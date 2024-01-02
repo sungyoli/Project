@@ -1,0 +1,6 @@
+{
+  "name": "yarn",
+  "version": "1.22.21",
+  "main": "index.js",
+  "license": "MIT"
+}

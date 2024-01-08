@@ -1,0 +1,103 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ a{
+    text-decoration: none;
+    color: inherit;
+ }
+ 
+ li{
+    list-style: none;
+ }
+ 
+ .wrap {
+    margin: 0;
+    padding: 0;
+    display: flex;
+ }
+
+ .table {
+   margin-top: 140px;
+ }
+
+/* table제목 왼쪽여백주기 */
+.table1 span {
+   padding-left: 10px;
+   font-size: 16px;
+}
+
+.table2 span {
+   padding-left: 10px;
+   font-size: 16px;
+}
+
+.table3 span {
+   padding-left: 10px;
+   font-size: 16px;
+}
+
+
+/* 문서  table */
+.table_name {
+   margin-top: 20px;
+   padding-left: 10px;
+   font-size: 25px;
+}
+
+ table {
+   border-collapse: collapse;
+   width:210%;
+   font-size: 14px;
+   margin-bottom: 50px;
+ }
+
+ th, td {
+   line-height: 2px;
+   text-align: left;
+   padding: 16px;
+ }
+
+ table th {
+   border-top: 1px solid #dfdfdf;
+   border-bottom: 1px solid #dfdfdf; /* 하단 선 추가 */
+ }
+
+ table tr td:hover {
+   background-color: #d8d8d8; /* 각 셀에 hover 효과를 줍니다. */
+ }
+ 
+ /* 행에 hover 시의 스타일 */
+ table tr:hover td {
+   background-color: #d8d8d8; /* 해당 행 전체에 hover 효과를 줍니다. */
+ }
+ 
+ /* 왼쪽 고정 메뉴바 */
+ .menu a {
+    display:block; /* 블록 요소로 설정하여 전체 너비에 링크 적용 */
+    padding: 10px; /* 안쪽 여백 설정 */
+    color: #333; /* 글자색 설정 */
+    border-radius: 5px; /* 모서리 둥글게 설정 */
+ }
+ 
+ /* 새결재 진행 버튼 스타일 */
+#left_menu {
+    margin:2%;
+    width:150px;
+ } 
+
+ #write-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: hsl(203, 100%, 62%);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font: size 15px;
+ }
+ 

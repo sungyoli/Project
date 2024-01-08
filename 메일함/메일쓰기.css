@@ -4,121 +4,187 @@ body {
   margin: 0px;
   height: 100vh;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
+
 a:hover {
   text-decoration: underline;
 }
+
 ul,
 li {
   list-style-type: none;
   margin: 0px;
   padding: 0px;
 }
+
+.title_wrap select {
+
+  width : 200px;
+  flex: 0 0 80px;
+}
+
+#address {
+
+  margin-left : 10px;
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
 #wrap {
   width: 860px;
-  
-  margin: auto;
+  margin: 0 auto;
 }
+
 textarea {
   resize: none;
+  width: 100%;
+  height: 200px;
+}
+
+.inputButton {
+  padding: 8px;
+  cursor: pointer;
 }
 
 header {
   background: #eeeeee;
   padding: 20px;
 }
+
 header > img {
   float: left;
   margin-right: 30px;
   width: 120px;
   height: 110px;
 }
+
 header > h1 {
   padding: 0px;
   margin: 0px;
 }
+
 .clear {
   clear: both;
 }
+
 .none {
   display: none;
 }
 
-/*게시판*/
-/*외곽잡기*/
 #content_wrap {
   border: 1px solid #ddd;
   padding: 30px;
   background: white;
   width: 100%;
   font-size: 13px;
-  border-radius: 30px;
+  margin-top: 20px;
+  height: 500px;
 }
-#content_wrap ul:nth-child(1),ul:nth-child(3) {
+
+#content_wrap ul:nth-child(1),
+#content_wrap ul:nth-child(3) {
   background: #ffffff;
   border: 1px solid #dddddd;
   padding: 10px;
 }
+
 #content_wrap ul li {
   margin-bottom: 6px;
 }
+
 #content_wrap ul li:nth-child(2) {
   margin-bottom: 10px;
 }
+
 #content_wrap .title {
   font-weight: bold;
   display: inline-block;
   width: 60px;
 }
 
-/*내부잡기 shift+home+insert */
-#content_wrap li:nth-child(1) div {
-  display: inline-block;
+.title_wrap {
+  list-style: none;
+  padding: 0;
 }
-#content_wrap li:nth-child(1) .radiobox {
-  font-size: 13px;
-  margin-left: 50px;
+
+.title_wrap li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
 }
-/*쓰기영역 */
+
+.title_wrap span {
+  display: flex;
+  align-items: center;
+}
+
+.title_wrap input[type="text"] {
+  margin-right: 20px; /* 원하는 간격으로 조정 */
+  width: 300px; /* 변경된 부분: 전체 폭을 사용하도록 수정 */
+}
+
+.title_wrap label {
+  flex: 0 0 80px; /* 레이블의 고정된 너비 */
+}
+
+.file {
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+/* 쓰기영역 */
 .writeWrap {
-  margin: 0px;
+  margin-top: 20px;
 }
 
 .writeWrap .writeArea {
-  width: 95%;
+  width: 100%;
   padding: 5%;
   font-size: 12px;
   min-height: 300px;
-
 }
+
 .configWrap {
   border: none;
 }
+
 .configWrap ul {
   margin: 0px;
   background: #ffffff;
   padding: 10px;
 }
+
 .configWrap .tag .InputArea input {
   width: 500px;
 }
+
 .end {
   background: white;
   width: 100%;
-  padding: 10px;
-  padding-top: 70px;
+  text-align: right;
+  
 }
+
 .end a {
   font-size: 14px;
-  border: 1px solid gold;
-  background: khaki;
+  border: 1px solid #3CB4FF;
+  background: white;
   padding: 5px;
   border-radius: 5px;
+  color: #3CB4FF;
+  float: right;
+  margin: 20px 10px;
 }
+
 .end a:hover {
+  background: #3CB4FF;
+  color: white;
   font-weight: bold;
   text-decoration: none;
 }

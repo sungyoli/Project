@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>가연언니 게시판</title>
+<script src="http://kit.fontawesome.com/a4539ed26c.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="가연언니.css">
+
+</head>
+<body>
+
+<div class="wrap">
+   <!-- 왼쪽 메뉴 -->
+   <div id="left_menu">
+      <div><h3>게시판</h3></div>
+      <button id="write-button">글쓰기</button>
+      <div class="menu">
+         <a href="#">전사공지</a>
+            <button class="accordion">부서게시판</button>
+            <div class="panel">
+              <p><a href="#"> 개발팀</a></p>
+              <p><a href="#">유지보수(관리)팀</a></p>
+              <p><a href="#">총무팀</a></p>
+              <p><a href="#">마케팅팀</a></p>
+              <p><a href="#">총무팀</a></p>
+            </div>
+         </a>      
+      </div>   
+   </div>
+   
+   <!-- 가운데 게시판 목록 리스트 -->
+   <div class="table_div">
+      <div class="table_name"><b>게시판홈</b></div><br>
+      <form name="boardAdd" action="boardAddAction.html" method="post"> <!-- 화면에서 입력받은 값을 전송한다. -->
+         <table>
+            <tr>
+               <th style="width: 5%"> 번호 </th>
+               <th style="width: 5%"> 긴급 </th>
+               <th style="width: 50%"> 제목 </th>
+               <th style="width: 5%"> 첨부 </th>
+               <th style="width: 5%"> 부서이름 </th>
+               <th style="width: 10%"> 작성자 </th>
+               <th style="width: 10%"> 작성일자 </th>
+               <th style="width: 5%"> 조회수 </th>
+            </tr>
+            
+            <tr>
+               <td style="width: 5%"> 1 </td>
+               <td style="width: 5%"> <i class="fa-solid fa-bell"></i> </td>
+               <td style="width: 50%"> 제목을 입력하세요. </td>
+               <td class = "file" style="width: 5%"> <i class="fa-solid fa-file"></i> </td>
+               <td style="width: 10%"> 개발팀 </td>
+               <td style="width: 10%"> 홍길동 </td>
+               <td style="width: 10%"> 2024-01-02 </td>
+               <td style="width: 5%"> 13 </td>
+            </tr>
+         </table><br>
+
+      </form>
+         <!-- 버튼추가 -->
+         <div class="pagination">
+           <a href="#">&laquo;</a>
+           <a href="#">1</a>
+           <a class="active" href="#">2</a>
+           <a href="#">3</a>
+           <a href="#">4</a>
+           <a href="#">5</a>
+           <a href="#">6</a>
+           <a href="#">&raquo;</a>
+         </div>
+         <!-- 버튼추가끝 -->
+
+      <div class="center">
+         <div class="select_text">
+            <div class="board_select">
+               <select class="select" value="게시판선택">
+               <option selected disabled>제목+내용</option>
+               <option value="board">제목</option>
+               <option value="board">작성자</option>
+               </select>
+            </div>
+         </div>
+         <input type="text" id="search-input" placeholder="검색어를 입력하세요">
+         <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+         </div>
+        
+      </div>
+      
+   </div>
+
+   <!-- 오른쪽 글 목록 -->
+   <div id="right_post">
+      <p class="right_m">전사 공지</p>
+         <div class="flex">
+            <li>it 최근 이슈1</li>
+            <span class date>06-01</span>
+         </div>
+         <div class="flex">
+            <li>헬스케어 향후 전망</li>
+            <span class date>06-01</span>
+         </div>
+         <div class="flex">
+            <li>it 상반기 정책</li>
+            <span class date>06-01</span>
+         </div>
+         <div class="flex">
+            <li>AI 플랫폼 2024 유망 서비스</li>
+            <span class date>06-01</span>
+         </div>
+         
+      
+      <p class="right_m">부서게시판</p>
+      <div class="flex">
+         <li>[공지] 금주 실행 계획</li>
+         <span class date>06-01</span>
+      </div>
+      <div class="flex">
+         <li>[중요]상반기 프로젝트</li>
+         <span class date>06-01</span>
+      </div>
+      <div class="flex">
+         <li>[공유] 무선 네트워크</li>
+         <span class date>06-01</span>
+      </div>
+   </div>
+
+</div>
+
+
+
+/*--------------------------------*/
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+ 
+  for (i = 0; i < acc.length; i++) {
+   acc[i].addEventListener("click", function() {
+     this.classList.toggle("active");
+     var panel = this.nextElementSibling;
+     if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+     } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+     }
+   });
+  }
+
+  </script>
+</html>

@@ -1,0 +1,175 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ a{
+    text-decoration: none;
+    color: inherit;
+ }
+ 
+ li{
+    list-style: none;
+ }
+
+ .center-table {
+    position: relative;
+    left: 20%;
+ }
+
+ .critical_bottom {
+    left: 24px;
+ } 
+
+ .tab_nav {
+    display: block;
+    height: 10px;
+ }
+
+ .tab_nav li {
+    float: left;
+    margin: 0 0 -1px 24px;
+    padding: 0;
+    cursor: pointer;
+    height:40px;
+    line-height: 40px;
+    font-size :13px;
+    color: #999;
+ }
+
+ .tab_nav li:hover {
+    border-bottom: 3px solid #000;
+    color: black;
+    font-weight: 500;
+ }
+
+ /* li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+ } */
+
+  /* 테이블 */
+ 
+
+/* table제목 왼쪽여백주기 */
+.table1 span {
+   padding-left: 10px;
+   font-size: 16px;
+}
+
+.table2 span {
+   padding-left: 10px;
+   font-size: 16px;
+}
+
+.table3 span {
+   padding-left: 10px;
+   font-size: 16px;
+}
+
+
+/* 문서  table */
+ table {
+   display: flex;
+   flex-direction: column;
+   border-collapse: collapse;
+   width:100%;
+   font-size: 13px;
+   margin-bottom: 50px;
+ }
+
+ th, td {
+   line-height: 2px;
+   text-align: left;
+   padding: 15px;
+ }
+
+ table th {
+   border-top: 1px solid #dfdfdf;
+   border-bottom: 1px solid #dfdfdf; /* 하단 선 추가 */
+ }
+
+ table tr td:hover {
+   background-color: #d8d8d8; /* 각 셀에 hover 효과를 줍니다. */
+ }
+
+ /* 행에 hover 시의 스타일 */
+ table tr:hover td {
+   background-color: #d8d8d8; /* 해당 행 전체에 hover 효과를 줍니다. */
+ }
+ 
+ /* 왼쪽 고정 메뉴바 */
+ .menu a {
+    display:block; /* 블록 요소로 설정하여 전체 너비에 링크 적용 */
+    padding: 10px; /* 안쪽 여백 설정 */
+    color: #333; /* 글자색 설정 */
+    border-radius: 5px; /* 모서리 둥글게 설정 */
+ }
+ 
+ 
+ /* 하단 검색창 */
+ #search-input {
+    padding: 7px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    width: 70%;
+    box-sizing: border-box;
+    width: 300px;
+    font-size: 11px;
+  }
+  
+  /* 하단 검색창 옵션 */
+  .select_text {
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .select option {
+    font-size: 11px; /* 원하는 폰트 크기로 조절 */
+}
+
+  
+  #search-button {
+    padding: 7px;
+    background-color: darkgray;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    margin-left:-2px;
+  }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select {
+    padding:5px;
+    margin-right: 4px;
+}
+
+/* 페이지 버튼 */
+.pagination {
+    margin-bottom: 20px;
+}
+.pagination a {
+    color: rgb(97, 97, 97);
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: background-color .3s;
+    font-size: 13px;
+  }
+  
+  .pagination a.active {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+  }
+  
+  .pagination a:hover:not(.active) {background-color: #ddd;}
+

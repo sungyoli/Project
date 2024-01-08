@@ -8,7 +8,7 @@
     left:0px;
     width: 100vw;
     height:100vh;
-    background: rgba(92, 92, 92, 0.63);
+    background: rgba(32, 32, 32, 0.534);
     z-index:1;
     display: none;
 } 
@@ -20,7 +20,7 @@
     transform:translate(-50%, -50%) scale(0);
     background: #fff;
     width:700px;
-    height:500px;
+    height:550px;
     z-index: 2;
     padding:20px;
     box-sizing: border-box;
@@ -29,14 +29,14 @@
 }
 .popup .content span {
     font-size: 18px;
-    margin-right: 10px;
+    margin-left: 7px;
 }
 
 .popup .close-btn {
     cursor:pointer;
     position:absolute;
-    right:10px;
-    top:10px;
+    right:25px;
+    top:30px;
     width:30px;
     height:30px;
     color:black;
@@ -59,21 +59,22 @@
 .table {
     display: flex;
     justify-content: center;
+    top: 20px;
 }
 .table1 {
     display: flex;
-    border: 1px solid rgb(131, 131, 131);
+    border: 1px solid rgb(194, 194, 194);
     width:40%;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .table2 {
     display: flex;
-    border: 1px solid rgb(131, 131, 131);
+    border: 1px solid rgb(160, 160, 160);
     width:55%;
     height: 300px;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-left: 5px;
 }
 
@@ -106,4 +107,5 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 11px;
+    margin-top: 20px;
   }

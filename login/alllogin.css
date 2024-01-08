@@ -12,7 +12,8 @@ a{
 
 .contents{
     width: 100%;
-    margin-left: 350px;
+    display: flex;
+    justify-content:center
 
 }
 
@@ -20,11 +21,11 @@ a{
     margin: 0 auto;
 }
 
-div .choice {
+.choice {
     text-align: center;
     width: 200px;
     height: 200px;
-    margin: 50px;
+    margin: 100px 50px 100px 50px;
     background: skyblue;
     display: inline-block;
     border-radius: 10%;
@@ -40,15 +41,12 @@ i {
 
 
 .join {
-    padding-top: 15px;
-    text-align: center;
-    width: 350px;
     height: 50px;
-    /*margin-left: 120px;*/
-    position: absolute;
-    right: 0;
-    
-
+    text-align: center;
     background: lightgray;
-    
+    border-radius: 10px;
+}
+
+.join_button {
+    padding: 13px;
 }

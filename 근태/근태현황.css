@@ -1,0 +1,257 @@
+@charset "UTF-8";
+
+/* 공통 스타일 시작 */
+* {
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	
+	text-decoration: none;
+	color: inherit;
+}
+
+li {
+	
+	list-style: none;
+}
+
+body {
+	
+	display : flex;
+}
+/* 공통 스타일 끝 */
+
+/* left_Main 시작 */	
+.left_menu {
+	
+	background : white;
+	border-radius : 5px;
+	padding : 20px;
+	width : 250px;
+	height : 1080px;
+}
+
+.menu_middle img {
+	
+	margin-right : 15px;
+}
+
+.menu_middle table {
+	
+	margin-left : 10px;
+}
+
+.menu_middle th {
+	
+	color : #333;
+	text-align : left;
+}
+
+.menu_middle td {
+	
+	color : #666;
+	text-align : right;
+}
+
+.menu_top h3 {
+	
+	font-weight : 500;
+	font-size : 22px;
+	color : #333;
+}
+
+#dateDisplay {
+	
+	font-weight: 400;
+	font-size : 12px;
+	color: #888;
+	margin : 15px 0 10px 0;
+}
+
+#timeDisplay {
+	
+	font-weight: 600;
+	font-size : 42px;
+	color: #5e5e5e;
+}
+
+.inputButton {
+	
+	cursor: pointer; /* 커서 모양 변경 */
+	margin : 10px 0;
+	font-size : 16px;
+	font-weight : 600;
+	padding : 5px 10px;
+	height : 42px;	
+	width: 90px;
+	box-shadow: none;
+	border-radius: 10px;
+    border: 1px solid #3CB4FF;
+    color: #3CB4FF;
+    background: #fff; /* 흰색 배경 */
+}
+.inputButton:hover{
+	background: #3CB4FF;
+	color: #FFFFFF;
+}
+.disabled:hover{
+	background: #fff;
+	color: #ddd;
+}
+.disabled {
+	cursor: default;
+	color: #ddd;
+	border: 1px solid #ddd;
+}
+
+.menu_bottom {
+	
+	margin-left : -30px;
+	cursor: pointer;
+	color : #333;
+	list-style : none;	
+	font-weight : 400;	
+}
+
+.menu_bottom li {	
+	
+	text-align : left;
+	margin : 10px 40px;
+	line-height: 150%;
+}
+
+.menu_bottom li a {
+	
+	color : black;
+	text-decoration : none;
+	transition : color 0.3s; /* 색상 전환에 효과 부여 */
+}
+
+.menu_bottom li a:hover,
+.menu_bottom li a:active,
+.menu_bottom li a:focus { /* 마우스 올릴 때 / 클릭 할 때 / 포커스 되면 */
+
+	color: #3CB4FF;
+	outline : none;
+}
+/* left_Main 끝 */
+
+/* right_Main 시작 */
+#right_Main,
+#left_Main { 
+
+	display: flex;
+	flex-direction : column;
+	margin : 0 25px 0 20px;
+}
+
+#main_top h1 {
+	
+	text-align: left;
+	font-size : 22px;
+	color : #333;
+	font-weight : 500;
+	background: white;
+	border-radius: 5px;
+	padding: 10px;
+	width: 1650px;
+	margin-top : 10px;  
+}
+
+#main_middle {
+	
+	text-align: center;
+	background: white;
+	border-radius: 5px;
+	margin : 20px 20px;
+}
+
+.row {
+	
+	float: left;
+	margin: 0;
+	width: 1300px;
+	height: 500px;
+	padding: 0 20px;
+    background: #fff;
+}
+
+#main_middle table {
+	
+	width : 1200px;
+	margin : 5px 20px;
+	text-align : center;
+	border-collapse : collapse; /* 셀의 경계가 병합되어 선이 이어짐 */
+}
+
+#main_middle table th {
+	
+	height : 32px;
+	font-size : 15px;
+	font-weight : 500;
+	border-bottom : 1px solid #ddd;
+	padding : 10px 0;
+}
+
+#main_middle table td {
+	
+	padding-top : 10px;
+	font-weight : 400;
+	font-size : 13px;
+	height : 20px;
+	max-width : 80px;
+	min-width : 50px;
+}
+
+.accordion {
+	
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	outline: none; /*  클릭 효과 등을 제거하여 시각적인 포커스 표시를 없앰 */
+	transition: 0.2s; /* 전환효과 */
+	font-size : 20px;
+	font-weight : 600;
+	border : none;
+}
+
+.active,
+.accordion:active { 
+
+	color: #3CB4FF;
+	outline : none;
+	border : 1px solid #ddd;
+}
+
+.accordion:after {
+	
+	content: '\002B'; /* 그나마 화살표 모양 : "\2B9F" "\2B9D" | https://www.unicode.org/charts/#symbols */
+	color: #777;
+	font-weight: bold;
+	float: left;
+	margin-right : 20px;
+}
+
+.active:after {
+	
+	content: "\2212";
+	color: #3CB4FF;
+}
+
+.panel {
+	
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+

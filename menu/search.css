@@ -1,0 +1,79 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+
+/* ^ 기본 css 설정 */
+
+.form-control {
+  width: 260px;
+  height: 40px;
+  padding-left: 10px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.form-control-feedback {
+  position: absolute;
+  right: 35px;
+  top: 37%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 3rem;
+  pointer-events: none;
+  color: #aaa;
+}
+
+.top_icons {
+  color: #3cb4ff;
+  font-size: 25px;
+}
+
+.name {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+.name > span {
+  margin-left: 35px;
+  font-size: 20px;
+}
+
+.line {
+  border-bottom: 0.5px solid #d6d6d6;
+}
+
+.input-group {
+  display: flex;
+  top: 16px;
+  right: 90px;
+}
+.right {
+  display: flex;
+  position: absolute;
+  right: 40px;
+}
+.has-search {
+  margin-right: 10px;
+}
+
+/* 
+position : absolute;
+top : 50%;
+transform : translateY(-50%)
+ 상하 정렬(absolute할때)
+ */

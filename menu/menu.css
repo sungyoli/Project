@@ -1,0 +1,114 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.wrap {
+  border-right: 1px solid #ccc; /* 세로선을 추가하는 부분 */
+  padding-right: 20px; /* 세로선과 메뉴 사이의 간격을 조절 */
+}
+
+/* 카테고리명 */
+#left_menu {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+html{
+  font-size:16px
+}
+/* 새결재 진행 버튼 */
+
+#write-button {
+  margin-top: 27px;
+  padding: 15px;
+  background-color: white;
+  color: rgb(46, 46, 46);
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font: size 16px;
+  font-weight: bold;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, min(100%, 30rem));
+  min-height: 100vh;
+  place-items: start;
+  gap: 1rem;
+  padding: 1rem;
+}
+.tab__label {
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+}
+.tab__content {
+  color: black;
+  font-size: 14px;
+}
+.tab li {
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-top: -5px;
+}
+
+.tab li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Core styles/functionality */
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.35s;
+}
+.tab input:checked ~ .tab__content {
+  max-height: 10rem;
+}
+
+/* Visual styles */
+.accordion {
+  color: gray;
+  border: none;
+  overflow: hidden;
+  width: 60%;
+}
+
+.tab__label {
+  display: flex;
+  color: black;
+  background: white;
+  cursor: pointer;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.tab__label::after {
+  content: "\276F";
+  width: 8em;
+  height: 1em;
+  text-align: center;
+  transform: rotate(90deg);
+  transition: all 0.35s;
+  color: gray;
+}
+.tab input:checked + .tab__label::after {
+  transform: rotate(270deg);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="idFind.css" />
+    <title>아이디찾기</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend class="title">아이디찾기</legend>
+      <form action="#" method="post">
+        <table class="idFind">
+          <tr>
+            <th align="right"><label for="name"> 성명 </label></th>
+            <td>
+              <input
+                type="text"
+                id="name"
+                name="UserName"
+                size="20"
+                placeholder="Name"
+                autofocus
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <th align="right"><label for="em"> 이메일 </label></th>
+            <td>
+              <input
+                type="email"
+                id="em"
+                name="userEmail"
+                size="30"
+                placeholder="Email"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+
+        <tr>
+          <td style="border-bottom: none">
+            <br />
+
+            <input class="findButton" type="submit" value="아이디찾기" />
+          </td>
+        </tr>
+      </form>
+    </fieldset>
+  </body>
+</html>

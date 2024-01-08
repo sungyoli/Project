@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.dropdown{
+  text-align: right;
+}
+
+.wrap {
+  width: 100%;
+  height:130vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  margin:100px;
+  
+ 
+}
+
+.login {
+  width: 80%;
+  height: 90%;
+  background: white;
+  border-radius: 20px;
+  border: 1px solid rgb(218, 213, 213);
+  max-width: 1000px;
+ 
+  
+}
+
+.login_title {
+  padding: 20px;
+  display: flex;
+  text-align: right;
+  line-height: 3;
+  
+}
+
+.box{
+padding: 60;
+box-shadow: gray;
+}
+
+.picture_con {
+  margin: 30px 0 8px;
+  font-size: 14px;
+  font-weight: 800;
+  width: 300px;
+  padding-right: 40px;
+  line-height: 3;
+  
+ 
+}
+
+
+
+.container{
+  margin: 30px;
+  display: flex;
+  vertical-align: text-bottom;
+  
+}
+
+.container1{
+  margin: 30px;
+  display: flex;
+  
+}
+
+
+.int_box {
+  display: block;
+  position: relative;
+  width: 80%;
+  height: 50px;
+  background: rgba(3, 3, 3, 0.021);
+  border-radius: 10px;
+  border: 1px solid rgb(218, 213, 213);
+  font-size: 15px;
+ 
+  
+  
+}
+
+.name_con{
+  margin: 19px 0 8px;
+  font-size: 14px;
+  font-weight: 800;
+  width: 500px;
+  padding-right: 40px;
+  padding: 10px;
+  
+
+}
+
+.company_con{
+  margin: 19px 0 8px;
+  font-size: 14px;
+  font-weight: 800;
+  width: 500px;
+  padding-right: 40px;
+  padding: 10px;
+  
+}
+
+.division_con{
+  margin: 19px 0 8px;
+  font-size: 14px;
+  font-weight: 800;
+  width: 500px;
+  padding-right: 40px;
+  padding: 10px;
+}
+
+.posision_con{
+  margin: 19px 0 8px;
+  font-size: 14px;
+  font-weight: 800;
+  width: 500px;
+  padding-right: 40px;
+  padding: 10px;
+}
+
+.email_con{
+  width: 500px;
+    padding-right: 40px;
+    padding: 10px;
+}
+
+.phon_con{
+  margin: 19px 0 8px;
+  font-size: 14px;
+  font-weight: 800;
+  width: 500px;
+  padding-right: 40px;
+  padding: 10px;
+ 
+}
+
+.phon_con2{
+  margin: 19px 0 8px;
+  font-size: 14px;
+  font-weight: 800;
+  width: 500px;
+  padding-right: 40px;
+  padding: 10px;
+  
+}
+
+.birth_con {
+    width: 45%;
+    padding-right: 40px;
+    display: table;
+ 
+}
+
+#bir_yy {
+  display: table-cell;
+  width: 147px;
+}
+
+#bir_mm {
+  display: table-cell;
+  width: 147px;
+  vertical-align: middle;
+}
+
+#bir_dd {
+  display: table-cell;
+  width: 147px;
+}
+
+#bir_mm,
+#bir_dd {
+  padding-left: 10px;
+}
+
+.join_btn {
+  width: 100%;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 60px 0 91px;
+  border: 0;
+  
+  
+}
+button:hover {
+  cursor: pointer;
+}
+.join_btn input {
+  width: 5%;
+  border:1px solid gray;
+  background-color:rgb(27, 173, 218);
+  font-size: 15px;
+  color: #fff;
+  padding: 11px 0 17px;
+  border-radius: 10px;
+  
+}

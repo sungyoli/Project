@@ -118,6 +118,10 @@ li{
    font-weight: bold;
 }
 
+#dropdown_center_div{
+   justify-content: flex-end;
+}
+
  #dropdown {
    display: inline-block;
  }
@@ -144,12 +148,17 @@ li{
 .center{
    display: inline-block;
    width: 500px;
-   margin-left: 620px;
+   position: relative;
+   left: 38%;
    
 }
 
 .select{
    height: 30px;
+}
+
+#search_span{
+   
 }
 
 #search-input{

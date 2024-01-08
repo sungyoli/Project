@@ -60,30 +60,46 @@
               <td style="width: 10%">2024-01-02</td>
               <td style="width: 5%">13</td>
             </tr>
-          </table>
+          </table><br>
 
-          <div class="select_text">
-            <div class="board_select">
-              <select value="게시판선택">
-                <option selected disabled>제목+내용</option>
-                <option value="board">제목</option>
-                <option value="board">작성자</option>
-              </select>
-            </div>
+          <div class="pagination">
+            <a class="p" href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a class="active" href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a class="p" href="#">&raquo;</a>
+          </div>
 
-            <div>
-              <input
-                type="text"
-                id="search-input"
-                placeholder="검색어를 입력하세요"
-              />
-              <button id="search-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
+
+          <div class="center">
+            <div class="select_text">
+              <div class="board_select">
+                <select value="게시판선택">
+                  <option selected disabled>제목+내용</option>
+                  <option value="board">제목</option>
+                  <option value="board">작성자</option>
+                </select>
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="검색어를 입력하세요"
+                />
+                <button id="search-button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
             </div>
           </div>
         </form>
       </div>
+
+
 
       <!-- 오른쪽 글 목록 -->
       <div id="right_post">
@@ -121,9 +137,23 @@
       </div>
     </div>
 
-    /*--------------------------------*/
-
     <script>
+        //버튼
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+      
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+          } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+        }
+
       fetch("../header/header.html")
         .then((response) => response.text())
         .then((html) => {

@@ -18,30 +18,19 @@ li {
 	
 	list-style: none;
 }
-/* 공통 스타일 끝 */
-
-body {
-
-  margin-top : 20px;
-  height: 100vh;
-}
-
-a {
-
-  text-decoration: none;
-  color: black;
-}
 
 a:hover {
 
   text-decoration: underline;
 }
+/* 공통 스타일 끝 */
 
 /* top 시작 */
 #top {
 
   width: 860px;
   margin: 0 auto;
+  margin-top : 20px;
 }
 /* top 끝 */
 
@@ -54,7 +43,7 @@ a:hover {
   width: 100%;
   font-size: 13px;
   margin-top: 20px;
-  height: 500px;
+  height: 100%;
 }
 
 #middle ul:nth-child(1),
@@ -138,7 +127,6 @@ a:hover {
   width: 100%;
 }
 
-
 .addressButton {
 
   margin-left: 10px; /* 왼쪽 정렬을 위해 마진 제거 */
@@ -147,6 +135,15 @@ a:hover {
   cursor: pointer;
   width : 50px;
   font-size : 12px;
+}
+
+#addressBookModal p {
+
+  margin : 40px 30px;
+  font-weight: 500;
+  font-size : 14px;
+  border : 1px solid #dddddd;
+  padding : 10px;
 }
 
 .modal {
@@ -166,8 +163,8 @@ a:hover {
 
   position: absolute;
   top: 10px;
-  right: 10px;
-  font-size: 20px;
+  left: 330px;
+  font-size: 30px;
   cursor: pointer;
 }
 
@@ -181,15 +178,11 @@ a:hover {
 
 .middle_content {
 
-  margin-top: 20px;
-}
-
-.middle_content {
-
   width: 100%;
   padding: 5%;
   font-size: 12px;
   min-height: 300px;
+  margin-top: 20px;
 }
 
 textarea {
@@ -206,6 +199,7 @@ textarea {
   background: white;
   width: 100%;
   text-align: right; 
+  margin-top : 30px;
 }
 
 .bottom a {
@@ -215,9 +209,8 @@ textarea {
   background: white;
   padding: 5px;
   border-radius: 5px;
-  color: #3CB4FF;
-  float: right;
-  margin: 40px 10px;
+  color: #3CB4FF; 
+  margin-right : 10px;
 }
 
 .bottom a:hover {

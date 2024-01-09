@@ -3,23 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <title>메일쓰기</title>
     <link rel="stylesheet" href="메일쓰기.css" />
-    <title>JS Bin</title>
     <script src="../ckeditor/ckeditor.js"></script>
     <script src="http://cdn.ckeditor.com/4.23.0-lts/standard/ckeditor.js"></script>
     <script type="text/javascript">
-    
-      function submit() {
-
+      function submitForm() {
         alert("등록되었습니다.");
         location.href = "boardList.html";
       }
 
       function save() {
-
         alert("임시저장되었습니다.");
       }
-      
+
       function openOrgChartModal() {
         var modal = document.getElementById("addressBookModal");
         modal.style.display = "block";
@@ -35,22 +32,17 @@
         var recipientEmailInput = document.getElementById(targetInputId);
         var listContainer = document.getElementById(listContainerId);
 
-        // 선택된 옵션의 값 가져오기
         var selectedOption = selectElement.options[selectElement.selectedIndex].value;
 
-        // 받는 사람의 이메일 입력란에 순차적으로 추가
         if (recipientEmailInput.value !== "") {
           recipientEmailInput.value += ", " + selectedOption;
         } else {
           recipientEmailInput.value = selectedOption;
         }
 
-        // 선택된 옵션을 리스트에 추가
         var listItem = document.createElement("li");
         listItem.textContent = selectedOption;
         listContainer.appendChild(listItem);
-
-        
       }
     </script>
   </head>
@@ -73,7 +65,10 @@
               </select>
               <input type="button" class="addressButton" value="주소록" onclick="openOrgChartModal()">
               <div id="addressBookModal" class="modal">
+                <p>조직도</p>
+                <p>
                 <iframe src="../조직도/조직도.html" width="300" height="300" style="border: none;"></iframe>
+                </p>
                 <span class="close" onclick="closeModal()">&times;</span>
               </div>
             </span>
@@ -104,10 +99,10 @@
           <textarea name="editor1" id="editor1" rows="10" required></textarea>
         </form>
         <div class="bottom">
-          <a href="보낸메일함.html" onclick="submit()">보내기</a>
-          <a href="받은메일함.html" onclick="submit()">나에게 보내기</a>
+          <a href="보낸메일함.html" onclick="submitForm()">보내기</a>
+          <a href="받은메일함.html" onclick="submitForm()">나에게 보내기</a>
         </div>
-      </div>
+      </div>  
     </form>
     <script>
       CKEDITOR.replace("editor1", {

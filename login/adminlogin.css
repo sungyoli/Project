@@ -28,10 +28,20 @@ legend {
     color: black;/* 글자색 */
 }
 
+.title {
+    margin: 30px;
+    
+}
+
 label {
     font-size: 14px; /* 글자크기 */
     font-weight: bold;  /* 글자굵기 */
     width:120px; /* 글자색 */
+}
+
+.find {
+    font-size: 10px;
+    color: blue;
 }
 
 .login {
@@ -42,6 +52,9 @@ label {
     margin-top: 20px;
 }
 
+.right_sorted{
+    text-align: right;
+}
 
 .login th {
     font-size: 15px;
@@ -77,14 +90,11 @@ th, td {
     margin-left: 80px;
     margin-top: 5px;
     width: 300px;
-    height: 40px;
+    height: 45px;
 }
 
 .Klogin_button {
     margin-bottom: 10px;
+    margin-right: 80px;
 }
 
-.find {
-    font-size: 10px;
-    color: blue;
-}

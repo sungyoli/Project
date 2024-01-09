@@ -54,6 +54,10 @@ li{
    margin-top:50px;
  }
 
+.accordion-button{
+   font-weight: bold;
+}
+
  #mailkind{
    padding-left: 0;
    margin-bottom: 0%;
@@ -64,11 +68,17 @@ li{
    padding-left: 30px;
    height: 40px;
    font-weight: bold;
+
  }
 
  .mailkind_li:hover{
    background-color: #F0F8FF;
  }
+
+.mailkind_span{
+   position: relative;
+   top: 25%;
+}
 
  .right_contents{
    margin-top: 0;
@@ -108,6 +118,10 @@ li{
    font-weight: bold;
 }
 
+#dropdown_center_div{
+   justify-content: flex-end;
+}
+
  #dropdown {
    display: inline-block;
  }
@@ -134,12 +148,17 @@ li{
 .center{
    display: inline-block;
    width: 500px;
-   margin-left: 620px;
+   position: relative;
+   left: 38%;
    
 }
 
 .select{
    height: 30px;
+}
+
+#search_span{
+   
 }
 
 #search-input{
@@ -195,6 +214,10 @@ li{
    width: 1200px;
    margin-left:80px;
    
+}
+
+#clip_icon{
+   margin-left: 20px;
 }
 
  /* Pagination links */

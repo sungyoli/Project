@@ -1,267 +1,125 @@
 @charset "UTF-8";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Noto Sans KR", sans-serif;
-}
 
-a {
-  text-decoration: none;
-  color: black;
-}
+      body {
+        font-family: Arial, sans-serif;
+      }
 
-li {
-  list-style: none;
-}
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+      }
 
-.dropdownbtn {
-  display: inline-block;
-  position: relative;
-  bottom: 650px;
-  right: 140px;
-  
-}
+      .dropdownbtn {
+        position: relative;
+        display: inline-block;
+        margin-left: 95%;
+      }
 
-.profile{
-  width: 100px;
-  height: 100px;
-  border-radius: 90px;
-  
-}
+      .profile {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
 
-.dropdowncontent {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
+      .dropdowncontent {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0 8px 16px white;
+        z-index: 1;
+      }
 
-.dropdownbtn:hover .dropdowncontent {
-  display: block;
-}
+      .dropdowncontent a {
+        display: block;
+        padding: 12px 16px;
+        text-decoration: none;
+        color: #333;
+      }
 
-.dropdowncontent a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+      .dropdowncontent a:hover {
+        background-color: #93d9e0;
+      }
 
-.dropdowncontent a:hover {
-  background-color: #f1f1f1;
-}
+      .dropdownbtn:hover .dropdowncontent {
+        display: block;
+      }
 
-.wrap {
-  width: 100%;
-  height:139vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(232, 238, 238, 0.788);
-  padding:30px;
-  
-}
+      .login {
+        background-color: #becaca09;
+        padding: 60px;
+        border: 1px solid #aacdff;
+        box-shadow: blue;
+        border-radius: 60px;
+        margin-top: 20px;
+        
+        
+      }
 
-.login {
-  width: 90%;
-  height: 90%;
-  background: white;
-  border-radius: 20px;
-  border: 3px solid rgba(231, 230, 230, 0);
-  max-width: 1000px;
- 
-  
-}
+      .login_title {
+        text-align: center;
+        margin-bottom: 20px;
+      }
 
-.login_title {
-  padding: 20px;
-  display: flex;
-  text-align:right;
-  line-height: 50;
-}
+      .box {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 30%; 
+        margin: 50px;
+        
+        
+      }
 
-.login_title h2 {
-  font-weight: bold;
-  font-size: 40px;
-  margin-left: 25px;
-  padding: 20px;
-  margin: 50px;
-}
+      
 
-.box{
-margin-bottom:50%;
-margin-left:20px;
+      
 
+      .int_box {
+        width: 300px; /* 원하는 너비 값으로 조절 */
+        height: 40px; /* 원하는 높이 값으로 조절 */
+        display: flex;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box; /* 패딩과 테두리를 요소의 크기에 포함 */
+        
+        
+      }
 
-}
+      #previewImage {
+        max-width: 200px;
+        max-height: 200px;
+        display: none;
+      }
 
-.picture_con {
-  margin-bottom: 80px;
-  font-size: 14px;
-  font-weight: 800;
-  width: 300px;
-  padding-right: 40px;
-  line-height: 3;
-  
-  
-}
+      
 
-
-.container{
-  margin: 30px;
-  display: flex;
-  vertical-align: text-bottom;
-  
-}
-
-
-
-
-
-
-
-.int_box {
-  display: block;
-  position: relative;
-  width: 80%;
-  height: 50px;
-  background: rgba(3, 3, 3, 0.021);
-  border-radius: 10px;
-  border: 1px solid rgb(218, 213, 213);
-  font-size: 15px;
- 
-  
-  
-}
-
-.name_con{
-  margin: 19px 0 8px;
-  font-size: 14px;
-  font-weight: 800;
-  width: 500px;
-  padding-right: 40px;
-  padding: 10px;
-  
-
-}
-
-.company_con{
-  margin: 19px 0 8px;
-  font-size: 14px;
-  font-weight: 800;
-  width: 500px;
-  padding-right: 40px;
-  padding: 10px;
-  
-}
-
-.division_con{
-  margin: 19px 0 8px;
-  font-size: 14px;
-  font-weight: 800;
-  width: 500px;
-  padding-right: 40px;
-  padding: 10px;
-}
-
-.posision_con{
-  margin: 19px 0 8px;
-  font-size: 14px;
-  font-weight: 800;
-  width: 500px;
-  padding-right: 40px;
-  padding: 10px;
-}
-
-.email_con{
-  width: 500px;
-    padding-right: 40px;
-    padding: 10px;
+      .join_btn {
+        width: 100%;
+        font-weight: 700;
+        background-color: rgba(0, 0, 0, 0);
+        margin: 60px 0 91px;
+        border: 0;
+      }
+      
+      button:hover {
+        cursor: pointer;
+      }
+      
+      .join_btn input {
+        width: 90px;
+        border: none;
+        font-size: 15px;
+        color: #fff;
+        padding: 11px 0 17px;
+        border-radius: 10px;
+        background-color: skyblue;
+      }
+      
+      .join_btn input[value="취소"] {
+        background-color: rgba(128, 128, 128, 0.062);
+        color: black;
+        border:none;
+      }
     
-}
-
-.phon_con{
-  margin: 19px 0 8px;
-  font-size: 14px;
-  font-weight: 800;
-  width: 500px;
-  padding-right: 40px;
-  padding: 10px;
-  
-}
-
-.phon_con2{
-  
-  font-size: 14px;
-  font-weight: 800;
-  width: 500px;
-  padding-right: 40px;
-  padding: 10px;
-  
-  
-
-  
-}
-
-.birth_con {
-    width: 107%;
-    padding-right: 40px;
-    display: table;
-    margin-top: 30px;
-    
-    
- 
-}
-
-#bir_yy {
-  display: table-cell;
-  width: 147px;
-}
-
-#bir_mm {
-  display: table-cell;
-  width: 147px;
-  vertical-align: middle;
-}
-
-#bir_dd {
-  display: table-cell;
-  width: 147px;
-}
-
-#bir_mm,
-#bir_dd {
-  padding-left: 10px;
-}
-
-.join_btn {
-  width: 100%;
-  font-weight: 700;
-  background-color: rgba(0, 0, 0, 0);
-  margin: 60px 0 91px;
-  border: 0;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
-.join_btn input {
-  width: 10%;
-  border: none;
-  font-size: 15px;
-  color: #fff;
-  padding: 11px 0 17px;
-  border-radius: 10px;
-  background-color: skyblue;
-}
-
-.join_btn input[value="취소"] {
-  background-color: rgba(128, 128, 128, 0.062);
-  color: black;
-  border:none;
-}

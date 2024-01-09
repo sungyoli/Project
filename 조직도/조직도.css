@@ -16,17 +16,18 @@ body {
 ul.tree {
     width: 180px;
     margin: 0 auto;
-    padding-top: 48px;
+    padding-top: 0px;
 }
 
 ul li {
     position: relative;
     list-style:none;
-    padding: 4px 0;
-    font-size: 13px;
+    padding: 3px 0;
+    font-size: 12px;
 }
 
 li span {
+    font-size: 13px;
     font-weight: bold;
 }
 
@@ -68,11 +69,14 @@ details[open] {
     max-height: 1000px;
 }
 
+/* '▶' 없애기 */
 summary {
     display: block;
     position: relative;
     cursor: pointer;
 }
+
+/* +버튼없애기 */
 .parent:nth-child(1) summary:before {
     content: "";
 }
@@ -83,6 +87,7 @@ summary {
     content: "";
 }
 
+/* +버튼 */
 summary:before {
     content: '+';
     position: absolute;
@@ -95,11 +100,71 @@ summary:before {
     /* border-radius: 9px; */
 }
 
+/* -버튼 */
 details[open] > summary:before {
     content: '-';
+    z-index: 1;
+    top: 4px;
     background-color: gray;
 }
 
+/* 가지 */
 details > ul {
-    padding: 15px;
+    padding: 14px;
 }
+
+.table1 {
+    margin-top: 15px;
+}
+
+/* 모달 */
+
+.popup .overlay {
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height:100vh;
+    z-index:1;
+    display: none;
+} 
+
+.popup .content {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%) scale(0);
+    background: #fff;
+    width:300px;
+    height:380px;
+    z-index: 2;
+    padding:10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 5px rgb(214, 214, 214);
+}
+
+.popup .close-btn {
+    cursor:pointer;
+    position:absolute;
+    right:15px;
+    top:17px;
+    width:30px;
+    height:30px;
+    color:gray;
+    font-size:30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius:50%;
+}
+
+.popup.active .overlay {
+    display:block;
+}
+
+.popup.active .content {
+    /* transition:all 300ms ease-in-out; */
+    transform:translate(-50%, -50%) scale(1);
+}
+
+

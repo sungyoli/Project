@@ -12,243 +12,165 @@
  li{
     list-style: none;
  }
- 
+
  .wrap {
-    margin: 0;
-    padding: 0;
+   display:flex;
+ }
+ /* 버튼 가로 나열 */
+.button-top {
     display: flex;
-    height: 100vh;
-    width:100%;
- }
- 
- #left_menu {
-    
-    width:300px;
-    height: 100%;
-    margin-right: 0px;
-    margin-top: 0;;
-    border-right: 3px solid #999;
-    background-color: lightgray;
- 
- }
- 
- #letter1{
-    margin-left:20px;
-    font-weight: bold;
- }
-  
-  #write-button {
-     margin-top: 20px;
-     margin-left: 20px;
-     padding: 10px;
-     border: 2px solid #999;
-     background-color: white;
-     border-radius: 5px;
-     cursor: pointer;
-     width: 85%;
-     height: 55px;
-     font: size 15px;
-  }
- 
-  .accordion{
-    margin-top:50px;
-  }
- 
- .accordion-button{
-    font-weight: bold;
- }
- 
-  #mailkind{
-    padding-left: 0;
-    margin-bottom: 0%;
-    cursor: pointer;
- }
- 
-  .mailkind_li{
-    padding-left: 30px;
-    height: 40px;
-    font-weight: bold;
- 
-  }
- 
-  .mailkind_li:hover{
-    background-color: #F0F8FF;
-  }
- 
- .mailkind_span{
-    position: relative;
-    top: 25%;
- }
- 
-  .right_contents{
-    margin-top: 0;
-    width: 100%; /* 늘리고자 하는 가로 길이로 조정 */
-    display: flex;  
-    flex-direction: column;
- }
- 
-  .table_name{
-     
-     width: 100%;
-     height: 150px;
-     border-bottom: 3px solid #999;
-     padding-left: 40px;
-     flex-flow: row nowrap;
-     background-color: lightgray;
-     display: inline-block;
-     
-    }
-  
- #mail_tt{
-    margin-top: 20px;
-    margin-bottom: 30px;
- }   
- 
- #mailtt_span{
-    font-size: 30px;
-    font-weight: bold;
-    margin-right: 5px;
- }
- 
- .mail_cnt{
-    color: #999;
- }
- 
- .cnt{
-    font-weight: bold;
- }
- 
-  #dropdown {
-    display: inline-block;
-  }
-    
- #chk_box {
-    margin-right: 40px;
-    width: 18px;
-    height: 18px;
- }
- 
-  .btn-light {
-    margin-right: 20px;
- }
- 
- .btn-light:hover{
-    background-color: #F0F8FF;
- }
- 
- 
- .icon{
-    margin-right: 8px;
- }
- 
- .center{
-    display: inline-block;
-    width: 500px;
-    margin-left: 620px;
-    
- }
- 
- .select{
-    height: 30px;
- }
- 
- #search-input{
-    height: 35px;
-    width: 350px;
- }
- 
- 
- .table_name2 {
-     margin-top: 10px;
- }
- 
- .mail_div{
-    cursor: pointer
- }
- 
- 
- .mail_div:hover {
-    background-color: #F0F8FF;
- }
- 
- .mail_ul {
-    display: flex;
-    margin-bottom: 0;
-    height: 50px;
-    align-items: center;
-    justify-content: space-around;
- }
- 
- .checkbox{
-    width: 15px;
-    height: 15px;
- }
- 
- .mail li {
-    display: inline-block;
- 
- }
- 
- #main-nano-wrapper {
-    position: absolute;
-    top: 214px;
-    bottom: 0;
-    height: auto;
-  }
- 
- .sender_li {
     margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  /* 아이콘 */
+ .icon{
+    color: black;
+    font-size: 18px;
+    margin-right: 3px;
+ }
+
+ /* 버튼 */
+ .btn {
+   font-size:13px;
+   border: none;
+   background-color: white;
+   cursor: pointer;
+   padding: 5px 10px 5px 10px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+ }
+
+ .btn:hover {
+   background-color: rgba(219, 219, 219, 0.527);
+ }
+
+ /* 내용 */
+
+ .content {
+   margin-top:10px;
+   border: 4px solid rgb(226, 226, 226);
+   margin-left: 20px;
+   width: 860px;
+   height: 780px;
+   margin-bottom: 100px;
+   display: flex;
+   flex-direction: column;
+ }
+
+ .img {
+   margin-top: 20px;
+   margin-left:20px;
+ }
+
+ .file {
+   margin-top: 20px;
+   display: flex;
+   font-size: 13px;
+   margin-left: 30px;
+ }
+
+ .file-add {
+   border: 2px dashed rgba(197, 197, 197, 0.527);
+   margin-left: 30px;
+   width: 710px;
+   height: 65px;
+   display: flex;
+   justify-content:center;
+ }
+
+ /* 아이콘 */
+ .file-add span{
+   margin-top: 1px;
+   font-size: 13px;
+   text-decoration: line;
+ }
+
+ .file-add ion-icon{
+   color: gray;
+   font-size: 20px;
+ }
+
+ .file-add ul{
+   display: flex;
+   justify-content:center;
+   margin-top: 20px;
+ }
+
+ .file-add li{
+   display: flex;
+   justify-content:center;
  }
  
- .mailtitle_li {
-    width: 1200px;
-    margin-left:80px;
-    
+ /* 우측 메뉴 */
+ .right-menu {
+   margin-top:10px;
+   margin-left:20px;
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+   border-left: 1px solid #c2c2c2;
  }
- 
- #clip_icon{
-    margin-left: 20px;
- }
- 
-  /* Pagination links */
-  .pagination{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    margin-bottom:10px;
-    margin-top: 100px;
-    height: 50px;
- }
- .pagination a {
+
+ /* 우측 버튼 */
+.tab_nav {
+   display: block;
+   height: 10px;
+}
+
+.tab_nav li {
+   float: left;
+   margin: 0 0 -1px 24px;
+   padding: 0;
+   cursor: pointer;
+   height:40px;
+   line-height: 40px;
+   font-size :13px;
+   color: #999;
+}
+
+.tab_nav li:hover {
+   border-bottom: 3px solid #000;
    color: black;
-   padding: 8px 16px;
-   text-decoration: none;
-   transition: background-color .3s;
+   font-weight: 500;
+}
+
+/* 프로필 */
+.profile1 {
+   display: flex;
+   border-top: 1px solid #c2c2c2;
+   background-color: #e4f6fc;
+   height: 80px;
+}
+
+.profile1 ul{
+   margin-top: 20px;
+   margin-left: 18px;
+}
+
+.profile1 li{
+   margin-bottom: 5px;
+}
+
+.profile1 li:nth-child(1){
+   margin-bottom: 5px;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+.profile1 li:nth-child(2){
+   font-size: 12px;
+}
+
+/* 프로필 이미지 */
+.profile1 img {
+   margin-top: 15px;
+   border-radius: 50%; /* 50%로 설정하여 동그랗게 만듭니다. */
+   width: 50px; /* 이미지의 너비를 조절하세요. */
+   height: 50px; /* 이미지의 높이를 조절하세요. */
+   object-fit: cover; /* 이미지가 원형으로 잘릴 수 있도록 설정합니다. */
+   margin-left: 15px;
  }
- 
- /* Style the active/current link */
- .pagination a.active {
-   background-color: black;
-   color: white;
- }
- 
- /* Add a grey background color on mouse-over */
- .pagination a:hover:not(.active) {background-color: #ddd;}
-  
- .arrow{
-    font-size: 20px;
- }
- 
- 
- 
- 
- 
- 
-  
- 
-  
- 
-  
- 
  
   

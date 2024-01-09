@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 반응형 웹 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="modal.css" />
+    <script src="modal.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/67a1f076db.js"
+      crossorigin="anonymous"
+    ></script>
+
+<title>조직도</title>
+</head>
+<body>
+<div class="popup" id="popup-1">
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <span>결재양식 선택</span>
+        <div class="table">
+            <div class="table1">
+                <table>
+                    <tr>dd</tr>
+                    <tr>dd</tr>
+                </table>
+            </div>
+            <div class="table2">
+                <table>
+                    <tr>dd</tr>
+                    <tr>dd</tr>
+                </table>
+            </div>
+        </div>
+        <div class="button">
+            <button id="confirm-button">확인</button>
+            <button id="cancel-button">취소</button>
+        </div>
+    </div>
+</div>
+
+<button onclick="togglePopup()">Show Popup</button>
+</body>
+</html>

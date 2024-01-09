@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>JS Bin</title>
+    <script src="../ckeditor/ckeditor.js"></script>
+    <script src="http://cdn.ckeditor.com/4.23.0-lts/standard/ckeditor.js"></script>
+    <script type="text/javascript">
+      function submit() {
+        alert("등록되었습니다.");
+        location.href = "boardList.html";
+      }
+      function save() {
+        alert("임시저장되었습니다.");
+      }
+    </script>
+  </head>
+  <body>
+    <form id="wrap">
+      <div id="content_wrap">
+        <ul class="title_wrap">
+          <li>
+            <span class="title">부서</span>
+            <div class="board_select">
+              <select value="게시판선택">
+                <option selected disabled>부서명</option>
+                <option value="board">자유게시판</option>
+                <option value="board">개발팀</option>
+                <option value="board">유지보수(관리)팀</option>
+                <option value="board">마케팅팀</option>
+                <option value="board">영업팀</option>
+                <option value="board">총무팀</option>
+              </select>
+            </div>
+            <div class="radiobox">
+              <!--
+            <input type="checkBox" id="chkNotice1" name="chkB1">
+            <label for="chkNotice1">공지사항으로 게시글쓰기</label>
+            <input type="checkBox" id="chkNotice2" name="chkB2">
+            <label for="chkNotice2">일반글로 게시글쓰기</label>
+            -->
+              <input type="radio" name="write" id="write_O" />
+              <label for="write_O">공지사항으로 게시글쓰기</label>
+              <input type="radio" name="write" id="write_G" />
+              <label for="write_G">일반글로 게시글쓰기</label>
+            </div>
+          </li>
+          <li>
+            <span class="title">제목</span>
+            <input
+              type="text"
+              onfocus="value=''"
+              value="게시글 제목을 입력하세요"
+              style="width: 500px"
+            />
+          </li>
+          <li>
+            <span class="title" style="font-size: 10px">동영상삽입</span>
+          </li>
+        </ul>
+
+        <form class="writeWrap">
+          <textarea name="editor1" id="editor1" rows="10">
+                </textarea
+          >
+        </form>
+        <div class="end">
+          <a href="#" onclick="submit()">저장하기</a>
+          <a href="#" onclick="save()">임시저장</a>
+        </div>
+      </div>
+    </form>
+    <script>
+      // Replace the <textarea id="editor1"> with a CKEditor 4
+      // instance, using default configuration.
+      CKEDITOR.replace("editor1", {
+        language: "ko",
+      });
+    </script>
+  </body>
+</html>

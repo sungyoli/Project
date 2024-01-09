@@ -54,27 +54,28 @@ li{
    margin-top:50px;
  }
 
- .accordion-button{
+.accordion-button{
    font-weight: bold;
 }
 
  #mailkind{
    padding-left: 0;
    margin-bottom: 0%;
-   cursor: pointer
+   cursor: pointer;
 }
 
  .mailkind_li{
    padding-left: 30px;
    height: 40px;
    font-weight: bold;
+
  }
 
  .mailkind_li:hover{
    background-color: #F0F8FF;
  }
 
- .mailkind_span{
+.mailkind_span{
    position: relative;
    top: 25%;
 }
@@ -117,6 +118,10 @@ li{
    font-weight: bold;
 }
 
+#dropdown_center_div{
+   justify-content: flex-end;
+}
+
  #dropdown {
    display: inline-block;
  }
@@ -144,7 +149,7 @@ li{
    display: inline-block;
    width: 500px;
    position: relative;
-   left: 51%;
+   left: 38%;
    
 }
 
@@ -152,98 +157,58 @@ li{
    height: 30px;
 }
 
+
 #search-input{
    height: 35px;
    width: 350px;
 }
 
-
-.table_name2 {
-    margin-top: 10px;
-}
-
-.mail_div:hover {
-   background-color: #F0F8FF;
-}
-
-.mail_ul {
-   display: flex;
-   margin-bottom: 0;
-   height: 50px;
-   align-items: center;
-   justify-content: space-around;
-/
-}
-
-.checkbox{
-   width: 15px;
-   height: 15px;
-}
-
-.mail li {
-   display: inline-block;
-
-}
-
-#main-nano-wrapper {
-   position: absolute;
-   top: 214px;
-   bottom: 0;
-   height: auto;
+.email-container {
+   margin: 20px auto;
+   background-color: #fff;
+   padding: 0 50px 50px 50px;
+   margin-top: 30px; 
+   margin: 30px 0px 0px 0px;
  }
 
-.sender_li {
-   margin-left: 30px;
-}
+ .email-header {
+   border-bottom: 1px solid #ddd;
+   padding-bottom: 10px;
+   margin-bottom: 20px;
+   display: flex;
+ }
 
-.mailtitle_li {
-   width: 1200px;
-   height: 50px;
-   padding-left:80px;
-   text-justify: center;
-   cursor: pointer  
-}
+ .email-header h2 {
+   color: #333;
+ }
 
-.mailtitle_text{
-   position: relative;
-   top: 25%; 
-}
+ .email-details {
+   margin-bottom: 20px;
+ }
 
-#clip_icon{
-   position: relative;
-   top: 25%;
-   margin-left: 20px;
-}
+ .email-details p {
+   margin: 5px 0;
+   color: #666;
+ }
 
-  /* Pagination links */
-  .pagination{
+ .flex{
+   align-items: center;
    display:flex;
-   justify-content:center;
-   align-items:center;
-   margin-bottom:10px;
-   margin-top: 100px;
-   height: 50px;
-}
-.pagination a {
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
-  transition: background-color .3s;
 }
 
-/* Style the active/current link */
-.pagination a.active {
-  background-color: black;
-  color: white;
+.flex button {
+   width: 15px;
+    height: 15px;
 }
+ .email-content {
+   padding-top: 20px;
+   border-top: 1px solid #ddd;
+ }
 
-/* Add a grey background color on mouse-over */
-.pagination a:hover:not(.active) {background-color: #ddd;}
- 
-.arrow{
-   font-size: 20px;
-}
- 
+ .email-content p {
+   line-height: 1.6;
+   color: #333;
+ }
 
 
 

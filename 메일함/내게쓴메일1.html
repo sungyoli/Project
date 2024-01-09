@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>받은메일함</title>
+    <title>내게쓴메일1</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,7 +11,7 @@
     />
     <!-- CDN방식 -->
     <!-- 장점 내가 가지고 있지 않아도 됨 단점 인터넷연결이 안되어있으면 사용불가 -->
-    <link rel="stylesheet" href="받은메일함.css" />
+    <link rel="stylesheet" href="내게쓴메일1.css" />
     <script
       src="http://kit.fontawesome.com/a4539ed26c.js"
       crossorigin="anonymous"
@@ -63,12 +63,6 @@
                 >
                   <span class="mailkind_span">임시보관함</span>
                 </li>
-                <li
-                class="mailkind_li"
-                onclick="location.href='내게쓴메일함.html'"
-              >
-                <span class="mailkind_span">내게쓴메일함</span>
-              </li>
               </ul>
             </div>
           </div>
@@ -82,7 +76,7 @@
         <!-- 위 -->
         <div class="table_name">
           <div id="mail_tt">
-            <span id="mailtt_span">받은메일함</span>
+            <span id="mailtt_span">내게쓴메일함</span>
             <span class="mail_cnt">전체메일</span>
             <span class="cnt">3</span>
             <span class="mail_cnt">/</span>
@@ -116,7 +110,6 @@
             <div class="center">
               <span class="board_select">
                 <select class="select" value="검색대상선택">
-                  <option value="board">보낸사람</option>
                   <option value="board">제목</option>
                 </select>
               </span>
@@ -134,68 +127,33 @@
         </div>
 
         <!-- 아래1 -->
-        <!-- 메일 목록 -->
-        <div class="table_name2">
-          <!-- form으로 감싸야하나? -->
-          <div class="mail_div" >
-            <!-- 해당 메일페이지로 이동 -->
-            <ul class="mail_ul">
-              <li>
-                <input type="checkbox" class="checkbox" />
-              </li>
-              <li>
-                <i class="fa-regular fa-envelope-open fa-lg" type="button"></i>
-              </li>
-              <li class="sender_li"><span>홍길동</span></li>
+        <!-- 메일 내용 -->
+        <div class="email-container">
+          <div class="email-header">
+            <h2>메일입니다.</h2>
+          </div>
 
-              <li class="mailtitle_li" onclick="location.href='받은메일1.html'">
-                <span class="mailtitle_text">안녕하세요</span><span id="clip_icon"
-                  ><i class="fa-solid fa-paperclip"></i
-                ></span>
-              </li>
-              <li class="maildate_li">24-01-19 15:30</li>
-            </ul>
+          <div class="email-details">
+            <div class="flex">
+              <button class="plus">+</button>
+              <p><strong>보낸사람:</strong> 나</p>
+            </div>
+            <div class="toggle">
+              <p><strong>받는사람:</strong> 나</p>
+              <p><strong>보낸날짜:</strong> 2024-01-06</p>
+            </div>
+            <p>
+              <i class="fa-solid fa-paperclip"></i><strong> 첨부파일:</strong>
+            </p>
+            <div class="file">
+              <p><a href="#">filename.txt</a></p>
+            </div>
           </div>
-          <div class="mail_div">
-            <ul class="mail_ul">
-              <li>
-                <input type="checkbox" class="checkbox" />
-              </li>
-              <li>
-                <i class="fa-regular fa-envelope-open fa-lg" type="button"></i>
-              </li>
-              <li class="sender_li"><span>홍길동</span></li>
-              <li class="mailtitle_li" onclick="location.href='받은메일1.html'"><span class="mailtitle_text">안녕하세요</span></li>
-              <li class="maildate_li">24-01-19 15:30</li>
-            </ul>
-          </div>
-          <div class="mail_div">
-            <ul class="mail_ul">
-              <li>
-                <input type="checkbox" class="checkbox" />
-              </li>
-              <li>
-                <i class="fa-regular fa-envelope-open fa-lg" type="button"></i>
-              </li>
-              <li class="sender_li"><span>홍길동</span></li>
-              <li class="mailtitle_li" onclick="location.href='받은메일1.html'"><span class="mailtitle_text">안녕하세요</span></li>
-              <li class="maildate_li">24-01-19 15:30</li>
-            </ul>
+
+          <div class="email-content">
+            <p> 내게 쓴 메일입니다</p>
           </div>
         </div>
-        <!-- 아래2 -->
-        <!-- 버튼추가 -->
-        <div class="pagination">
-          <a href="#" class="arrow">&laquo;</a>
-          <a href="#">1</a>
-          <a class="active" href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">4</a>
-          <a href="#">5</a>
-          <a href="#">6</a>
-          <a href="#" class="arrow">&raquo;</a>
-        </div>
-        <!-- 버튼추가끝 -->
       </div>
     </div>
     <script

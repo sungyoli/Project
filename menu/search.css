@@ -25,7 +25,7 @@ li {
 
 .form-control-feedback {
   position: absolute;
-  right: 35px;
+  right: 48px;
   top: 37%;
   transform: translateY(-50%);
   z-index: 2;
@@ -67,8 +67,9 @@ li {
   position: absolute;
   right: 40px;
 }
+
 .has-search {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 /* 
@@ -77,3 +78,38 @@ top : 50%;
 transform : translateY(-50%)
  상하 정렬(absolute할때)
  */
+
+ .dropdownbtn {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownbtn img {
+
+  border : 1px solid #ddd;
+  border-radius :50%;
+}
+
+.dropdowncontent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdowncontent a {
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdowncontent a:hover {
+  background-color: #ddd;
+}
+
+.dropdownbtn:hover .dropdowncontent {
+  display: block;
+}

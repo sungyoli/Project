@@ -6,12 +6,9 @@
   box-sizing: border-box;
   /* font-family: 'Poppins', sans-serif; */
 }
-
-ul, ol, li {
-  list-style: none; /* 점 없애기 */
-  padding: 0px;
+li {
+  list-style: none;
 }
-
 a {
   text-decoration: none; /* 클릭시 보라색, 파란색글씨로 안변하게 */
   color: inherit; /* 컬러 기본으로 설정해주고 다른곳에서 재설정 */
@@ -26,7 +23,7 @@ body {
 
 .sidebar {
   position: fixed;
-  width: 100%;
+  width: 60px;
   height: 100vh;
   background: #3cb4ff;
   overflow: hidden;
@@ -37,6 +34,7 @@ body {
 }
 .sidebar ul {
   position: relative;
+  width: 60px;
   height: 100vh;
 }
 .sidebar ul li :hover {

@@ -7,7 +7,7 @@
       src="http://kit.fontawesome.com/a4539ed26c.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../header/header.css" />
     <link rel="stylesheet" href="boardList.css" />
   </head>
   <body>
@@ -16,7 +16,7 @@
       <div id="header"></div>
       <div id="left_menu">
         <h3>게시판</h3>
-        <button href="#" id="write-button" onclick="write();">글쓰기</button>
+        <button href="./boardTable.html" id="write-button" onclick="write();">글쓰기</button>
         <div class="menu">
           <a href="#">전사공지</a>
           <button class="accordion">부서게시판</button>
@@ -60,8 +60,8 @@
               <td style="width: 10%">2024-01-02</td>
               <td style="width: 5%">13</td>
             </tr>
-          </table><br>
-
+          </table>
+          <br />
           <div class="pagination">
             <a class="p" href="#">&laquo;</a>
             <a href="#">1</a>
@@ -72,7 +72,6 @@
             <a href="#">6</a>
             <a class="p" href="#">&raquo;</a>
           </div>
-
 
           <div class="center">
             <div class="select_text">
@@ -98,8 +97,6 @@
           </div>
         </form>
       </div>
-
-
 
       <!-- 오른쪽 글 목록 -->
       <div id="right_post">
@@ -138,30 +135,22 @@
     </div>
 
     <script>
-        //버튼
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-      
-        for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
+      //버튼
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
           this.classList.toggle("active");
           var panel = this.nextElementSibling;
           if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
+            panel.style.maxHeight = null;
           } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.maxHeight = panel.scrollHeight + "px";
           }
         });
-        }
+      }
 
-      fetch("../header/header.html")
-        .then((response) => response.text())
-        .then((html) => {
-          document.getElementById("header").innerHTML = html;
-        })
-        .catch((error) => {
-          console.log("헤더 로딩 오류", error);
-        });
       let acc = document.getElementsByClassName("accordion");
       let i;
 
@@ -181,5 +170,14 @@
         location.href = "index.html";
       }
     </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../importJS/headerIpt.js"></script>
   </body>
 </html>

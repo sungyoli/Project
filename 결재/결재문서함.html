@@ -1,11 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    결재문서함
-</body>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>결재대기문서</title>
+    <script
+      src="http://kit.fontawesome.com/a4539ed26c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../결재/결재대기문서.css" />
+
+    <script
+      src="https://kit.fontawesome.com/67a1f076db.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="center-table">
+        <div class="critical_bottom">
+            <ul class="tab_nav">
+              <li id="tab_all" class="first">
+                <span>전체</span>
+              </li>
+              <li id="tab_pending" class="first">
+                <span>대기</span>
+              </li>
+              <li id="tab_hold" class="first">
+                <span>보류</span>
+              </li>
+            </ul>
+          </div>
+          <!-- 가운데 게시판 목록 리스트 -->
+          <br />
+          <table>
+              <tr>
+                  <th style="width: 12.5%">기안일</th>
+                  <th style="width: 12.5%">완료일</th>
+                  <th style="width: 12.5%">결재양식</th>
+                  <th style="width: 8.5%">긴급</th>
+                  <th style="width: 12.5%">제목</th>
+                  <th style="width: 8.5%">첨부</th>
+                  <th style="width: 12.5%">기안자</th>
+                  <th style="width: 12.5%">문서번호</th>
+                  <th style="width: 12.5%">결재상태</th>
+              </tr>
+              <tr>
+                  <td>2024-01-08</td>
+                  <td>2024-01-08</td>
+                <td>휴가신청</td>
+                <td></td>
+                <td>휴가신청합니다.</td>
+                <td></td>
+                <td>한성준</td>
+                <td>2024-00001</td>
+                <td>완료</td>
+              </tr>
+              
+              <tr>
+                  <td>2024-01-05</td>
+                  <td>2024-01-05</td>
+                  <td>업무요청</td>
+                  <td><i class="fa-solid fa-triangle-exclamation"></i></td>
+                  <td>업무 요청드립니다.</td>
+                  <td></td>
+                  <td>한성준</td>
+                  <td>2024-00001</td>
+                  <td>완료</td>
+              </tr>
+              
+              <tr>
+                  <td>2023-01-02</td>
+                  <td>2023-01-02</td>
+                  <td>매출보고서</td>
+                  <td></td>
+                  <td>매출보고서 보내드립니다.</td>
+                  <td></td>
+                  <td>한성준</td>
+                <td>2024-00001</td>
+                <td>완료</td>
+              </tr>
+          </table>
+    </div>
+    <div class="table">
+    
+    <div class="pagination center">
+        <a href="#">&laquo;</a>
+        <a href="#">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+
+      <div class="center">
+        <div class="select_text">
+          <div class="board_select">
+            <select class="select" value="게시판선택">
+              <option selected disabled>제목</option>
+              <option value="board">기안자</option>
+              <option value="board">결재양식</option>
+            </select>
+          </div>
+
+          <div>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="검색어를 입력하세요"
+            />
+            <button id="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script></script>
+  </body>
 </html>

@@ -37,7 +37,7 @@
                 aria-expanded="true"
                 aria-controls="panelsStayOpen-collapseOne"
               >
-                <b>메일함</b>
+                메일함
               </button>
             </h2>
             <div
@@ -46,13 +46,13 @@
             >
               <ul id="mailkind">
                 <li class="mailkind_li" onclick="location.href='받은메일함.html'">
-                  <b>받은메일함</b>
+                  <span class="mailkind_span">받은메일함</span>
                 </li>
                 <li class="mailkind_li" onclick="location.href='보낸메일함.html'">
-                  <b>보낸메일함</b>
+                  <span class="mailkind_span">보낸메일함</span>
                 </li>
                 <li class="mailkind_li" onclick="location.href='임시보관함.html'">
-                  <b>임시보관함</b>
+                  <span class="mailkind_span">임시보관함</span>
                 </li>
               </ul>
             </div>
@@ -99,7 +99,7 @@
 
           <div class="center">
             <span class="board_select">
-              <select class="select" value="게시판선택">
+              <select class="select" value="검색대상선택">
                 <option value="board">받는사람</option>
                 <option value="board">제목</option>
               </select>
@@ -133,7 +133,7 @@
               </li>
               <li class="sender_li"><span>아무개</span></li>
 
-              <li class="mailtitle_li">안녕하세요</li>
+              <li class="mailtitle_li">안녕하세요<span id="clip_icon"><i class="fa-solid fa-paperclip"></i></span></li>
               <li class="maildate_li">24-01-19 15:30</li>
             </ul>
           </div>

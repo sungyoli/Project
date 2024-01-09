@@ -37,7 +37,7 @@
                 aria-expanded="true"
                 aria-controls="panelsStayOpen-collapseOne"
               >
-                <b>메일함</b>
+                메일함
               </button>
             </h2>
             <div
@@ -45,14 +45,23 @@
               class="accordion-collapse collapse show"
             >
               <ul id="mailkind">
-                <li class="mailkind_li" onclick="location.href='받은메일함.html'">
-                  받은메일함
+                <li
+                  class="mailkind_li"
+                  onclick="location.href='받은메일함.html'"
+                >
+                  <span class="mailkind_span">받은메일함</span>
                 </li>
-                <li class="mailkind_li" onclick="location.href='보낸메일함.html'">
-                  보낸메일함
+                <li
+                  class="mailkind_li"
+                  onclick="location.href='보낸메일함.html'"
+                >
+                  <span class="mailkind_span">보낸메일함</span>
                 </li>
-                <li class="mailkind_li" onclick="location.href='임시보관함.html'">
-                  임시보관함
+                <li
+                  class="mailkind_li"
+                  onclick="location.href='임시보관함.html'"
+                >
+                  <span class="mailkind_span">임시보관함</span>
                 </li>
               </ul>
             </div>
@@ -68,44 +77,44 @@
         <div class="table_name">
           <div id="mail_tt">
             <span id="mailtt_span">받은메일함</span>
-            <span class="mail_cnt">전체메일</span> 
-            <span class="cnt">3</span> 
+            <span class="mail_cnt">전체메일</span>
+            <span class="cnt">3</span>
             <span class="mail_cnt">/</span>
-            <span class="mail_cnt">안읽은메일</span> 
-            <span class="cnt">0</span> 
+            <span class="mail_cnt">안읽은메일</span>
+            <span class="cnt">0</span>
           </div>
-          <div id="dropdown">
-            <input type="checkbox" id="chk_box" /><!-- 전체선택 체크박스 -->
-            <button type="button" class="btn btn-light">
-              <span class="icon"><i class="fa-solid fa-reply"></i></span>답장
-            </button>
-            <button type="button" class="btn btn-light">
-              <span class="icon"><i class="fa-regular fa-trash-can"></i></span
-              >삭제
-            </button>
-            <button type="button" class="btn btn-light">
-              <span class="icon"><i class="fa-solid fa-arrow-right"></i></span
-              >전달
-            </button>
-            <button type="button" class="btn btn-light">
-              <span class="icon"
-                ><i
-                  class="fa-regular fa-envelope-open fa-lg"
-                  type="button"
-                ></i></span
-              >읽음
-            </button>
-          </div>
+          <div>
+            <div id="dropdown">
+              <input type="checkbox" id="chk_box" /><!-- 전체선택 체크박스 -->
+              <button type="button" class="btn btn-light">
+                <span class="icon"><i class="fa-solid fa-reply"></i></span>답장
+              </button>
+              <button type="button" class="btn btn-light">
+                <span class="icon"><i class="fa-regular fa-trash-can"></i></span
+                >삭제
+              </button>
+              <button type="button" class="btn btn-light">
+                <span class="icon"><i class="fa-solid fa-arrow-right"></i></span
+                >전달
+              </button>
+              <button type="button" class="btn btn-light">
+                <span class="icon"
+                  ><i
+                    class="fa-regular fa-envelope-open fa-lg"
+                    type="button"
+                  ></i></span
+                >읽음
+              </button>
+            </div>
 
-          <div class="center">
-            <span class="board_select">
-              <select class="select" value="게시판선택">
-                <option value="board">보낸사람</option>
-                <option value="board">제목</option>
-              </select>
-            </span>
+            <div class="center">
+              <span class="board_select">
+                <select class="select" value="검색대상선택">
+                  <option value="board">보낸사람</option>
+                  <option value="board">제목</option>
+                </select>
+              </span>
 
-            <span>
               <input
                 type="text"
                 id="search-input"
@@ -114,7 +123,7 @@
               <button id="search-button">
                 <i class="fa-solid fa-magnifying-glass fa-lg"></i>
               </button>
-            </span>
+            </div>
           </div>
         </div>
 
@@ -133,7 +142,11 @@
               </li>
               <li class="sender_li"><span>홍길동</span></li>
 
-              <li class="mailtitle_li">안녕하세요</li>
+              <li class="mailtitle_li">
+                안녕하세요<span id="clip_icon"
+                  ><i class="fa-solid fa-paperclip"></i
+                ></span>
+              </li>
               <li class="maildate_li">24-01-19 15:30</li>
             </ul>
           </div>

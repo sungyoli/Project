@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <title>회원가입</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
     <link rel="stylesheet" href="join4.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/756eb8e6e1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   </head>
   <body>
     <div class="header">
       <div class="naver_title">
-          <td><img src="../image/OIP.jpg" width="400px" ></td>
+          <td><img src="image/OIP.jpg" width="400px" ></td>
       </div>
   </div>
 
@@ -19,7 +20,7 @@
       <div class="login">
           <div class="login_title">
           </div>
-          <h3 class="text1">네이버에 로그인하여 <span style="color: green">NAVER WORKS</span> 서비스를 이용하실 수 있습니다.
+          <h3 class="text1">네이버에 로그인하여 <font color="green">NAVER WORKS</font> 서비스를 이용하실 수 있습니다.
           </h3>
           <h3 class="text2">공용 PC에서 사용하시는 경우 보안을 위해 서비스 이용 후 네이버에서도 반드시 로그아웃해 주세요.</h3>
           <div class="login_id">
@@ -49,9 +50,35 @@
           <input type="submit" value="로그인" onclick="join()" />
         </div>
 
-        <img src="../image/adver.jpg" width="700"  alt="My Image">
-      </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="image/adver1.jpg"></div>
+            <div class="swiper-slide"><img src="image/adver2.jpg"></div>
+            <div class="swiper-slide"><img src="image/adver3.png"></div>
+            <div class="swiper-slide"><img src="image/adver4.jpg"></div>
+            <div class="swiper-slide"><img src="image/adver5.jpg"></div>
+            <div class="swiper-slide"><img src="image/adver6.jpg"></div>
+            <div class="swiper-slide"><img src="image/adver7.jpg"></div>
+          </div>
+        </div>
+    
   </div>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      autoHeight:true,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+
+  </script>
+  
 </body>
 </html>
 

@@ -51,14 +51,14 @@
  table {
    border-collapse: collapse;
    width:210%;
-   font-size: 14px;
+   font-size: 13px;
    margin-bottom: 50px;
  }
 
  th, td {
    line-height: 2px;
    text-align: left;
-   padding: 16px;
+   padding: 15px;
  }
 
  table th {

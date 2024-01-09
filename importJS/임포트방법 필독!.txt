@@ -1,0 +1,13 @@
+1. HEADER임포트 방법
+    header.css, header.js 동시에 임포트 해야함. 그렇기때문에
+    기본경로(script src="../importJS/headerIpt.js")로 임포트
+    code:
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../importJS/headerIpt.js"></script>

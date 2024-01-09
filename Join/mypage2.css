@@ -1,17 +1,31 @@
-
 @charset "UTF-8";
-
-.wrap{
-margin: 50px;
-max-width: 500%;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+.wrap {
+  margin: 50px;
+  max-width: 500%;
+}
+.wrap h3{
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+}
 .dropdownbtn {
   position: relative;
   display: inline-block;
   margin-left: 95%;
 }
-
+.accordion-item {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
 .profile {
   width: 50px;
   height: 50px;
@@ -22,6 +36,7 @@ max-width: 500%;
 .dropdowncontent {
   display: none;
   position: absolute;
+
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -45,25 +60,29 @@ max-width: 500%;
 
 .accordion-header {
   background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
   padding: 10px;
   cursor: pointer;
-  margin-bottom: 10px; /* 버튼 간격 조절 */
+  font-weight: 700;
+  font-size: 20px;
+  /* margin-bottom: 10px; 버튼 간격 조절 */
 }
 
-.accordion-button{
-  font-weight:bold;
+.accordion-button {
+  font-weight: bold;
 }
 
-.accordion-body{
-  font-weight:bold;
+.accordion-body {
   display: none;
   padding: 10px;
-  
-  }
- 
-  .checkbox {
-    margin-top: 10px;
-  }
+}
+.accordion-body ul {
+  font-weight: 600;
+}
+
+.checkbox {
+  margin-top: 10px;
+}
 
 .join_btn {
   width: 100%;
@@ -90,6 +109,9 @@ button:hover {
 .join_btn input[value="취소"] {
   background-color: rgba(128, 128, 128, 0.062);
   color: black;
-  border:none;
+  border: none;
 }
-  
+
+.join_btn {
+  text-align: center;
+}

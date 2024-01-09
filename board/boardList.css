@@ -171,10 +171,6 @@ td {
   transition: background-color .3s;
 }
 
-.pagination .p {
-  font-size: 30px;
-}
-
 /* Style the active/current link */
 .pagination a.active {
   background-color: dodgerblue;

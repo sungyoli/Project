@@ -17,6 +17,7 @@ li {
 .table_div {
   margin-top: 20px;
   width: calc(100% - 390px); /* 늘리고자 하는 가로 길이로 조정 */
+  
 }
 .table_div table {
   width: 100%;
@@ -43,7 +44,7 @@ li {
 
 #left_menu {
   margin: 2%;
-  width: 150px;
+  width: 200px;
 }
 
 .panel {
@@ -65,12 +66,12 @@ li {
 .table_div table {
   border-collapse: collapse;
   text-align: center;
+  font-size: 13px;
 }
 
 .table_div table th,
 td {
   height: 50px;
-  border: 1px solid lightgray;
   padding-left: 2px;
   text-align: center;
 }
@@ -219,3 +220,29 @@ td {
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
+
+/* 테이블 css 추가 */
+
+.table_div tr td:hover {
+  background-color: #d8d8d8; /* 각 셀에 hover 효과를 줍니다. */
+}
+
+table {
+  width: 210%;
+  margin-bottom: 50px;
+}
+
+th, td {
+  /* ... 다른 스타일 속성들 ... */
+  border: none;
+}
+
+table th {
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+} 
+
+table tr:hover td {
+  background-color: #d8d8d8; /* 해당 행 전체에 hover 효과를 줍니다. */
+}
+

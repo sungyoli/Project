@@ -16,9 +16,9 @@
       <div id="header"></div>
       <div id="left_menu">
         <h3>게시판</h3>
-        <button href="./boardTable.html" id="write-button" onclick="write();">글쓰기</button>
+        <input type="button" id="write-button" onclick="window.location='boardTable.html'" value="글쓰기">	
         <div class="menu">
-          <a href="#">전체게시판</a>
+          <a href="boardList.html">전체게시판</a>
           <a>부서게시판</a> 
           <p><a href="boardList_development.html">개발팀</a></p>
           <p><a href="boardList_maintenance.html">유지보수(관리)팀</a></p>
@@ -30,7 +30,7 @@
 
       <!-- 가운데 게시판 목록 리스트 -->
       <div class="table_div">
-        <div class="table_name"><b>게시판홈</b></div>
+        <div class="table_name"><b>영업팀 게시판</b></div>
         <br />
         <form name="boardAdd" action="boardAddAction.html" method="post">
           <!-- 화면에서 입력받은 값을 전송한다. -->
@@ -49,13 +49,13 @@
             <tr>
               <td style="width: 5%">1</td>
               <td style="width: 5%"><i class="fa-solid fa-bell"></i></td>
-              <td style="width: 50%"><a href="boardView.html">[공유] 1월 프로젝트 진행</a></td>
+              <td style="width: 50%">제목을 입력하세요.</td>
               <td class="file" style="width: 5%">
                 <i class="fa-solid fa-file"></i>
               </td>
-              <td style="width: 10%">개발팀</td>
-              <td style="width: 10%">홍길동</td>
-              <td style="width: 10%">2024-01-08</td>
+              <td style="width: 10%">영업팀</td>
+              <td style="width: 10%">이하나</td>
+              <td style="width: 10%">2024-01-02</td>
               <td style="width: 5%">13</td>
             </tr>
           </table>

@@ -256,3 +256,17 @@ details[open] > summary:before {
 details > ul {
     padding: 12px;
 }
+
+/* 새결재진행버튼 */
+.first-btn {
+    margin-top: 27px;
+    padding: 15px;
+    background-color: white;
+    color: rgb(46, 46, 46);
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px;
+    font: size 16px;
+    font-weight: bold;
+}

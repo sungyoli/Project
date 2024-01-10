@@ -21,16 +21,14 @@ a {
   padding-left: 0; /* 혹은 다른 값으로 설정 */
 }
 body {
-  min-height: 100vh;
   background: white;
   font-family: "Poppins", sans-serif;
-  width: 60px;
 }
 
 
 .sidebar {
   position: fixed;
-  width: 100%;
+  width: 60px;
   height: 100vh;
   background: #3cb4ff;
   overflow: hidden;

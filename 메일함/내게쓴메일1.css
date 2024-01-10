@@ -1,4 +1,4 @@
-<<<<<<<<< Temporary merge branch 1
+
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +14,7 @@ li {
   list-style: none;
 }
 
-.wrap {
-}
+
 #header {
   width: 60px;
 }
@@ -191,13 +190,7 @@ li {
   line-height: 1.6;
   color: #333;
 }
-=========
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
- 
+
  a{
     text-decoration: none;
     color: inherit;
@@ -355,10 +348,3 @@ li {
  
   
  
-  
- 
-  
- 
- 
-  
->>>>>>>>> Temporary merge branch 2

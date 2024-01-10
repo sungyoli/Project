@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>내게쓴메일1</title>
     <!-- CDN방식 -->
     <!-- 장점 내가 가지고 있지 않아도 됨 단점 인터넷연결이 안되어있으면 사용불가 -->
@@ -13,8 +14,7 @@
   </head>
   <body>
     <div class="wrap">
-      <div id="header"></div>
-      <div class="leftMenu"></div>
+
       <div class="right_contents">
         <!-- 위 -->
         <div class="table_name">
@@ -28,7 +28,6 @@
           </div>
           <div>
             <div id="dropdown">
-              <input type="checkbox" id="chk_box" /><!-- 전체선택 체크박스 -->
               <button type="button" class="btn btn-light">
                 <span class="icon"><i class="fa-solid fa-reply"></i></span>답장
               </button>
@@ -54,6 +53,8 @@
               <span class="board_select">
                 <select class="select" value="검색대상선택">
                   <option value="board">제목</option>
+                  <option value="board">보낸사람</option>
+                  <option value="board">받는사람</option>
                 </select>
               </span>
 
@@ -99,19 +100,6 @@
         </div>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="../importJS/headerIpt.js"></script>
+
   </body>
 </html>

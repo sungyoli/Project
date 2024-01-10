@@ -2,13 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>보낸메일함</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>보낸메일1</title>
     <!-- CDN방식 -->
     <!-- 장점 내가 가지고 있지 않아도 됨 단점 인터넷연결이 안되어있으면 사용불가 -->
     <link rel="stylesheet" href="보낸메일1.css" />
@@ -19,58 +14,6 @@
   </head>
   <body>
     <div class="wrap">
-      <!-- 왼쪽 메뉴 -->
-      <div id="left_menu">
-        <div>
-          <h1 id="letter1"><br />메일</h1>
-        </div>
-        <button id="write-button">메일쓰기</button>
-
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#panelsStayOpen-collapseOne"
-                aria-expanded="true"
-                aria-controls="panelsStayOpen-collapseOne"
-              >
-                메일함
-              </button>
-            </h2>
-            <div
-              id="panelsStayOpen-collapseOne"
-              class="accordion-collapse collapse show"
-            >
-              <ul id="mailkind">
-                <li
-                  class="mailkind_li"
-                  onclick="location.href='받은메일함.html'"
-                >
-                  <span class="mailkind_span">받은메일함</span>
-                </li>
-                <li
-                  class="mailkind_li"
-                  onclick="location.href='보낸메일함.html'"
-                >
-                  <span class="mailkind_span">보낸메일함</span>
-                </li>
-                <li
-                  class="mailkind_li"
-                  onclick="location.href='임시보관함.html'"
-                >
-                  <span class="mailkind_span">임시보관함</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br />
-
       <!-- 오른쪽 -->
       <div class="right_contents">
         <!-- 위 -->
@@ -84,7 +27,6 @@
             <span class="cnt">0</span>
           </div>
           <div id="dropdown">
-            <input type="checkbox" id="chk_box" /><!-- 전체선택 체크박스 -->
             <button type="button" class="btn btn-light">
               <span class="icon"><i class="fa-solid fa-reply"></i></span>답장
             </button>
@@ -109,8 +51,9 @@
           <div class="center">
             <span class="board_select">
               <select class="select" value="검색대상선택">
-                <option value="board">받는사람</option>
                 <option value="board">제목</option>
+                <option value="board">보낸사람</option>
+                <option value="board">받는사람</option>
               </select>
             </span>
 
@@ -159,10 +102,5 @@
         </div>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>

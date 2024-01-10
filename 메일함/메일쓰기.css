@@ -1,8 +1,11 @@
+@charset "UTF-8";
 
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+/* 공통 스타일 시작 */
+* {
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 a{
@@ -266,43 +269,47 @@ li{
   padding: 5%;
   font-size: 12px;
   min-height: 300px;
-   margin-top: 20px;
- }
- 
- textarea {
- 
-   resize: none;
-   width: 100%;
-   height: 200px;
- }
- /* middle 끝 */
- 
- /* bottom 시작 */
- .bottom {
-   position: relative;
-   top: 50px;
-   background: white;
-   width: 100%;
-   text-align: right; 
-   margin-right : 10px;
- }
- 
- .bottom a {
- 
-   font-size: 14px;
-   border: 1px solid #3CB4FF;
-   background: white;
-   padding: 5px;
-   border-radius: 5px;
-   color: #3CB4FF;
-   margin-right : 10px;
- }
- 
- .bottom a:hover {
-   
-   background: #3CB4FF;
-   color: white;
-   font-weight: bold;
-   text-decoration: none;
- }
- /* bottom 끝 */
+  margin-top: 20px;
+}
+
+textarea {
+
+  resize: none;
+  width: 100%;
+  height: 200px;
+}
+/* middle 끝 */
+
+/* bottom 시작 */
+.bottom {
+
+  background: white;
+  width: 100%;
+  text-align: right; 
+  margin-top : 30px;
+}
+
+.bottom a {
+
+  font-size: 14px;
+  border: 1px solid #3CB4FF;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  color: #3CB4FF; 
+  margin-right : 10px;
+}
+
+.bottom a:hover {
+  
+  background: #3CB4FF;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* bottom 끝 */
+
+
+
+
+

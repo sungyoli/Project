@@ -21,65 +21,6 @@
     width:100%;
  }
  
- #left_menu {
-    
-    width:300px;
-    height: 100%;
-    margin-right: 0px;
-    margin-top: 0;;
-    border-right: 3px solid #999;
-    background-color: lightgray;
- 
- }
- 
- #letter1{
-    margin-left:20px;
-    font-weight: bold;
- }
-  
-  #write-button {
-     margin-top: 20px;
-     margin-left: 20px;
-     padding: 10px;
-     border: 2px solid #999;
-     background-color: white;
-     border-radius: 5px;
-     cursor: pointer;
-     width: 85%;
-     height: 55px;
-     font: size 15px;
-  }
- 
-  .accordion{
-    margin-top:50px;
-  }
- 
- .accordion-button{
-    font-weight: bold;
- }
- 
-  #mailkind{
-    padding-left: 0;
-    margin-bottom: 0%;
-    cursor: pointer;
- }
- 
-  .mailkind_li{
-    padding-left: 30px;
-    height: 40px;
-    font-weight: bold;
- 
-  }
- 
-  .mailkind_li:hover{
-    background-color: #F0F8FF;
-  }
- 
- .mailkind_span{
-    position: relative;
-    top: 25%;
- }
- 
   .right_contents{
     margin-top: 0;
     width: 100%; /* 늘리고자 하는 가로 길이로 조정 */
@@ -118,10 +59,6 @@
     font-weight: bold;
  }
  
- #dropdown_center_div{
-    justify-content: flex-end;
- }
- 
   #dropdown {
     display: inline-block;
   }
@@ -134,7 +71,15 @@
  
   .btn-light {
     margin-right: 20px;
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10%;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
  }
+
  
  .btn-light:hover{
     background-color: #F0F8FF;
@@ -149,7 +94,7 @@
     display: inline-block;
     width: 500px;
     position: relative;
-    left: 38%;
+    left: 47%;
     
  }
  
@@ -179,7 +124,6 @@
     height: 50px;
     align-items: center;
     justify-content: space-around;
- /
  }
  
  .checkbox{

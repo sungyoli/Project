@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>메일쓰기</title>
+
     <link rel="stylesheet" href="메일쓰기.css" />
     <script src="../ckeditor/ckeditor.js"></script>
     <script src="http://cdn.ckeditor.com/4.23.0-lts/standard/ckeditor.js"></script>
@@ -27,12 +28,16 @@
         modal.style.display = "none";
       }
 
+
       function updateRecipientEmail(targetInputId, selectElementId, listContainerId) {
+
         var selectElement = document.getElementById(selectElementId);
         var recipientEmailInput = document.getElementById(targetInputId);
         var listContainer = document.getElementById(listContainerId);
 
+
         var selectedOption = selectElement.options[selectElement.selectedIndex].value;
+
 
         if (recipientEmailInput.value !== "") {
           recipientEmailInput.value += ", " + selectedOption;
@@ -45,8 +50,13 @@
         listContainer.appendChild(listItem);
       }
     </script>
+    <script
+      src="http://kit.fontawesome.com/a4539ed26c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
+
     <form id="top">
       <h3>메일쓰기</h3>
       <div id="middle">
@@ -105,6 +115,7 @@
         </div>
       </div>  
     </form>
+
     <script>
       CKEDITOR.replace("editor1", {
         language: "ko",

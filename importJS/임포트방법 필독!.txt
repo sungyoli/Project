@@ -11,3 +11,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="../importJS/headerIpt.js"></script>
+2. mail 왼쪽메뉴 임포트 방법
+    위와 같음.
+    code:
+    <script src="../importJS/mailIpt.js"></script>

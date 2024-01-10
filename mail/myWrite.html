@@ -6,7 +6,7 @@
     <title>내게쓴메일1</title>
     <!-- CDN방식 -->
     <!-- 장점 내가 가지고 있지 않아도 됨 단점 인터넷연결이 안되어있으면 사용불가 -->
-    <link rel="stylesheet" href="내게쓴메일1.css" />
+    <link rel="stylesheet" href="myWrite.css" />
     <script
       src="http://kit.fontawesome.com/a4539ed26c.js"
       crossorigin="anonymous"
@@ -14,7 +14,8 @@
   </head>
   <body>
     <div class="wrap">
-
+      <div id="header"></div>
+      <div id="mailLeftmenu"></div>
       <div class="right_contents">
         <!-- 위 -->
         <div class="table_name">
@@ -100,6 +101,15 @@
         </div>
       </div>
     </div>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../importJS/headerIpt.js"></script>
+    <script src="../importJS/mailIpt.js"></script>
   </body>
 </html>

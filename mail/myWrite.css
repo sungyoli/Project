@@ -14,8 +14,6 @@ li {
 }
 
 .wrap {
-  width: 100vw;
-  display: flex;
 }
 #header {
   width: 60px;

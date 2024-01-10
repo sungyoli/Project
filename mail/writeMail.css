@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+body {
+  margin: 0px;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.title_wrap select {
+  margin-left: 20px; /* 최근 주소를 왼쪽 정렬하기 위한 수정 */
+  width: 200px;
+  flex: 0 0 100px;
+}
+
+#address {
+
+  margin-left: 20px; /* 왼쪽 정렬을 위해 마진 제거 */
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+#wrap {
+  width: 860px;
+  margin: 0 auto;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  height: 200px;
+}
+
+.inputButton {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#me {
+
+  font-size : 10px;
+  color : #838282;
+}
+
+header {
+  background: #eeeeee;
+  padding: 20px;
+}
+
+header > img {
+  float: left;
+  margin-right: 30px;
+  width: 120px;
+  height: 110px;
+}
+
+header > h1 {
+  padding: 0px;
+  margin: 0px;
+}
+
+.clear {
+  clear: both;
+}
+
+.none {
+  display: none;
+}
+
+#content_wrap {
+  border: 1px solid #ddd;
+  padding: 30px;
+  background: white;
+  width: 100%;
+  font-size: 13px;
+  margin-top: 20px;
+  height: 500px;
+}
+
+#content_wrap ul:nth-child(1),
+#content_wrap ul:nth-child(3) {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
+
+#content_wrap ul li {
+  margin-bottom: 6px;
+}
+
+#content_wrap ul li:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+#content_wrap .title {
+  font-weight: bold;
+  display: inline-block;
+  width: 60px;
+}
+
+.title_wrap {
+  list-style: none;
+  padding: 0;
+}
+
+.title_wrap li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.title_wrap span {
+  display: flex;
+  align-items: center;
+  width: 100%; /* span이 전체 너비를 차지하도록 수정 */
+}
+
+.title_wrap input[type="text"] {
+  flex: 0 0 300px; /* 텍스트 입력 부분이 남은 공간을 모두 차지하도록 수정 */
+  margin-right: 20px; /* 원하는 간격으로 조정 */
+  width: 500px;
+}
+
+.title_wrap label {
+  flex: 0 0 120px; /* 레이블의 고정된 너비 */
+}
+
+.file {
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+/* 쓰기영역 */
+.writeWrap {
+  margin-top: 20px;
+}
+
+.writeWrap .writeArea {
+  width: 100%;
+  padding: 5%;
+  font-size: 12px;
+  min-height: 300px;
+}
+
+.configWrap {
+  border: none;
+}
+
+.configWrap ul {
+  margin: 0px;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.configWrap .tag .InputArea input {
+  width: 500px;
+}
+
+.end {
+  background: white;
+  width: 100%;
+  text-align: right;
+  
+}
+
+.end a {
+  font-size: 14px;
+  border: 1px solid #3CB4FF;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  color: #3CB4FF;
+  float: right;
+  margin: 20px 10px;
+}
+
+.end a:hover {
+  background: #3CB4FF;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}

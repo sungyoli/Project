@@ -69,6 +69,19 @@
    font-size: 16px;
 }
 
+/* 행 커서 */
+table tr:nth-child(2) {
+   cursor: pointer;
+ }
+ 
+table tr:nth-child(3) {
+   cursor: pointer;
+ }
+ 
+table tr:nth-child(4) {
+   cursor: pointer;
+ }
+
 
 /* 문서  table */
  table {

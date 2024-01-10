@@ -11,8 +11,12 @@ li {
 
 body {
   height: 100vh;
+  position: fixed;
 }
-
+#mailLeftmenu {
+  width: 300px;
+  z-index: 998;
+}
 #left_menu {
   width: 300px;
   height: 100%;
@@ -48,7 +52,7 @@ body {
 }
 
 .accordion-button {
-  width: 100%;
+  width: 50%;
   height: 50px;
   border: none;
   background: #fff;
@@ -57,14 +61,4 @@ body {
   font-weight: bold;
   text-align: left;
   position: relative;
-  padding-left: 10%;
 }
-.accordion-button span::after {
-  content: url(../localImages/arrow.wbm);
-  position: absolute;
-  right: 10%;
-  top: 50%;
-  width: 50px;
-  height: 50px;
-  transform: translateY(-50%);
-}/*# sourceMappingURL=mailLeftmenu.css.map */

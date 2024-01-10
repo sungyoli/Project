@@ -23,6 +23,12 @@ body {
 	
 	display : flex;
 }
+.wrap{
+	display: flex;
+}
+#header {
+	width: 60px;
+}
 /* 공통 스타일 끝 */
 
 /* left_Main 시작 */	

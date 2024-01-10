@@ -14,6 +14,58 @@
   </head>
   <body>
     <div class="wrap">
+      <!-- 왼쪽 메뉴 -->
+      <div id="left_menu">
+        <div>
+          <h1 id="letter1"><br />메일</h1>
+        </div>
+        <button id="write-button">메일쓰기</button>
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                메일함
+              </button>
+            </h2>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse show"
+            >
+              <ul id="mailkind">
+                <li
+                  class="mailkind_li"
+                  onclick="location.href='받은메일함.html'"
+                >
+                  <span class="mailkind_span">받은메일함</span>
+                </li>
+                <li
+                  class="mailkind_li"
+                  onclick="location.href='보낸메일함.html'"
+                >
+                  <span class="mailkind_span">보낸메일함</span>
+                </li>
+                <li
+                  class="mailkind_li"
+                  onclick="location.href='임시보관함.html'"
+                >
+                  <span class="mailkind_span">임시보관함</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
       <!-- 오른쪽 -->
       <div class="right_contents">
         <!-- 위 -->
@@ -95,10 +147,15 @@
           </div>
 
           <div class="email-content">
-            <p> 내게 쓴 메일입니다</p>
+            <p>내게 쓴 메일입니다</p>
           </div>
         </div>
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

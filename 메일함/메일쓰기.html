@@ -3,9 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>메일쓰기</title>
-    <!-- CDN방식 -->
-    <!-- 장점 내가 가지고 있지 않아도 됨 단점 인터넷연결이 안되어있으면 사용불가 -->
     <link rel="stylesheet" href="메일쓰기.css" />
     <script src="../ckeditor/ckeditor.js"></script>
     <script src="http://cdn.ckeditor.com/4.23.0-lts/standard/ckeditor.js"></script>
@@ -18,39 +15,6 @@
       function save() {
         alert("임시저장되었습니다.");
       }
-
-      function openOrgChartModal() {
-        var modal = document.getElementById("addressBookModal");
-        modal.style.display = "block";
-      }
-
-      function closeModal() {
-        var modal = document.getElementById("addressBookModal");
-        modal.style.display = "none";
-      }
-
-      function updateRecipientEmail(
-        targetInputId,
-        selectElementId,
-        listContainerId
-      ) {
-        var selectElement = document.getElementById(selectElementId);
-        var recipientEmailInput = document.getElementById(targetInputId);
-        var listContainer = document.getElementById(listContainerId);
-
-        var selectedOption =
-          selectElement.options[selectElement.selectedIndex].value;
-
-        if (recipientEmailInput.value !== "") {
-          recipientEmailInput.value += ", " + selectedOption;
-        } else {
-          recipientEmailInput.value = selectedOption;
-        }
-
-        var listItem = document.createElement("li");
-        listItem.textContent = selectedOption;
-        listContainer.appendChild(listItem);
-      }
     </script>
     <script
       src="http://kit.fontawesome.com/a4539ed26c.js"
@@ -58,133 +22,57 @@
     ></script>
   </head>
   <body>
-    <div class="wrap">
-      <!-- 오른쪽 -->
-      <div class="right_contents">
-        <!-- 위 -->
-        <div class="table_name">
-          <div id="mail_tt">
-            <span id="mailtt_span">메일쓰기</span>
-          </div>
-          <div>
-            <div id="dropdown">
-              <button type="button" class="btn btn-light">
-                <a href="보낸메일함.html" onclick="submitForm()">보내기</a>
-              </button>
-              <button type="button" class="btn btn-light">
-                <a href="내게쓴메일함.html" onclick="submitForm()">나에게 보내기</a>
-              </button>
-              <button type="button" class="btn btn-light">
-                <a href="임시보관함.html" onclick="submitForm()">임시저장</a>
-              </button>
-            </div>
+    <form id="wrap">
+      <h3>메일쓰기</h3>
+      <div id="content_wrap">
+        <ul class="title_wrap">
+          <li>
+            <span>
+              <label for="subjectInput">받는사람
+                <label id="me">나에게<input type="checkbox" id="subjectInput"></label>
+              </label>
+              <input type="text" placeholder="이메일 입력" required>
+              <select value="최근주소">
+                <option selected disabled>최근주소</option>
+                <option value="aaa@naver.com">aaa@naver.com</option>
+                <option value="bbb@naver.com">bbb@naver.com</option>
+                <option value="ccc@naver.com">ccc@naver.com</option>
+              </select>
+              <input type="button" id="address" value="주소록" onclick="">
+            </span>
+          </li>
+          <li>
+            <span>
+              <label for="subjectInput">참조</label>
+              <input type="text" placeholder="참조 이메일 입력">
+              <select value="최근주소">
+                <option selected disabled>최근주소</option>
+                <option value="aaa@naver.com">aaa@naver.com</option>
+                <option value="bbb@naver.com">bbb@naver.com</option>
+                <option value="ccc@naver.com">ccc@naver.com</option>
+              </select>
+              <input type="button" id="address" value="주소록" onclick="">
+            </span>
+          </li>
+          <li>
+            <label for="subjectInput">제목</label>
+            <input type="text" id="subjectInput" placeholder="제목" required />
+          </li>
+          <li>
+            <label for="fileInput">파일첨부</label>
+            <input class="file" type="file" value="파일선택" onclick="" />
+          </li>
+        </ul>
 
-            <div class="center">
-              <span class="board_select">
-                <select class="select" value="검색대상선택">
-                  <option value="board">제목</option>
-                  <option value="board">보낸사람</option>
-                  <option value="board">받는사람</option>
-                </select>
-              </span>
-
-              <input
-                type="text"
-                id="search-input"
-                placeholder="검색어를 입력하세요"
-              />
-              <button id="search-button">
-                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- 아래1 -->
-        <!-- 메일쓰기 -->
-        <form id="top">
-          <div id="middle">
-            <ul class="middle_menu">
-              <li>
-                <span>
-                  <label for="subjectInput"
-                    >받는사람
-                    <label id="sendme"
-                      >나에게<input type="checkbox" id="subjectInput"
-                    /></label>
-                  </label>
-                  <input
-                    type="text"
-                    id="recipientEmail"
-                    placeholder="이메일 입력"
-                    required
-                  />
-                  <select
-                    id="recentAddresses"
-                    onchange="updateRecipientEmail('recipientEmail', 'recentAddresses', 'recipientList')"
-                  >
-                    <option selected>최근주소</option>
-                    <option value="aaa@naver.com">aaa@naver.com</option>
-                    <option value="bbb@naver.com">bbb@naver.com</option>
-                    <option value="ccc@naver.com">ccc@naver.com</option>
-                  </select>
-                  <input
-                    type="button"
-                    class="addressButton"
-                    value="주소록"
-                    onclick="openOrgChartModal()"
-                  />
-                  <div id="addressBookModal" class="modal">
-                    <p>조직도</p>
-                    <p>
-                      <iframe
-                        src="../조직도/조직도.html"
-                        width="400"
-                        height="400"
-                        style="border: none"
-                      ></iframe>
-                    </p>
-                    <span class="close" onclick="closeModal()">&times;</span>
-                  </div>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <label for="ccInput">참조</label>
-                  <input type="text" id="ccInput" placeholder="참조 이메일 입력" />
-                  <select
-                    id="recentAddressesCc"
-                    onchange="updateRecipientEmail('ccInput', 'recentAddressesCc', 'ccList')"
-                  >
-                    <option selected>최근주소</option>
-                    <option value="aaa@naver.com">aaa@naver.com</option>
-                    <option value="bbb@naver.com">bbb@naver.com</option>
-                    <option value="ccc@naver.com">ccc@naver.com</option>
-                  </select>
-                  <input
-                    type="button"
-                    class="addressButton"
-                    value="주소록"
-                    onclick="openOrgChartModal()"
-                  />
-                </span>
-              </li>
-              <li>
-                <label for="subjectInput">제목</label>
-                <input type="text" id="subjectInput" placeholder="제목" required />
-              </li>
-              <li>
-                <label for="fileInput">파일첨부</label>
-                <input class="file" type="file" value="파일선택" />
-              </li>
-            </ul>
-            <form class="middle_content">
-              <textarea name="editor1" id="editor1" rows="10" required></textarea>
-            </form>
-          </div>
+        <form class="writeWrap">
+          <textarea name="editor1" id="editor1" rows="10"></textarea>
         </form>
+        <div class="end">
+          <a href="보낸메일함.html" onclick="submit()">보내기</a>
+          <a href="받은메일함.html" onclick="submit()">나에게 보내기</a>
+        </div>
       </div>
-    </div>
+    </form>
     <script>
       CKEDITOR.replace("editor1", {
         language: "ko",

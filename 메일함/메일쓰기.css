@@ -1,3 +1,4 @@
+<<<<<<< yoonji
 *{
    margin: 0;
    padding: 0;
@@ -305,3 +306,233 @@ li{
    text-decoration: none;
  }
  /* bottom 끝 */
+=======
+@charset "UTF-8";
+
+/* 공통 스타일 시작 */
+* {
+	
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	
+	text-decoration: none;
+	color: inherit;
+}
+
+li {
+	
+	list-style: none;
+}
+
+a:hover {
+
+  text-decoration: underline;
+}
+/* 공통 스타일 끝 */
+
+/* top 시작 */
+#top {
+
+  width: 860px;
+  margin: 0 auto;
+  margin-top : 20px;
+}
+/* top 끝 */
+
+/* middle 시작 */
+#middle {
+
+  border: 1px solid #ddd;
+  padding: 30px;
+  background: white;
+  width: 100%;
+  font-size: 13px;
+  margin-top: 20px;
+  height: 100%;
+}
+
+#middle ul:nth-child(1),
+#middle ul:nth-child(3) {
+
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
+
+#middle ul li {
+
+  margin-bottom: 6px;
+}
+
+#middle ul li:nth-child(2) {
+
+  margin-bottom: 10px;
+}
+
+#middle .title {
+
+  font-weight: bold;
+  display: inline-block;
+  width: 60px;
+}
+
+.middle_menu {
+
+  list-style: none;
+  padding: 0;
+}
+
+.middle_menu li {
+
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.middle_menu input[type="text"] {
+
+  flex: 0 0 300px; /* 텍스트 입력 부분이 남은 공간을 모두 차지하도록 수정 */
+  margin-right: 20px; /* 원하는 간격으로 조정 */
+  width: 500px;
+  font-size : 12px;
+}
+
+.middle_menu label {
+
+  flex: 0 0 120px; /* 레이블의 고정된 너비 */
+}
+
+.middle_menu select {
+
+  width: 200px;
+  flex: 0 0 100px;
+  cursor: pointer;
+  font-size : 12px;
+}
+
+#sendme {
+  font-size: 10px;
+  color: #838282;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#sendme label {
+  margin-left: 5px;
+  vertical-align: middle; /* 수직 가운데 정렬 */
+}
+
+#sendme input[type="checkbox"] {
+  vertical-align: middle; /* 수직 가운데 정렬 */
+}
+
+.middle_menu span {
+  display: flex;
+  align-items: baseline; /* 기준선을 통해 아래쪽 정렬 */
+  width: 100%;
+}
+
+.addressButton {
+
+  margin-left: 10px; /* 왼쪽 정렬을 위해 마진 제거 */
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  cursor: pointer;
+  width : 50px;
+  font-size : 12px;
+}
+
+#addressBookModal p {
+
+  margin : 40px 30px;
+  font-weight: 500;
+  font-size : 14px;
+  border : 1px solid #dddddd;
+  padding : 10px;
+}
+
+.modal {
+  
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ddd;
+  background: white;
+  padding: 20px;
+  z-index: 1;
+}
+
+.close {
+
+  position: absolute;
+  top: 10px;
+  left: 510px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.file {
+
+  border: 1px solid #ccc;
+  border-radius: 10%;
+  cursor: pointer;
+  font-size : 12px;
+}
+
+.middle_content {
+
+  width: 100%;
+  padding: 5%;
+  font-size: 12px;
+  min-height: 300px;
+  margin-top: 20px;
+}
+
+textarea {
+
+  resize: none;
+  width: 100%;
+  height: 200px;
+}
+/* middle 끝 */
+
+/* bottom 시작 */
+.bottom {
+
+  background: white;
+  width: 100%;
+  text-align: right; 
+  margin-top : 30px;
+}
+
+.bottom a {
+
+  font-size: 14px;
+  border: 1px solid #3CB4FF;
+  background: white;
+  padding: 5px;
+  border-radius: 5px;
+  color: #3CB4FF; 
+  margin-right : 10px;
+}
+
+.bottom a:hover {
+  
+  background: #3CB4FF;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* bottom 끝 */
+
+
+
+
+
+>>>>>>> master

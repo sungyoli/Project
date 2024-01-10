@@ -70,13 +70,14 @@
             </div>
           </li>
 
-          <div class="phone">
-            <label for="id">핸드폰 인증</label>
-            <input id="phone1" type="text" size="1" maxlength="3" oninput="changePhone1()"> -
-            <input id="phone2" type="text" size="3" maxlength="4" oninput="changePhone2()"> -
-            <input id="phone3" type="text" size="3" maxlength="4" oninput="changePhone3()">
-
-        </div>
+          <tr class="ph">
+            <th>핸드폰 번호</th>
+             <td><input type="text"name="tel_h1"> -
+                 <input type="text" name="tel_h2_1"> -
+                 <input type="text" name="tel_h2_2">
+             </td>
+            </tr>
+        
         <div class="auth">
             <div id="phoneNum">000000</div>
             <button disabled id="sendMessage" onclick="getToken()">인증번호 전송</button>

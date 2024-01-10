@@ -40,10 +40,10 @@ html{
 }
 
 body {
-  display: grid;
+  display: fixed;
   place-content: center;
   grid-template-columns: repeat(auto-fit, min(100%, 30rem));
-  min-height: 100vh;
+  min-height: 100%;
   place-items: start;
   gap: 1rem;
   padding: 1rem;

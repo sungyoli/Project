@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import url(../header/header.css);
 @import url(mainMedia.css);
 * {
   padding: 0;
@@ -127,4 +126,4 @@ article {
   border: none;
   background: #efefef;
   padding: 5px 10px 5px 10px;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

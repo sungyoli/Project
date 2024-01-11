@@ -4,7 +4,22 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script src="http://kit.fontawesome.com/a4539ed26c.js" crossorigin="anonymous"></script>
-
+<script>
+	function updatePost(){
+		const result = confirm("수정하겠습니까?");
+	
+		if(result){
+			alert("수정되었습니다.");
+		}
+	}
+	function deletePost(){
+		const result = confirm("삭제하겠습니까?");
+	
+		if(result){
+			alert("삭제되었습니다.");
+		}
+	}
+</script>
 <link rel="stylesheet" href="boardView.css">
 
 </head>
@@ -12,6 +27,7 @@
 
 <div class="wrap">
 	<!-- 왼쪽 메뉴 -->
+	<div id="header"></div>
 	<div id="left_menu">
 		<div><h3>게시판</h3></div>
 		<input type="button" id="write-button" onclick="window.location='boardTable.html'" value="글쓰기">			
@@ -34,8 +50,8 @@
 		
 		 <div class="bt_wrap">
               <a href="boardTable.html" class="on"><i class="fa-regular fa-pen-to-square"></i>글쓰기</a>
-              <a href="write.html" class="on"><i class="fa-solid fa-pen-to-square"></i>수정</a>
-              <a href="write.html" class="on"><i class="fa-regular fa-trash-can"></i>삭제</a>
+              <a href="#" class="on" onclick="updatePost()"><i class="fa-solid fa-pen-to-square"></i>수정</a>
+              <a href="#" class="on" onclick="deletePost()"><i class="fa-regular fa-trash-can"></i>삭제</a>
               <a href="boardList.html" class="on"><i class="fa-solid fa-list"></i>목록</a>
          </div>
            
@@ -125,7 +141,15 @@
 	
 </div>
 
-
+<script
+type="module"
+src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+nomodule
+src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+></script>
+<script src="../importJS/headerIpt.js"></script>
 
 </body>
 </html>

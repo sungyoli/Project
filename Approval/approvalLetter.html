@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>결재대기문서함</title>
+    <title>결재대기문서</title>
     <script>
       function redirectTo(link) {
         window.location.href = link;
@@ -39,49 +39,41 @@
           <table>
               <tr>
                   <th style="width: 12.5%">기안일</th>
-                  <th style="width: 12.5%">완료일</th>
                   <th style="width: 12.5%">결재양식</th>
                   <th style="width: 8.5%">긴급</th>
                   <th style="width: 12.5%">제목</th>
                   <th style="width: 8.5%">첨부</th>
                   <th style="width: 12.5%">기안자</th>
-                  <th style="width: 12.5%">문서번호</th>
                   <th style="width: 12.5%">결재상태</th>
               </tr>
               <tr onclick="redirectTo('ReauestLeave.html')">
-                  <td>2024-01-08</td>
                   <td>2024-01-08</td>
                 <td>연차신청</td>
                 <td></td>
                 <td>연차신청합니다.</td>
                 <td></td>
                 <td>한성준</td>
-                <td>2024-00001</td>
-                <td>완료</td>
+                <td><button class="btn completed">완료</button></td>
               </tr>
               
               <tr onclick="redirectTo('OvertimeWork.html')">
                   <td>2024-01-05</td>
-                  <td>2024-01-05</td>
                   <td>연장근무신청</td>
-                  <td><i class="fa-solid fa-triangle-exclamation"></i></td>
+                  <td><button class="btn urgent">긴급</button></td>
                   <td>연장근무신청합니다.</td>
                   <td></td>
                   <td>한성준</td>
-                  <td>2024-00001</td>
-                  <td>완료</td>
+                  <td><button class="btn completed">완료</button></td>
               </tr>
               
               <tr onclick="redirectTo('WeekendWork.html')">
-                  <td>2023-01-02</td>
                   <td>2023-01-02</td>
                   <td>휴일근무신청</td>
                   <td></td>
                   <td>휴일근무신청합니다.</td>
                   <td></td>
                   <td>한성준</td>
-                <td>2024-00001</td>
-                <td>완료</td>
+                <td><button class="btn completed">완료</button></td>
               </tr>
           </table>
     </div>

@@ -117,3 +117,28 @@ table tr:hover td {
   font: size 15px;
 }
 
+/* 결재상태, 긴급 아이콘 */
+
+.btn {
+  border-radius: 3px;
+  padding: 3px 5px;
+  font-size: 12px;
+}
+
+.progress {
+  border: none;
+  color: white;
+  background-color:#abd37d;
+}
+
+.completed {
+  border: none;
+  color: white;
+  background-color:#b4b4b4;
+}
+
+.urgent {
+  border: 1px solid #ff8383;
+  color: #ff8383;
+  background-color: rgba(255, 255, 255, 0);
+}

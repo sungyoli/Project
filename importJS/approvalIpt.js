@@ -1,8 +1,5 @@
-function togglePopup(){
-    document.getElementById("popup-1").classList.toggle("active");
-}
 
-fetch("../Approval/modal.html")
+fetch("../Approval/approvalMenu.html")
 .then((response) => response.text())
 .then((html) => {
   const tempDiv = document.createElement("div");
@@ -13,7 +10,7 @@ fetch("../Approval/modal.html")
     const href = linkTag.getAttribute("href");
     const link = document.createElement("link");
     link.setAttribute("rel", "stylesheet");
-    link.setAttribute("href", "../Approval/modal.html" + href); // 상대 경로로 수정
+    link.setAttribute("href", "../mail/" + href); // 상대 경로로 수정
     document.head.appendChild(link);
   });
 
@@ -21,13 +18,13 @@ fetch("../Approval/modal.html")
   scriptTags.forEach((scriptTag) => {
     const src = scriptTag.getAttribute("src");
     const script = document.createElement("script");
-    script.setAttribute("src", "../Approval/modal.html" + src); // 상대 경로로 수정
+    script.setAttribute("src", "../mail/" + src); // 상대 경로로 수정
     document.body.appendChild(script);
   });
 
-  document.getElementById("modalBtn").innerHTML = html;
+  document.getElementById("leftMenu").innerHTML = html;
 })
 .catch((error) => {
-  console.log("결제모달 로딩 오류", error);
+  console.log("왼쪽메뉴 로딩 오류", error);
 });
 

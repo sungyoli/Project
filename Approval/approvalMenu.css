@@ -15,27 +15,21 @@ a{
   height: 100vh;
   box-shadow: 0 0 10px #ddd;
   text-align: center;
+  margin: 0;
 }
 #left_menu h3 {
   font-size: 30px;
   padding-top: 60px;
 }
-#write-button{
-  width: 70%;
-  height: 50px;
+#modalBtn{
   border-radius: 10px;
-  background: #3cb4ff;
-  border: 2px solid #3cb4ff;
-  color: #fff;
   font-weight: 700;
   font-size: 18px;
   margin: 10px;
   margin-top: 60px;
+
 }
-#write-button:hover {
-  background: #fff;
-  color: #3cb4ff;
-}
+
 .tab__label{
   font-size: 20px;
   font-weight: 700;

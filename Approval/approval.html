@@ -24,6 +24,7 @@
       <div id="header"></div>
       <div id="leftMenu"></div>
       <!-- 가운데 게시판 목록 리스트 -->
+      <div class="tablewrap">
       <div class="table">
         <div class="table2"><span>기안 진행 문서</span></div>
         <br />
@@ -31,7 +32,6 @@
           <tr>
             <th>기안일</th>
             <th>결재양식</th>
-            <th>긴급</th>
             <th>제목</th>
             <th>첨부</th>
             <th>결재상태</th>
@@ -39,7 +39,6 @@
           <tr onclick="redirectTo('WeekendWork.html')">
             <td>2023-12-25</td>
             <td>휴일근무신청</td>
-            <td></td>
             <td>휴일근무신청합니다.</td>
             <td></td>
             <td><button class="btn progress">진행중</button></td>
@@ -48,7 +47,6 @@
           <tr onclick="redirectTo('ReauestLeave.html')">
             <td>2023-12-25</td>
             <td>연차신청</td>
-            <td><button class="btn urgent">긴급</button></td>
             <td>연차신청합니다.</td>
             <td></td>
             <td><button class="btn progress">진행중</button></td>
@@ -57,7 +55,6 @@
           <tr onclick="redirectTo('OvertimeWork.html')">
             <td>2023-12-25</td>
             <td>연장근무신청</td>
-            <td></td>
             <td>연장근무내역입니다.</td>
             <td></td>
             <td><button class="btn progress">진행중</button></td>
@@ -70,7 +67,6 @@
           <tr>
             <th>기안일</th>
             <th>결재양식</th>
-            <th>긴급</th>
             <th>제목</th>
             <th>첨부</th>
             <th>결재상태</th>
@@ -78,7 +74,6 @@
           <tr onclick="redirectTo('ReauestLeaveCompleted.html')">
             <td>2023-12-25</td>
             <td>연차신청</td>
-            <td></td>
             <td>연차신청합니다.</td>
             <td></td>
             <td><button class="btn completed">완료</button></td>
@@ -87,7 +82,6 @@
           <tr onclick="redirectTo('OvertimeWorkCompleted.html')">
             <td>2023-12-25</td>
             <td>연장근무신청</td>
-            <td><button class="btn urgent">긴급</button></td>
             <td>연장근무내역입니다.</td>
             <td></td>
             <td><button class="btn completed">완료</button></td>
@@ -96,12 +90,12 @@
           <tr onclick="redirectTo('WeekendWorkCompleted.html')">
             <td>2023-12-25</td>
             <td>휴일근무신청</td>
-            <td></td>
             <td>휴일근무신청합니다.</td>
             <td></td>
             <td><button class="btn completed">완료</button></td>
           </tr>
         </table>
+      </div>
       </div>
     </div>
 

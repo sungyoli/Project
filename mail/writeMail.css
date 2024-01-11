@@ -175,21 +175,6 @@ li {
   font-size: 12px;
 }
 
-#sendme {
-  font-size: 10px;
-  color: #838282;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-#sendme label {
-  margin-left: 5px;
-  vertical-align: middle; /* 수직 가운데 정렬 */
-}
-
-#sendme input[type="checkbox"] {
-  vertical-align: middle; /* 수직 가운데 정렬 */
-}
 
 .middle_menu span {
   display: flex;

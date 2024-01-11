@@ -2,6 +2,7 @@
 
 DROP TABLE status_tbl CASCADE CONSTRAINTS;
 CREATE TABLE status_tbl(
+    
     sysDate TIMESTAMP DEFAULT SYSTIMESTAMP, -- 근무 일자 
     startMonth NUMBER, -- 근무 월
     startDate TIMESTAMP, -- 근무 시작 일시

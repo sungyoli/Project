@@ -62,3 +62,24 @@ body {
   text-align: left;
   position: relative;
 }
+
+#mailkind{
+  padding-left: 0;
+  margin-top: 50px;
+  margin-bottom: 0%;
+  cursor: pointer;
+}
+
+.mailkind_li{
+  height: 40px;
+  font-weight: bold;
+}
+
+.mailkind_li:hover{
+  background-color: #F0F8FF;
+}
+
+.mailkind_span{
+  position: relative;
+  top: 25%;
+}

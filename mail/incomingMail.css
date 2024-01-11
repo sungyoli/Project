@@ -34,7 +34,6 @@ li {
   border-bottom: 5px solid skyblue;
   padding-left: 40px;
   flex-flow: row nowrap;
-  /* background-color: lightgray; */
   display: inline-block;
 }
 
@@ -94,7 +93,7 @@ li {
   display: inline-block;
   width: 500px;
   position: relative;
-  left: 50%;
+  left: 40%;
 }
 
 .select {

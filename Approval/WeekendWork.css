@@ -53,7 +53,7 @@
    border: 4px solid rgb(226, 226, 226);
    margin-left: 20px;
    width: 860px;
-   height: 780px;
+   height: 1200px;
    margin-bottom: 100px;
    display: flex;
    flex-direction: column;
@@ -61,7 +61,7 @@
 
  .img {
    margin-top: 20px;
-   margin-left:20px;
+   margin-left:25px;
  }
 
  .file {

@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>전자결재</title>
+    <script>
+      function redirectTo(link) {
+        window.location.href = link;
+      }
+    </script>
     <script
       src="http://kit.fontawesome.com/a4539ed26c.js"
       crossorigin="anonymous"
@@ -17,66 +22,9 @@
   <body>
     <div class="wrap">
       <div id="header"></div>
-      <!-- 왼쪽 메뉴 -->
-      <div id="left_menu">
-        <div><h3>전자결재</h3></div>
-        <button id="write-button">새 결재 진행</button>
-        <div class="menu">
-          <a href="#">결재하기</a>
-          <a href="#"
-            >개인 문서함
-            <ul>
-              <li>개발팀</li>
-              <li>유지보수(관리)팀</li>
-              <li>마케팅팀</li>
-              <li>영업팀</li>
-              <li>총무팀</li>
-            </ul>
-          </a>
-        </div>
-      </div>
 
       <!-- 가운데 게시판 목록 리스트 -->
       <div class="table">
-        <div class="table1"><span>새결재 문서</span></div>
-        <br />
-        <table>
-          <tr>
-            <th>기안일</th>
-            <th>결재양식</th>
-            <th>긴급</th>
-            <th>제목</th>
-            <th>첨부</th>
-            <th>결재상태</th>
-          </tr>
-          <tr>
-            <td>2023-12-25</td>
-            <td>휴가신청-근태관리연동</td>
-            <td></td>
-            <td>휴가신청합니다.</td>
-            <td></td>
-            <td>완료</td>
-          </tr>
-
-          <tr>
-            <td>2023-12-25</td>
-            <td>업무요청</td>
-            <td><i class="fa-solid fa-triangle-exclamation"></i></td>
-            <td>업무 요청드립니다.</td>
-            <td></td>
-            <td>완료</td>
-          </tr>
-
-          <tr>
-            <td>2023-12-25</td>
-            <td>매출보고서</td>
-            <td></td>
-            <td>매출보고서 보내드립니다.</td>
-            <td></td>
-            <td>완료</td>
-          </tr>
-        </table>
-
         <div class="table2"><span>기안 진행 문서</span></div>
         <br />
         <table>
@@ -88,31 +36,31 @@
             <th>첨부</th>
             <th>결재상태</th>
           </tr>
-          <tr>
+          <tr onclick="redirectTo('WeekendWork.html')">
             <td>2023-12-25</td>
-            <td>휴가신청-근태관리연동</td>
+            <td>휴일근무신청</td>
             <td></td>
-            <td>휴가신청합니다.</td>
+            <td>휴일근무신청합니다.</td>
             <td></td>
-            <td>완료</td>
+            <td>대기중</td>
           </tr>
 
-          <tr>
+          <tr onclick="redirectTo('ReauestLeave.html')">
             <td>2023-12-25</td>
-            <td>업무요청</td>
+            <td>연차신청</td>
             <td><i class="fa-solid fa-triangle-exclamation"></i></td>
-            <td>업무 요청드립니다.</td>
+            <td>연차신청합니다.</td>
             <td></td>
-            <td>완료</td>
+            <td>대기중</td>
           </tr>
 
-          <tr>
+          <tr onclick="redirectTo('OvertimeWork.html')">
             <td>2023-12-25</td>
-            <td>매출보고서</td>
+            <td>연장근무신청</td>
             <td></td>
-            <td>매출보고서 보내드립니다.</td>
+            <td>연장근무내역입니다.</td>
             <td></td>
-            <td>완료</td>
+            <td>대기중</td>
           </tr>
         </table>
 
@@ -127,29 +75,29 @@
             <th>첨부</th>
             <th>결재상태</th>
           </tr>
-          <tr>
+          <tr onclick="redirectTo('ReauestLeaveCompleted.html')">
             <td>2023-12-25</td>
-            <td>휴가신청-근태관리연동</td>
+            <td>연차신청</td>
             <td></td>
-            <td>휴가신청합니다.</td>
+            <td>연차신청합니다.</td>
             <td></td>
             <td>완료</td>
           </tr>
 
-          <tr>
+          <tr onclick="redirectTo('OvertimeWorkCompleted.html')">
             <td>2023-12-25</td>
-            <td>업무요청</td>
+            <td>연장근무신청</td>
             <td><i class="fa-solid fa-triangle-exclamation"></i></td>
-            <td>업무 요청드립니다.</td>
+            <td>연장근무내역입니다.</td>
             <td></td>
             <td>완료</td>
           </tr>
 
-          <tr>
+          <tr onclick="redirectTo('WeekendWorkCompleted.html')">
             <td>2023-12-25</td>
-            <td>매출보고서</td>
+            <td>휴일근무신청</td>
             <td></td>
-            <td>매출보고서 보내드립니다.</td>
+            <td>휴일근무신청합니다.</td>
             <td></td>
             <td>완료</td>
           </tr>

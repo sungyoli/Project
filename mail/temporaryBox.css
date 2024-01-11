@@ -23,8 +23,9 @@ li {
 
 .right_contents {
   margin-top: 0;
-  width: 100%; /* 늘리고자 하는 가로 길이로 조정 */
+  width: 100vw; /* 늘리고자 하는 가로 길이로 조정 */
   display: flex;
+  min-width: 1200px;
   flex-direction: column;
 }
 
@@ -112,9 +113,11 @@ li {
 .mail_ul {
   display: flex;
   margin-bottom: 0;
+  margin-left: 40px;
   height: 50px;
   align-items: center;
-  justify-content: space-around;
+  gap: 20px;
+  width: 100%;
 }
 
 .checkbox {
@@ -134,27 +137,45 @@ li {
 }
 
 .sender_li {
-  margin-left: 30px;
+  padding-left: 30px;
+  width: 380px;
+}
+
+.sender_li_span{
+  position: relative;
+  left: 60px;
 }
 
 .mailtitle_li {
-  width: 1200px;
+  width: 900px;
   height: 50px;
-  padding-left: 80px;
+  padding-left: 60px;
   text-justify: center;
-  cursor: pointer;
 }
 
 .mailtitle_text {
+  display: inline-block;
   position: relative;
   top: 25%;
+  width: 460px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-#clip_icon {
+.mailtitle_date{
+  display: inline-block;
+  width: 90px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*#clip_icon {
   position: relative;
   top: 25%;
   margin-left: 20px;
-}
+}*/
 
 /* Pagination links */
 .pagination {

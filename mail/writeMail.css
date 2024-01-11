@@ -22,10 +22,11 @@ li {
   width: 100vw;
 }
 
-.right_contents {
+.right_contents{
   margin-top: 0;
-  width: 100%; /* 늘리고자 하는 가로 길이로 조정 */
-  display: flex;
+  width: 100vw; /* 늘리고자 하는 가로 길이로 조정 */
+  display: flex;  
+  min-width: 1200px;
   flex-direction: column;
 }
 
@@ -255,30 +256,3 @@ textarea {
 }
 /* middle 끝 */
 
-/* bottom 시작 */
-.bottom {
-  position: relative;
-  top: 50px;
-  background: white;
-  width: 100%;
-  text-align: right;
-  margin-right: 10px;
-}
-
-.bottom a {
-  font-size: 14px;
-  border: 1px solid #3cb4ff;
-  background: white;
-  padding: 5px;
-  border-radius: 5px;
-  color: #3cb4ff;
-  margin-right: 10px;
-}
-
-.bottom a:hover {
-  background: #3cb4ff;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-}
-/* bottom 끝 */

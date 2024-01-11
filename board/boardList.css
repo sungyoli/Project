@@ -174,10 +174,10 @@ td {
 }
 
 /* Style the active/current link */
-.pagination a.active {
+/* .pagination a.active {
   background-color: dodgerblue;
   color: white;
-}
+} */
 
 /* Add a grey background color on mouse-over */
 .pagination a:hover:not(.active) {background-color: #ddd;}

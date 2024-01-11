@@ -18,4 +18,4 @@
 3. approval 왼쪽메뉴 임포트 방법
     위와 같음.
     code:
-    <script src="../importJS/mailIpt.js"></script>
+    <script src="../importJS/approvalIpt.js"></script>

@@ -4,46 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="mailLeftmenu.css">
+    <link rel="stylesheet" href="mailLeftmenu.css" />
   </head>
   <body>
     <div id="left_menu">
       <div>
         <h1 id="letter1"><br />메일</h1>
       </div>
-      <button id="write-button" class="buttonSections">메일쓰기</button>
+      <button id="write-button" class="buttonSections" onclick="location.href='writeMail.html'">메일쓰기</button>
 
-      <div class="accordion">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#panelsStayOpen-collapseOne"
-              aria-expanded="true"
-              aria-controls="panelsStayOpen-collapseOne"
-            >
-              <span>메일함</span>
-            </button>
-          </h2>
-          <div
-            id="panelsStayOpen-collapseOne"
-            class="accordion-collapse collapse show"
-          >
-            <ul id="mailkind">
-              <li class="mailkind_li" onclick="location.href='받은메일함.html'">
-                <span class="mailkind_span">받은메일함</span>
-              </li>
-              <li class="mailkind_li" onclick="location.href='보낸메일함.html'">
-                <span class="mailkind_span">보낸메일함</span>
-              </li>
-              <li class="mailkind_li" onclick="location.href='임시보관함.html'">
-                <span class="mailkind_span">임시보관함</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div
+        id="panelsStayOpen-collapseOne"
+        class="accordion-collapse collapse show"
+      >
+        <ul id="mailkind">
+          <li class="mailkind_li" onclick="location.href='incomingMailBox.html'">
+            <span class="mailkind_span">받은메일함</span>
+          </li>
+          <li class="mailkind_li" onclick="location.href='sendMailBox.html'">
+            <span class="mailkind_span">보낸메일함</span>
+          </li>
+          <li class="mailkind_li" onclick="location.href='myWriteBox.html'">
+            <span class="mailkind_span">내가쓴메일함</span>
+          </li>
+          <li class="mailkind_li" onclick="location.href='temporaryBox.html'">
+            <span class="mailkind_span">임시보관함</span>
+          </li>
+        </ul>
       </div>
     </div>
   </body>

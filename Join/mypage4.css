@@ -55,8 +55,7 @@ body {
 
   .content {
     margin-top: 20px;
-    position:absolute;
-    right:90%
+   margin-left: 20%;
     
   }
 
@@ -68,9 +67,13 @@ body {
   li {
     margin-top: 20px; /* 수정된 여백 값 */
   }
-
+.con_1 li {display: flex;}
   hr {
     margin: 20px 0; /* 수정된 간격 값 */
+  }
+
+  .con_1{
+    margin-left: 20px;
   }
 
   .con_1 img {
@@ -79,4 +82,6 @@ body {
     border-radius: 50%;
     margin-right: 10px; /* 이미지와 텍스트 간격 조절 */
   }
+
+  
   

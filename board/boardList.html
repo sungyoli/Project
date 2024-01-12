@@ -16,7 +16,7 @@
       <div id="header"></div>
       <div id="left_menu">
         <h3>게시판</h3>
-        <button href="./boardTable.html" id="write-button" onclick="write();">글쓰기</button>
+        <input type="button" id="write-button" onclick="window.location='boardTable.html'" value="글쓰기">	
         <div class="menu">
           <a href="#">전체게시판</a>
           <a>부서게시판</a> 
@@ -37,7 +37,7 @@
           <table>
             <tr>
               <th style="width: 5%">번호</th>
-              <th style="width: 5%">긴급</th>
+              <th style="width: 5%">공지</th>
               <th style="width: 50%">제목</th>
               <th style="width: 5%">첨부</th>
               <th style="width: 5%">부서이름</th>
@@ -63,7 +63,7 @@
           <div class="pagination">
             <a class="p" href="#">&laquo;</a>
             <a href="#">1</a>
-            <a class="active" href="#">2</a>
+            <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">4</a>
             <a href="#">5</a>

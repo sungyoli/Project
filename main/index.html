@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../header/header.css" />
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="profile.css" />
+    <link rel="shortcut icon" href="../logo/scope3.png">
+    <!-- <link rel="stylesheet" href="profile.css" /> -->
     <script
       src="https://kit.fontawesome.com/67a1f076db.js"
       crossorigin="anonymous"
@@ -40,30 +41,27 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
         </div>
         <div class="section_wrap">
           <section class="section1">
-            <article>
-              <div class="user-profile">
-                <div class="profile"></div>
-                <div class="profileInfo">
-                  <div id="username">홍길동</div>
-                  <div class="description">
-                    <div><span id="city">ICT그룹</span></div>
-                  </div>
-                  <ul class="inputBotton">
-                    <li>
-                      <a href="../메일/메일.html"><span>오늘 온 메일</span></a>
-                    </li>
-                    <li>
-                      <a href="../캘린더/캘린더.html"
-                        ><span>오늘의 일정</span></a
-                      >
-                    </li>
-                  </ul>
+            <article class="user-profile">
+              <div class="profile"></div>
+              <div class="profileInfo">
+                <div id="username">홍길동</div>
+                <div class="description">
+                  <div><span id="city">ICT그룹</span></div>
                 </div>
+                <ul class="inputBotton">
+                  <li>
+                    <a href="../mail/incomingMail.html"><span>오늘 온 메일</span></a>
+                  </li>
+                  <li>
+                    <a href="../calender/calendar.html"><span>오늘의 일정</span></a>
+                  </li>
+                </ul>
               </div>
             </article>
 
             <article>
               <div id="calendarContainer"></div>
+              <iframe src="../calender/calendar.html" srcdoc="<div class='calenderWrap'></div>"  frameborder="0" scrolling="no" allow="fullscreen"></iframe>
             </article>
           </section>
 
@@ -84,7 +82,7 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
 
           <section class="section3">
             <article>
-              <a href="../결재/결재.html" id="approval">결재 대기 문서</a>
+              <a href="../Approval/waitApprove.html" id="approval">결재 대기 문서</a>
             </article>
 
             <article>
@@ -98,7 +96,7 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
                   class="inputBtn"
                   type="button"
                   value="메일쓰기"
-                  onclick="window.location='../mail/incomingMail.html'"
+                  onclick="window.location='../mail/writeMail.html'"
                 />
               </li>
               <li>
@@ -123,7 +121,7 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="../importJS/headerIpt.js"></script>
-    
+
     <script>
       fetch("../calender/calendar.html")
         .then((response) => response.text())
@@ -136,7 +134,7 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
             const href = linkTag.getAttribute("href");
             const link = document.createElement("link");
             link.setAttribute("rel", "stylesheet");
-            link.setAttribute("href", "../calendar/" + href); // 캘린더 파일이 위치한 상대 경로로 수정
+            link.setAttribute("href", "../calendar" + href); // 캘린더 파일이 위치한 상대 경로로 수정
             document.head.appendChild(link);
           });
 
@@ -144,7 +142,7 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
           scriptTags.forEach((scriptTag) => {
             const src = scriptTag.getAttribute("src");
             const script = document.createElement("script");
-            script.setAttribute("src", "../calendar/" + src); // 캘린더 파일이 위치한 상대 경로로 수정
+            script.setAttribute("src", "../calendar" + src); // 캘린더 파일이 위치한 상대 경로로 수정
             document.body.appendChild(script);
           });
 

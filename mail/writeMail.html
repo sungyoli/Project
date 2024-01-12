@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>메일쓰기</title>
+    <link rel="shortcut icon" href="../logo/scope3.png">
     <!-- CDN방식 -->
     <!-- 장점 내가 가지고 있지 않아도 됨 단점 인터넷연결이 안되어있으면 사용불가 -->
     <link rel="stylesheet" href="writeMail.css" />
     <script src="../ckeditor/ckeditor.js"></script>
+    <script src="../importJS/OCIpt.js"></script>
     <script src="http://cdn.ckeditor.com/4.23.0-lts/standard/ckeditor.js"></script>
     <script type="text/javascript">
       function submitForm() {
@@ -28,29 +30,6 @@
         var modal = document.getElementById("addressBookModal");
         modal.style.display = "none";
       }
-
-      function updateRecipientEmail(
-        targetInputId,
-        selectElementId,
-        listContainerId
-      ) {
-        var selectElement = document.getElementById(selectElementId);
-        var recipientEmailInput = document.getElementById(targetInputId);
-        var listContainer = document.getElementById(listContainerId);
-
-        var selectedOption =
-          selectElement.options[selectElement.selectedIndex].value;
-
-        if (recipientEmailInput.value !== "") {
-          recipientEmailInput.value += ", " + selectedOption;
-        } else {
-          recipientEmailInput.value = selectedOption;
-        }
-
-        var listItem = document.createElement("li");
-        listItem.textContent = selectedOption;
-        listContainer.appendChild(listItem);
-      }
     </script>
     <script
     type="module"
@@ -66,7 +45,8 @@
       src="http://kit.fontawesome.com/a4539ed26c.js"
       crossorigin="anonymous"
     ></script>
-    <body>
+    </head>
+    <body> 
       <div class="wrap">
         <div id="header"></div>
         <div id="mailLeftmenu"></div>
@@ -81,11 +61,6 @@
               <div id="dropdown">
                 <button type="button" class="btn btn-light">
                   <a href="sendMailBox.html" onclick="submitForm()">보내기</a>
-                </button>
-                <button type="button" class="btn btn-light">
-                  <a href="myWriteBox.html" onclick="submitForm()"
-                    >나에게 보내기</a
-                  >
                 </button>
                 <button type="button" class="btn btn-light">
                   <a href="temporaryBox.html" onclick="submitForm()"
@@ -121,41 +96,28 @@
               <ul class="middle_menu">
                 <li>
                   <span>
-                    <label for="subjectInput"
-                      >받는사람
-                      <label id="sendme"
-                        >나에게<input type="checkbox" id="subjectInput"
-                      /></label>
-                    </label>
-                    <input
+                    <label for="subjectInput">받는사람</label>
+                      <input
                       type="text"
                       id="recipientEmail"
                       placeholder="이메일 입력"
                       required
                     />
-                    <select
-                      id="recentAddresses"
-                      onchange="updateRecipientEmail('recipientEmail', 'recentAddresses', 'recipientList')"
-                    >
-                      <option selected>최근주소</option>
-                      <option value="aaa@naver.com">aaa@naver.com</option>
-                      <option value="bbb@naver.com">bbb@naver.com</option>
-                      <option value="ccc@naver.com">ccc@naver.com</option>
-                    </select>
                     <input
                       type="button"
                       class="addressButton"
-                      value="주소록"
+                      value="조직도"
                       onclick="openOrgChartModal()"
                     />
                     <div id="addressBookModal" class="modal">
                       <p>조직도</p>
                       <p>
                         <iframe
-                          src="../OC/OC.html"
+                          id="oc"
                           width="400"
                           height="400"
                           style="border: none"
+                          src="../OC/OC.html"
                         ></iframe>
                       </p>
                       <span class="close" onclick="closeModal()">&times;</span>
@@ -170,19 +132,10 @@
                       id="ccInput"
                       placeholder="참조 이메일 입력"
                     />
-                    <select
-                      id="recentAddressesCc"
-                      onchange="updateRecipientEmail('ccInput', 'recentAddressesCc', 'ccList')"
-                    >
-                      <option selected>최근주소</option>
-                      <option value="aaa@naver.com">aaa@naver.com</option>
-                      <option value="bbb@naver.com">bbb@naver.com</option>
-                      <option value="ccc@naver.com">ccc@naver.com</option>
-                    </select>
                     <input
                       type="button"
                       class="addressButton"
-                      value="주소록"
+                      value="조직도"
                       onclick="openOrgChartModal()"
                     />
                   </span>
@@ -219,5 +172,4 @@
         });
       </script>
     </body>
-  </head>
 </html>

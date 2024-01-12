@@ -24,10 +24,11 @@ li {
   width: 60px;
 }
 
-.right_contents {
+.right_contents{
   margin-top: 0;
-  width: 100%; /* 늘리고자 하는 가로 길이로 조정 */
-  display: flex;
+  width: 100vw; /* 늘리고자 하는 가로 길이로 조정 */
+  display: flex;  
+  min-width: 1200px;
   flex-direction: column;
 }
 

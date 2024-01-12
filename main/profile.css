@@ -2,7 +2,6 @@
 
 .user-profile {
   width: 100%; 
-  height: 800px;
   border-radius: .3em;
   position: relative;
 }
@@ -26,23 +25,6 @@
   font-size: 18px;
 }
 
-.profile {
-  position: absolute;
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 110px;
-  height: 110px;
-  background-image: url(https://randomuser.me/api/portraits/med/women/6.jpg);
-  border-radius: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: auto;
-}
-.profileInfo{
-  position: absolute;
-  top: 160px;
-}
 
 .inputBotton {
   margin-top:15px;

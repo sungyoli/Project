@@ -169,7 +169,7 @@ body {
   position: relative;
   list-style: none;
   padding: 3px 0;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .popup li span {
@@ -263,18 +263,19 @@ summary {
 /* 새결재진행버튼 */
 .first-btn {
   padding: 15px;
-  background-color: #3cb4ff;
-  color: #fff;
+  background-color: white;
+  color: #3cb4ff;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  width: 250px;
+  width: 230px;
   font-size: 16px;
   font-weight: bold;
   border: 1px solid #3cb4ff;
 }
-.first-btn:hover {
+
+/* .first-btn:hover {
   border: 1px solid #3cb4ff;
   background: #fff;
   color: #3cb4ff;
-}
+} */

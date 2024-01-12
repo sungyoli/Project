@@ -12,7 +12,6 @@ li{
 
 }
 
-
 body {
   display: flex;
   flex-direction: row;
@@ -23,13 +22,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 700px;
-  height: 950px;
+  width: 800px;
+  height: 1150px;
   margin-top: 60px;
   margin-bottom: 60px;
   background: #ffffff;
   border: 1px solid #aacdff;
-  box-shadow: blue;
   border-radius: 20px;
 }
 
@@ -60,7 +58,6 @@ body {
  
 }
 
-
 .int_box {
   display: block;
   position: relative;
@@ -81,13 +78,13 @@ body {
     border:none;
     background-color: #0069a685;
     color: #fff;
-    padding:10px 30px
+    padding:10px 30px;
+    
+    
 }
 
-
-#box int_id button {
-    
-position: absolute;
+#box int_id button { 
+ position: absolute;
   width: 90px;
   height: 40px;
   top: 0;
@@ -108,41 +105,17 @@ position: absolute;
     
 }
 
-.phone {
-  display: flex;
-  justify-content: space-between;
-  line-height: 35px;
+.phone-input {
+  width: 90px; /* 너비 조절 */
+  border-radius: 5px;
+  margin:10px
 }
-
-.phbox{
-  
-}
-
-#phone1 {
-  width: 18%;
-  border-radius: 10px;
-}
-
-#phone2 {
-  width: 30%;
-  border-radius: 10px;
-}
-
-#phone3 {
-  width: 30%;
-  border-radius: 10px;
-}
-
 .auth {
   display: flex;
-  justify-content: space-between;
-  
 }
 
 .timer {
   display: flex;
-  justify-content: space-between;
- 
 }
 
 .auth div {
@@ -154,7 +127,7 @@ position: absolute;
 }
 
 .auth button {
-  width: 70%;
+  width: 50%;
   background-color: #fff;
   color: black;
   border-radius: 10px;
@@ -169,13 +142,12 @@ position: absolute;
 }
 
 .timer button {
-  width: 70%;
+  width: 50%;
   background-color: #fff;
   color: black;
   border-radius: 10px;
   
 }
-
 
 .birth_con {
     width: 100%;

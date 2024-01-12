@@ -18,66 +18,7 @@ body {
 
 .wrap {
   max-width: 900px;
-  display: flex;
-  height: 100vh;
-  width: 100%;
-}
-
-
-#header {
-  width: 60px;
-  display: none;
-}
-
-#left_menu {
-  margin: 2%;
-  width: 200px;
-  height:100vh;
-  line-height: 90px;
-  font-size: 20px;
-  margin-right: 20px;
-  
-  
-}
-
-.panel {
-  color: #333;
-  width: 300px;
-  height: 100vh;
-  line-height: 40px;
-  border-right: 2px solid #ddd;
-  padding-right: 10px;
-}
-
-/* 각 항목에 대한 효과 추가 */
-
-.panel p {
-  margin: 0;
-  transition: background-color 0.3s; /* 부드러운 전환 효과 추가 */
-}
-
-.panel p:hover {
-  background-color: #f0f0f0;
-}
-
-.panel a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s; /* 부드러운 전환 효과 추가 */
-}
-
-.panel a:hover {
-  color: #007bff;
-  font-weight: bold; /* 텍스트 굵게 효과 추가 */
-}
-
-.panel input[type="text"] {
-  border: 1px solid #ddd;
-  transition: border-color 0.3s; /* 부드러운 전환 효과 추가 */
-}
-
-.panel input[type="text"]:hover {
-  border-color: #007bff;
+  margin: 0 auto;
 }
 
 .dropdownbtn {
@@ -123,8 +64,6 @@ body {
   border: 3px solid #aacdff;
   border-radius: 60px;
   margin-top: 20px;
-  
-
 }
 .login label {
   font-weight: 700;
@@ -150,6 +89,11 @@ body {
   border-radius: 5px;
   border: 1px solid #ddd;
 }
+
+.picture_con{
+
+}
+
 .int_box {
   width: 300px; /* 원하는 너비 값으로 조절 */
   height: 40px; /* 원하는 높이 값으로 조절 */
@@ -172,28 +116,11 @@ input {
   padding: 0px 15px;
 }
 
-.name_con{
-  line-height: 30px;
-}
-
-.company_con{
-  line-height: 30px;
-}
-
-.select {
-  width: 150px;
-  height: 35px;
-  background: url('https://freepikpsd.com/media/2019/10/down-arrow-icon-png-7-Transparent-Images.png') calc(100% - 5px) center no-repeat;
-  background-size: 20px;
-  padding: 5px 30px 5px 10px;
-  border-radius: 4px;
-  outline: 0 none;
-
-}
-.select option {
-  background:#fff;
-  color:black;
-  padding: 3px 0;
+label {
+	display:inline-block;
+	text-align:center;
+	width:80px;
+	font-weight:bold
 }
 
 .email_con{

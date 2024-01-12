@@ -24,42 +24,13 @@
         document.getElementById( 'address-2' ).value = null;
       }
  </script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("inputImage").addEventListener("change", function () {
-      var selectedFile = this.files[0];
-      var reader = new FileReader();
-
-      reader.onload = function (e) {
-        document.getElementById("previewImage").src = e.target.result;
-        document.getElementById("previewImage").style.display = "block";
-      };
-
-      reader.readAsDataURL(selectedFile);
-    });
-  });
-
-  function join() {
-    // join 함수 구현 (저장 또는 취소 버튼 클릭 시 동작)
-  }
-</script>
   
-  <script src="../importJS/headerIpt.js"></script>
-  
-  <script
-  type="module"
-  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-></script>
   <head>
     <meta charset="UTF-8" />
     <title>회원가입</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="mypage1.css" />
-<<<<<<< HEAD
-    <link rel="stylesheet" href="../header/header.css" />
-=======
-    <link rel="shortcut icon" href="../logo/scope3.png">
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("inputImage").addEventListener("change", function () {
@@ -79,24 +50,10 @@
         // join 함수 구현 (저장 또는 취소 버튼 클릭 시 동작)
       }
     </script>
->>>>>>> b213bfbee059d92842a4957ed23dc22f361b8fbc
   </head>
   
   <body>
     <div class="wrap">
-      <!-- 왼쪽 메뉴 -->
-      <div id="header"></div>
-      <div id="left_menu">
-        <h3>설정</h3>
-          <div class="panel">
-            <p><a href="#">기본정보</a></p>
-            <p><a href="#">환경설정</a></p>
-            <p><a href="#">알림설정</a></p>
-            <p><a href="#">보안설정</a></p>
-          </div>
-        </div>
-      
-      
       <div class="dropdownbtn">
         <img class="profile" src="image/4301-212117.png">
         <div class="dropdowncontent">
@@ -120,41 +77,34 @@
                 <img src="" id="previewImage">
                 <button id="sendButton" onclick="deleteImage()">삭제하기</button>
                 <img src="" class="uploadImage">
+                </div>
               </li>
 
             
             
             <div class="name_con">
               <label for="id">이름</label>
-              <div class="name_box">
-                <input type="text" id="id" class="int_box" maxlength="20" placeholder="이름 2~20자 이내" />
-              </div>
+                <div style="height:50px">
             </div>
+            
 
             <div class="company_con">
-              <label for="id">회사</label>
-              <input type="text" id="id" class="int_box" maxlength="20" placeholder="회사" />
+              <label>회사</label>
+              <div style="height:50px">
             </div>
-          
-        
-            <select name="option" class="select" line-height="1cm">
-              <option disabled selected>부서</option>
-              <option value="개발팀">개발팀</option>
-              <option value="유지보수(관리)팀">유지보수(관리)팀</option>
-              <option value="총무팀">총무팀</option>
-              <option value="마케팅팀">마케팅팀</option>
-            </select>
+            
+            <div class="division_con">
+              <label>부서</label>
+              <div style="height:50px">
+            </div>
 
          
-            <select name="option" class="select" line-height="1cm">
-              <option disabled selected>직위</option>
-              <option value="부장">부장</option>
-              <option value="팀장">팀장</option>
-              <option value="과장">과장</option>
-              <option value="사원">사원</option>
-            </select>
+            <div class="option_con">
+              <label>직위</label>
+              <div style="height:50px">
+            </div>
           
-        
+         
             <div class="email_con">
               <label for="email">이메일</label>
               <div class="input-box">

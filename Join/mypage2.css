@@ -6,14 +6,21 @@
 }
 
 .wrap {
-  margin: 50px;
-  max-width: 500%;
+ 
+  max-width: 800px;
+  margin:auto
 }
 .wrap h3{
   margin-bottom: 50px;
   text-align: center;
   font-size: 30px;
   font-weight: normal;
+ 
+}
+
+.bell-icon {
+  font-size: 100%;
+  transform: scale(1.5); /* 이 값은 필요에 따라 조절 가능 */
 }
 .dropdownbtn {
   position: relative;
@@ -58,6 +65,8 @@
   display: block;
 }
 
+
+ 
 .accordion-header {
   background-color: #f1f1f1;
   border-bottom: 1px solid #ddd;
@@ -66,6 +75,9 @@
   font-weight: 700;
   font-size: 20px;
   /* margin-bottom: 10px; 버튼 간격 조절 */
+  
+  
+  
 }
 
 .accordion-button {
@@ -74,7 +86,7 @@
 
 .accordion-body {
   display: none;
-  padding: 10px;
+  padding: 50px;
 }
 .accordion-body ul {
   font-weight: 600;
@@ -84,6 +96,42 @@
   margin-top: 10px;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-content {
+  background-color:rgb(43, 40, 40);
+  margin:5% auto;
+  padding:20px;
+  border-radius: 20px;
+  width: 20%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 .join_btn {
   width: 100%;
   font-weight: 700;

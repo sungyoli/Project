@@ -2,9 +2,12 @@
 <html lang="ko">
   <head>
   <script type="text/javascript">
-    function join(){
+    function join() {
       alert("회원가입 완료");
-      location.href="../../go/join1ok.html";
+      // 일정 시간 후에 새 페이지로 이동
+      setTimeout(function () {
+        location.href = "../../main/main.html";
+      }, 1000); // 1000 밀리초(1초) 후에 이동하도록 설정
     }
 
   </script>
@@ -13,7 +16,6 @@
     <link rel="shortcut icon" href="../logo/scope3.png">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="join1.css" />
-    <link rel="stylesheet" href="join1.js" />
   </head>
   <body>
       
@@ -42,13 +44,29 @@
               </div>
             </div>
           </li>
+
+          <li>
+            <div class="name_con">
+              <label for="name">이름</label>
+              <div class="id_box">
+                  <input
+                    type="text"
+                    id="name"
+                    class="int_box"
+                    maxlength="20"
+                    placeholder="이름"
+                  />
+              </div>
+            </div>
+          </li>
+         
           <li>
             <div class="pwd_con">
-              <label for="id">비밀번호</label>
+              <label for="pass">비밀번호</label>
 
               <input
                 type="password"
-                id="id"
+                id="pass"
                 class="int_box"
                 maxlength="30"
                 placeholder="비밀번호 입력"
@@ -58,11 +76,11 @@
           </li>
           <li>
             <div class="pwdconf_con">
-              <label for="id">비밀번호 확인</label>
+              <label for="passchek">비밀번호 확인</label>
 
               <input
                 type="password"
-                id="id"
+                id="passchek"
                 class="int_box"
                 maxlength="30"
                 placeholder="비밀번호 재입력"
@@ -71,11 +89,11 @@
             </div>
           </li>
 
-          <tr class="ph">
+          <tr id="ph">
             <th>핸드폰 번호</th>
-             <td><input type="text"name="tel_h1"> -
-                 <input type="text" name="tel_h2_1"> -
-                 <input type="text" name="tel_h2_2">
+            <td><input type="tel" name="phone1" class="phone-input" /> -
+              <input type="tel" name="phone2" class="phone-input" /> -
+              <input type="tel" name="phone3" class="phone-input" />
              </td>
             </tr>
         
@@ -88,6 +106,21 @@
             <div id="timeLimit">03:00</div>
             <button disabled id="completion" onclick="checkCompletion()">인증확인</button>
         </div>
+
+        <li>
+          <div class="id_con">
+            <label for="mail">이메일</label>
+            <div class="id_box">
+                <input
+                  type="text"
+                  id="mail"
+                  class="int_box"
+                  maxlength="20"
+                  placeholder="이메일 입력"
+                />
+            </div>
+          </div>
+        </li>
 
           <!-- BIRTH -->
           <li>
@@ -108,20 +141,19 @@
           </li>
 
           <li>
-            <div class="id_con">
-              <label for="id">이메일</label>
+            <div class="num_con">
+              <label for="number">사업자등록번호</label>
               <div class="id_box">
                   <input
                     type="text"
-                    id="id"
+                    id="name"
                     class="int_box"
                     maxlength="20"
-                    placeholder="이메일 입력"
+                    placeholder="등록번호"
                   />
               </div>
             </div>
           </li>
-          
 
         <div class="agree-check">
           <input type="checkbox" /> 이용약관 개인정보 수집 및 이용, 마케팅 활용
@@ -130,7 +162,7 @@
 
         <!-- JOIN BTN-->
         <div class="join_btn">
-          <input href="../../go/join1ok.html" type="submit" value="가입하기" onclick="join()" />
+          <input type="button" value="가입하기" onclick="join()" />
         </div>
       </div>
     </form>

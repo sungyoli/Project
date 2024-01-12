@@ -2,87 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>calendar</title>
-    <link rel="stylesheet" href="calendar.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../logo/scope3.png">
+    <title>캘린더</title>
+    <style>
+      .wrap {
+        display: flex;
+        width: 100vw;
+      }
+    </style>
   </head>
   <body>
     <div class="wrap">
       <div id="header"></div>
-      <div class="calenderWrap">
-        <div class="calendar-header">
-          <button class="pre-btn" onclick="prevMonth()" data-info="이전 달">
-            <span class="hidden">이전 달</span>
-            <!-- 누를경우 이전달 달력으로 변경 -->
-          </button>
-          <h2 class="currentMonthYear" id="currentMonthYear"></h2>
-          <!-- 현재 보고있는 달을 출력 -->
-          <button class="nxt-btn" onclick="nextMonth()" data-info="다음 달">
-            <span class="hidden">다음 달</span>
-            <!-- 누를경우 다음달 달력으로 변경 -->
-          </button>
-        </div>
-        <h2 id="currentDate"></h2>
-        <!-- 첫화면에서 js로 달력출력 -->
-        <div id="calendar" class="calendar"></div>
-        <div id="modal" class="modal" style="display: none">
-          <button class="closeModal" onclick="closeModal()">닫기</button>
-          <h4>작성자</h4>
-          <input type="text" id="eventCreator" placeholder="작성자" />
-          <h4>일정색상</h4>
-          <div id="colorOptions">
-            <div class="color-preview" style="background-color: #ffd1dc"></div>
-            <div class="color-preview" style="background-color: #b19cd9"></div>
-            <div class="color-preview" style="background-color: #b2f3e5"></div>
-            <div class="color-preview" style="background-color: #aed9e0"></div>
-            <div class="color-preview" style="background-color: #fdfd96"></div>
-            <div class="color-preview" style="background-color: #c9ffe5"></div>
-          </div>
-          <input type="hidden" id="selectedColor" name="eventColor" value="" />
-          <h4>일정 기간</h4>
-          <input
-            type="datetime-local"
-            id="eventStartDate"
-            value="YYYY-MM-DDTHH:mm"
-          />
-          <span> ~ </span>
-          <input type="datetime-local" id="eventEndDate" />
-          <h4>내용</h4>
-          <input id="eventContent" placeholder="설명" />
-          <button class="addButton" onclick="addEvent()">추가</button>
-        </div>
-        <!-- 수정 모달 -->
-        <div id="edit-modal" class="edit-modal" style="display: none">
-          <button class="closeModal" onclick="closeModal()">닫기</button>
-          <h4>작성자</h4>
-          <input type="text" id="editCreator" placeholder="작성자" />
-          <h4>일정색상</h4>
-          <div id="colorOptions">
-            <div class="color-preview" style="background-color: #ffd1dc"></div>
-            <div class="color-preview" style="background-color: #b19cd9"></div>
-            <div class="color-preview" style="background-color: #b2f3e5"></div>
-            <div class="color-preview" style="background-color: #aed9e0"></div>
-            <div class="color-preview" style="background-color: #fdfd96"></div>
-            <div class="color-preview" style="background-color: #c9ffe5"></div>
-          </div>
-          <input type="hidden" id="editColor" name="editColor" value="" />
-          <h4>일정 기간</h4>
-          <input
-            type="datetime-local"
-            id="editStartDate"
-            value="YYYY-MM-DDTHH:mm"
-          />
-          <span> ~ </span>
-          <input type="datetime-local" id="editEndDate" />
-          <h4>내용</h4>
-          <input type="text" id="editContent" placeholder="내용" />
-        </div>
-      </div>
+      <div id="calendar"></div>
     </div>
-
-    <!-- <script src="./modal.js"></script> -->
-    <!-- <script src="./calendar.js"></script> -->
-    <!-- <script src="api.js"></script> -->
-    <script src="createday.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -92,5 +26,6 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="../importJS/headerIpt.js"></script>
+    <script src="../importJS/calendarIpt.js"></script>
   </body>
 </html>

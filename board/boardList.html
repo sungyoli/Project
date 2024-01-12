@@ -8,6 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../header/header.css" />
+    <link rel="shortcut icon" href="../logo/scope3.png">
     <link rel="stylesheet" href="boardList.css" />
   </head>
   <body>
@@ -16,17 +17,15 @@
       <div id="header"></div>
       <div id="left_menu">
         <h3>게시판</h3>
-        <button href="./boardTable.html" id="write-button" onclick="write();">글쓰기</button>
+        <input type="button" id="write-button" onclick="window.location='boardTable.html'" value="글쓰기">	
         <div class="menu">
-          <a href="#">전사공지</a>
-          <button class="accordion">부서게시판</button>
-          <div class="panel">
-            <p><a href="#"> 개발팀</a></p>
-            <p><a href="#">유지보수(관리)팀</a></p>
-            <p><a href="#">총무팀</a></p>
-            <p><a href="#">마케팅팀</a></p>
-            <p><a href="#">총무팀</a></p>
-          </div>
+          <a href="#">전체게시판</a>
+          <a>부서게시판</a> 
+          <p><a href="boardList_development.html">개발팀</a></p>
+          <p><a href="boardList_maintenance.html">유지보수(관리)팀</a></p>
+          <p><a href="boardList_generalAffairs.html">총무팀</a></p>
+          <p><a href="boardList_marketing.html">마케팅팀</a></p>
+          <p><a href="boardList_sales.html">영업팀</a></p>
         </div>
       </div>
 
@@ -39,7 +38,7 @@
           <table>
             <tr>
               <th style="width: 5%">번호</th>
-              <th style="width: 5%">긴급</th>
+              <th style="width: 5%">공지</th>
               <th style="width: 50%">제목</th>
               <th style="width: 5%">첨부</th>
               <th style="width: 5%">부서이름</th>
@@ -51,13 +50,13 @@
             <tr>
               <td style="width: 5%">1</td>
               <td style="width: 5%"><i class="fa-solid fa-bell"></i></td>
-              <td style="width: 50%">제목을 입력하세요.</td>
+              <td style="width: 50%"><a href="boardView.html">[공유] 1월 프로젝트 진행</a></td>
               <td class="file" style="width: 5%">
                 <i class="fa-solid fa-file"></i>
               </td>
               <td style="width: 10%">개발팀</td>
               <td style="width: 10%">홍길동</td>
-              <td style="width: 10%">2024-01-02</td>
+              <td style="width: 10%">2024-01-08</td>
               <td style="width: 5%">13</td>
             </tr>
           </table>
@@ -65,7 +64,7 @@
           <div class="pagination">
             <a class="p" href="#">&laquo;</a>
             <a href="#">1</a>
-            <a class="active" href="#">2</a>
+            <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">4</a>
             <a href="#">5</a>

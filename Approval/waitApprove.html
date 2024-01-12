@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>결재대기문서</title>
+    <link rel="shortcut icon" href="../logo/scope3.png">
+    <script>
+      function redirectTo(link) {
+        window.location.href = link;
+      }
+    </script>
     <script
       src="http://kit.fontawesome.com/a4539ed26c.js"
       crossorigin="anonymous"
@@ -16,6 +22,7 @@
   </head>
   <body>
     <div class="center-table">
+      <!-- 상단메뉴바 -->
         <div class="critical_bottom">
             <ul class="tab_nav">
               <li id="tab_all" class="first">
@@ -31,6 +38,9 @@
           </div>
           <!-- 가운데 게시판 목록 리스트 -->
           <br />
+
+        
+        
           <table>
               <tr>
                   <th style="width: 12.5%">기안일</th>
@@ -43,49 +53,50 @@
                   <th style="width: 12.5%">문서번호</th>
                   <th style="width: 12.5%">결재상태</th>
               </tr>
-              <tr>
-                  <td>2024-01-08</td>
-                  <td>2024-01-08</td>
-                <td>휴가신청</td>
-                <td></td>
-                <td>휴가신청합니다.</td>
+              <tr onclick="redirectTo('ReauestLeave.html')">
+                <td>2024-01-08</td>
+                <td>2024-01-08</td>
+              <td>연차신청</td>
+              <td></td>
+              <td>연차신청합니다.</td>
+              <td></td>
+              <td>한성준</td>
+              <td>2024-00001</td>
+              <td><button class="btn progress">진행중</button></td>
+            </tr>
+            
+            <tr onclick="redirectTo('OvertimeWork.html')">
+                <td>2024-01-05</td>
+                <td>2024-01-05</td>
+                <td>연장근무신청</td>
+                <td><button class="btn urgent">긴급</button></td>
+                <td>연장근무신청합니다.</td>
                 <td></td>
                 <td>한성준</td>
                 <td>2024-00001</td>
-                <td>완료</td>
-              </tr>
-              
-              <tr>
-                  <td>2024-01-05</td>
-                  <td>2024-01-05</td>
-                  <td>업무요청</td>
-                  <td><i class="fa-solid fa-triangle-exclamation"></i></td>
-                  <td>업무 요청드립니다.</td>
-                  <td></td>
-                  <td>한성준</td>
-                  <td>2024-00001</td>
-                  <td>완료</td>
-              </tr>
-              
-              <tr>
-                  <td>2023-01-02</td>
-                  <td>2023-01-02</td>
-                  <td>매출보고서</td>
-                  <td></td>
-                  <td>매출보고서 보내드립니다.</td>
-                  <td></td>
-                  <td>한성준</td>
-                <td>2024-00001</td>
-                <td>완료</td>
-              </tr>
+                <td><button class="btn progress">진행중</button></td>
+            </tr>
+            
+            <tr onclick="redirectTo('WeekendWork.html')">
+                <td>2023-01-02</td>
+                <td>2023-01-02</td>
+                <td>휴일근무신청</td>
+                <td></td>
+                <td>휴일근무신청합니다.</td>
+                <td></td>
+                <td>한성준</td>
+              <td>2024-00001</td>
+              <td><button class="btn progress">진행중</button></td>
+            </tr>
           </table>
-    </div>
-    <div class="table">
-    
+        </div>
+      </div>
+    <!-- 검색창 -->
+  <div class="table">
     <div class="pagination center">
         <a href="#">&laquo;</a>
-        <a href="#">1</a>
-        <a class="active" href="#">2</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
         <a href="#">3</a>
         <a href="#">4</a>
         <a href="#">5</a>

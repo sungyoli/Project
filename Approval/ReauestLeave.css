@@ -102,7 +102,7 @@
    display: flex;
    justify-content:center;
  }
- 
+
  /* 우측 메뉴 */
  .right-menu {
    margin-top:10px;
@@ -127,14 +127,17 @@
    height:40px;
    line-height: 40px;
    font-size :13px;
-   color: #999;
-}
-
-.tab_nav li:hover {
+   color: #000000;
    border-bottom: 3px solid #000;
    color: black;
    font-weight: 500;
 }
+
+/* .tab_nav li:hover {
+   border-bottom: 3px solid #000;
+   color: black;
+   font-weight: 500;
+} */
 
 /* 프로필 */
 .profile1 {
@@ -172,5 +175,41 @@
    object-fit: cover; /* 이미지가 원형으로 잘릴 수 있도록 설정합니다. */
    margin-left: 15px;
  }
- 
-  
+
+ .profile2 {
+  display: flex;
+  border-top: 1px solid #c2c2c2;
+  background-color: white;
+  height: 80px;
+  /* border-bottom: 1px solid #c2c2c2; */
+}
+
+.profile2 ul{
+  margin-top: 20px;
+  margin-left: 18px;
+}
+
+.profile2 li{
+  margin-bottom: 5px;
+}
+
+.profile2 li:nth-child(1){
+  margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.profile2 li:nth-child(2){
+  font-size: 12px;
+}
+
+/* 프로필 이미지 */
+.profile2 img {
+  margin-top: 15px;
+  border-radius: 50%; /* 50%로 설정하여 동그랗게 만듭니다. */
+  width: 50px; /* 이미지의 너비를 조절하세요. */
+  height: 50px; /* 이미지의 높이를 조절하세요. */
+  object-fit: cover; /* 이미지가 원형으로 잘릴 수 있도록 설정합니다. */
+  margin-left: 15px;
+}
+

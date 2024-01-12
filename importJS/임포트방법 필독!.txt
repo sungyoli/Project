@@ -1,3 +1,6 @@
+0.기본 임포트
+  script코드를 보고 맨 아래쪽에 id설정 보고
+  해당 id를 원하는 위치에 넣어야됨.
 1. HEADER임포트 방법
     header.css, header.js 동시에 임포트 해야함. 그렇기때문에
     기본경로(script src="../importJS/headerIpt.js")로 임포트
@@ -15,3 +18,7 @@
     위와 같음.
     code:
     <script src="../importJS/mailIpt.js"></script>
+3. approval 왼쪽메뉴 임포트 방법
+    위와 같음.
+    code:
+    <script src="../importJS/approvalIpt.js"></script>

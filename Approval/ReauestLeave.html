@@ -3,23 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="휴가신청서.css" />
+    <link rel="stylesheet" href="ReauestLeave.css" />
+    <link rel="shortcut icon" href="../logo/scope3.png">
     <title>휴가신청서</title>
+    <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script type="text/javascript">
+    function handleCancelClick() {
+      const result = confirm("취소 하시겠습니까?");
+      if(result){		// [확인] 버튼을 클릭하면 true를 반환하고,
+        window.location.href = "approval.html";
+      }
+      else {		// [취소] 버튼을 클릭하면 false를 반환
+        // alert(" ");
+      }
+    }
+
+    function handleRequestClick() {
+      const result2 = confirm("결재요청 하시겠습니까?");
+      if(result2){		// [확인] 버튼을 클릭하면 true를 반환하고,
+        window.location.href = "ReauestLeaveCompleted.html";
+      }
+      else {		// [취소] 버튼을 클릭하면 false를 반환
+      }
+    }
+    
+  </script>
   </head>
   <body>
         <div class="button-top">
-            <button type="button" class="btn">
-              <div class="icon"><ion-icon name="create-outline"></ion-icon></div>결재요청
+            <button type="button" class="btn" onclick="handleRequestClick()">
+              <div class="icon"><ion-icon name="create-outline"></ion-icon>
+              </div>결재요청
             </button>
-            <button type="button" class="btn">
+            <button type="button" class="btn" onclick="handleCancelClick()">
               <div class="icon"><ion-icon name="close-circle-outline"></ion-icon>
-              </i></div
-              >취소
+              </i></div>취소
             </button>
             <button type="button" class="btn">
               <div class="icon"><ion-icon name="menu-outline"></ion-icon>
-                </div
-              >목록
+                </div><a href="approval.html">목록</a>
             </button>
          </div>
         <div class="wrap">
@@ -44,15 +69,22 @@
               <li id="tab_1" class="first">
                 <span>결재선</span>
               </li>
-              <li id="tab_2" class="first">
+              <!-- <li id="tab_2" class="first">
                 <span>문서정보</span>
-              </li>
+              </li> -->
             </ul>
           </div>
           <div class="profile1">
             <img src="profile.jpg">
             <ul>
               <li>김상후 대표이사</li>
+              <li>결재대기</li>
+            </ul>
+          </div>
+          <div class="profile2">
+            <img src="profile.jpg">
+            <ul>
+              <li>조은정 전무</li>
               <li>결재대기</li>
             </ul>
           </div>

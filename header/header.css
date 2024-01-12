@@ -12,6 +12,11 @@ ul, ol, li {
   padding: 0px;
 }
 
+#header {
+  width: 60px;
+  z-index: 999;
+}
+
 a {
   text-decoration: none; /* 클릭시 보라색, 파란색글씨로 안변하게 */
   color: inherit; /* 컬러 기본으로 설정해주고 다른곳에서 재설정 */

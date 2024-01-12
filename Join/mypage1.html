@@ -56,7 +56,30 @@
     <title>회원가입</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="mypage1.css" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="../header/header.css" />
+=======
+    <link rel="shortcut icon" href="../logo/scope3.png">
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("inputImage").addEventListener("change", function () {
+          var selectedFile = this.files[0];
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+            document.getElementById("previewImage").src = e.target.result;
+            document.getElementById("previewImage").style.display = "block";
+          };
+
+          reader.readAsDataURL(selectedFile);
+        });
+      });
+
+      function join() {
+        // join 함수 구현 (저장 또는 취소 버튼 클릭 시 동작)
+      }
+    </script>
+>>>>>>> b213bfbee059d92842a4957ed23dc22f361b8fbc
   </head>
   
   <body>

@@ -19,11 +19,12 @@ fieldset {
     margin-bottom: 20px;
     margin-top: 70px;
     border-radius: 10%;
+    border: 3px solid skyblue;
 }
 
 legend {
     text-align: left;
-    font-size: 18px; /* 글자크기 */
+    font-size: 30px; /* 글자크기 */
     font-weight: bold;  /* 글자굵기 */
     color: black;/* 글자색 */
 }
@@ -82,8 +83,15 @@ th, td {
     margin-left: 80px;
     width: 300px;
     height: 40px;
-    background-color: lightgrey;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    font-size: 15px;
+    background-color: white;
     
+}
+
+.loginButton:hover{
+    background-color: skyblue;
 }
 
 .Nlogin_button{

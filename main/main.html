@@ -49,10 +49,10 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
                 </div>
                 <ul class="inputBotton">
                   <li>
-                    <a href="../메일.html"><span>오늘 온 메일</span></a>
+                    <a href="../mail/incomingMail.html"><span>오늘 온 메일</span></a>
                   </li>
                   <li>
-                    <a href="../캘린더/캘린더.html"><span>오늘의 일정</span></a>
+                    <a href="../calender/calendar.html"><span>오늘의 일정</span></a>
                   </li>
                 </ul>
               </div>
@@ -60,6 +60,7 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
 
             <article>
               <div id="calendarContainer"></div>
+              <iframe src="../calender/calendar.html" srcdoc="<div class='calenderWrap'></div>"  frameborder="0" scrolling="no" allow="fullscreen"></iframe>
             </article>
           </section>
 
@@ -80,7 +81,7 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
 
           <section class="section3">
             <article>
-              <a href="../결재/결재.html" id="approval">결재 대기 문서</a>
+              <a href="../Approval/waitApprove.html" id="approval">결재 대기 문서</a>
             </article>
 
             <article>
@@ -132,7 +133,7 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
             const href = linkTag.getAttribute("href");
             const link = document.createElement("link");
             link.setAttribute("rel", "stylesheet");
-            link.setAttribute("href", "../calendar/" + href); // 캘린더 파일이 위치한 상대 경로로 수정
+            link.setAttribute("href", "../calendar" + href); // 캘린더 파일이 위치한 상대 경로로 수정
             document.head.appendChild(link);
           });
 
@@ -140,7 +141,7 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
           scriptTags.forEach((scriptTag) => {
             const src = scriptTag.getAttribute("src");
             const script = document.createElement("script");
-            script.setAttribute("src", "../calendar/" + src); // 캘린더 파일이 위치한 상대 경로로 수정
+            script.setAttribute("src", "../calendar" + src); // 캘린더 파일이 위치한 상대 경로로 수정
             document.body.appendChild(script);
           });
 

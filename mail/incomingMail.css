@@ -3,12 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 a {
   text-decoration: none;
   color: inherit;
 }
-
 li {
   list-style: none;
 }
@@ -32,7 +30,7 @@ li {
 .table_name {
   width: 100%;
   height: 150px;
-  border-bottom: 5px solid skyblue;
+  border-bottom: 1px solid #ccc;
   padding-left: 40px;
   flex-flow: row nowrap;
   display: inline-block;
@@ -83,7 +81,7 @@ li {
 }
 
 .btn-light:hover {
-  background-color: #f0f8ff;
+  background-color: #e9e9e969;
 }
 
 .icon {

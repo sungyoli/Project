@@ -1,105 +1,120 @@
 @charset "UTF-8";
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  li {
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
 
-a {
-	text-decoration: none;
-	color:inherit;
-}
-
-fieldset {
-    /* {속성명: 속성값} */
-    
-    max-width: 400px; /* 최대폭 */
+#container{
+    max-width: 1000px; /* 최대폭 */
+    height: 750px;
     margin-left: auto;
     margin-right: auto; /* 상하여백 15px | 좌우여백 10px*/
     margin-bottom: 20px;
-    margin-top: 70px;
-    border-radius: 10%;
-    border: 3px solid skyblue;
+    margin-top: 100px;
+    border: 1px solid #ccc;
 }
 
-legend {
-    text-align: left;
-    font-size: 30px; /* 글자크기 */
-    font-weight: bold;  /* 글자굵기 */
-    color: black;/* 글자색 */
+#logo_img{
+  background-image: url(../logo/scope1.png);
+  background-size: 300px;
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
-.title {
-    margin: 30px;
-    
+#logininfo{
+    text-align: center;
+    margin-top: 50px;
 }
 
-label {
-    font-size: 14px; /* 글자크기 */
-    font-weight: bold;  /* 글자굵기 */
-    width:120px; /* 글자색 */
+.logininput input[type=text]{
+    width: 500px;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 5px 0;
+    /*box-sizing: border-box;*/
+    border: 1px solid #5A5AFF;
 }
 
-.find {
-    font-size: 10px;
-    color: blue;
+.logininput input[type=text]:focus{
+  background-color: aliceblue;
 }
 
-.login {
-    width: 400px;
-    height: 200px;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 20px;
+.logininput input[type=password]{
+    width: 500px;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 5px 0;
+    /*box-sizing: border-box;*/
+    border: 1px solid #5A5AFF;
 }
 
-.right_sorted{
+.logininput input[type=password]:focus{
+  background-color: aliceblue;
+}
+.loginButton{
+    width: 500px;
+    height: 50px;
+    margin: 5px 0;
+    font-size: 20px;
+    color: white;
+    background-color: #5A5AFF;
+    border: none;
+}
+
+.loginButton:hover{
+  background-color: #3CB4FF;
+}
+
+.save_and_find{
+  width: 500px;
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: left;
+}
+
+#save_ckb{
+  accent-color: #3CB4FF;
+}
+
+#naver{
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
     text-align: right;
 }
 
-.login th {
-    font-size: 15px;
-	font-weight: bold;
-	width: 120px;
-	height: 60px;
-	text-align: center;
-	padding-right: 10px;
-	padding-left: 20px;
-	border-bottom: 1px solid #ccc;
-	background: whitesmoke;
-	margin-right: 5px;
-}
-
-.login td {
-	padding: 10px 0 10px 10px;
-	border-bottom: 1px solid #ccc;
-}
-
-th, td {
-    padding: 5px;
-}
-
-.loginButton  {
-    margin-left: 80px;
-    width: 300px;
-    height: 43px;
-    border: 2px solid skyblue;
-    border-radius: 5px;
-    font-size: 15px;
-    font-weight: bold;
-    background-color: skyblue;
-    
-}
-
 .Nlogin_button{
-    margin-left: 80px;
-    margin-top: 5px;
-    width: 300px;
-    height: 45px;
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-.Klogin_button {
-    margin-bottom: 10px;
-    margin-right: 80px;
+.Klogin_button{
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+
+
 }
 
+.find {
+  font-size: 10px;
+  color: gray;
+}
+
+.find a:hover{
+  color: black;
+  border-bottom: 1px solid black;
+}

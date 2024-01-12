@@ -1,14 +1,16 @@
 @charset "UTF-8";
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-a{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  li {
+    list-style: none;
+  }
+  a{
     text-decoration: none;
-	color:inherit;
-}
+    color: inherit;
+  }
 
 .contents{
     width: 100%;
@@ -33,7 +35,7 @@ a{
     
 }
 
-i {
+.choice i{
     margin-top: 40px;
     margin-bottom: 10px;
 }

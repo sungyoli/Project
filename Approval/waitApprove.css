@@ -24,10 +24,10 @@
   display: flex;
   width: 100%;
 }
-.tableWrap{
-  /* width: 100vw;
-  min-width: 1200px; */
-}
+ /*.tableWrap{
+  width: 100vw;
+  min-width: 1200px; 
+}*/
  .tab_nav {
     display: block;
     height: 10px;
@@ -204,13 +204,13 @@ table tr:nth-child(4) {
     font-size: 13px;
   }
   
-  .pagination a.active {
+  /* .pagination a.active {
     background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0); 
     border: 1px solid black;
-  }
+  } */
   
-  .pagination a:hover:not(.active) {background-color: #ddd;}
+  .pagination :hover {background-color: #ddd;}
 
 /* 긴급, 결재상태 아이콘 */
 

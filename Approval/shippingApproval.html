@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <title>발송문서함</title>
+    <script>
+      function redirectTo(link) {
+        window.location.href = link;
+      }
+    </script>
     <script
       src="http://kit.fontawesome.com/a4539ed26c.js"
       crossorigin="anonymous"
@@ -42,50 +47,31 @@
                   <th style="width: 12.5%">기안일</th>
                   <th style="width: 12.5%">완료일</th>
                   <th style="width: 12.5%">결재양식</th>
-                  <th style="width: 8.5%">긴급</th> 
                   <th style="width: 12.5%">제목</th>
                   <th style="width: 8.5%">첨부</th>
                   <th style="width: 12.5%">담당자</th>
-                  <th style="width: 12.5%">발송일</th>
                   <th style="width: 12.5%">결재상태</th>
               </tr>
-              <tr>
-                  <td>2024-01-08</td>
-                  <td>2024-01-08</td>
-                <td>휴가신청</td>
-                <td></td>
-                <td>휴가신청합니다.</td>
+              <tr onclick="redirectTo('WeekendWorkCompleted.html')">
+                <td>2023-01-02</td>
+                <td>2023-01-02</td>
+                <td>휴일근무신청</td>
+                <td>휴일근무신청합니다.</td>
                 <td></td>
                 <td>한성준</td>
-                <td>2024-01-07</td>
-                <td><button class="btn progress">진행중</button>
-                </td>
+                <td><button class="btn progress">진행중</button></td>
               </tr>
               
-              <tr>
-                  <td>2024-01-05</td>
-                  <td>2024-01-05</td>
-                  <td>업무요청</td>
-                  <td><button class="btn urgent">긴급</button></td>
-                  <td>업무 요청드립니다.</td>
-                  <td></td>
-                  <td>한성준</td>
-                  <td>2024-01-04</td>
-                  <td><button class="btn progress">진행중</button>
-                  </td>
-              </tr>
-              
-              <tr>
-                  <td>2023-01-02</td>
-                  <td>2023-01-02</td>
-                  <td>매출보고서</td>
-                  <td></td>
-                  <td>매출보고서 보내드립니다.</td>
-                  <td></td>
-                  <td>한성준</td>
-                <td>2023-12-29</td>
+              <tr onclick="redirectTo('ReauestLeaveCompleted.html')">
+                <td>2024-01-08</td>
+                <td>2024-01-08</td>
+                <td>연차신청</td>
+                <td>연차신청합니다.</td>
+                <td></td>
+                <td>한성준</td>
                 <td><button class="btn completed">완료</button></td>
               </tr>
+            </tr>
           </table>
     </div>
     <div class="table">
@@ -93,11 +79,11 @@
     <div class="pagination center">
         <a href="#">&laquo;</a>
         <a class="active" href="#">1</a>
-        <!-- <a href="#">2</a>
+        <a href="#">2</a>
         <a href="#">3</a>
         <a href="#">4</a>
         <a href="#">5</a>
-        <a href="#">6</a> -->
+        <a href="#">6</a>
         <a href="#">&raquo;</a>
       </div>
 

@@ -14,12 +14,12 @@
 
 #container{
     max-width: 1000px; /* 최대폭 */
-    height: 750px;
+    height: 770px;
     margin-left: auto;
     margin-right: auto; /* 상하여백 15px | 좌우여백 10px*/
-    margin-bottom: 20px;
-    margin-top: 100px;
+    margin-top: 70px;
     border: 1px solid #ccc;
+
 }
 
 #logo_img{
@@ -37,7 +37,7 @@
 }
 
 .logininput input[type=text]{
-    width: 500px;
+    width: 450px;
     height: 50px;
     padding: 12px 20px;
     margin: 5px 0;
@@ -50,7 +50,7 @@
 }
 
 .logininput input[type=password]{
-    width: 500px;
+    width: 450px;
     height: 50px;
     padding: 12px 20px;
     margin: 5px 0;
@@ -62,7 +62,7 @@
   background-color: aliceblue;
 }
 .loginButton{
-    width: 500px;
+    width: 450px;
     height: 50px;
     margin: 5px 0;
     font-size: 20px;
@@ -76,7 +76,7 @@
 }
 
 .save_and_find{
-  width: 500px;
+  width: 450px;
   height: 50px;
   margin: 0 auto;
   padding-top: 20px;
@@ -88,7 +88,7 @@
 }
 
 #naver{
-    width: 500px;
+    width: 450px;
     height: 50px;
     margin: 0 auto;
     text-align: right;
@@ -117,4 +117,22 @@
 .find a:hover{
   color: black;
   border-bottom: 1px solid black;
+}
+
+.joingo_div{
+  width: 450px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.joingo_div a{
+  position: relative;
+  top: 25%;
+  color:  dimgray;
+  
+}
+
+.joingo_div a:hover{
+  color: #5A5AFF;
 }

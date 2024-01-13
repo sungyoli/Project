@@ -8,48 +8,45 @@
     <title>아이디찾기</title>
   </head>
   <body>
-    <fieldset>
-      <legend class="title">아이디찾기</legend>
-      <form action="#" method="post">
-        <table class="idFind">
-          <tr>
-            <th><label for="name"> 성명 </label></th>
-            <td>
+    <div id="container">
+      <div id="logo_img">
+        <!--<img src="../logo/scope1.png">-->
+      </div>
+      <div>
+        <form action="#" method="post">
+          <ul id="logininfo">
+            <li class="logininput">
               <input
                 type="text"
                 id="name"
                 name="UserName"
                 size="20"
-                placeholder="Name"
+                placeholder="이름"
                 autofocus
                 required
               />
-            </td>
-          </tr>
-
-          <tr>
-            <th><label for="em"> 이메일 </label></th>
-            <td>
+            </li>
+            <li class="logininput">
               <input
-                type="email"
-                id="em"
+                type="text"
+                id="email"
                 name="userEmail"
                 size="30"
-                placeholder="Email"
+                placeholder="이메일"
                 required
               />
-            </td>
-          </tr>
-        </table>
-
-        <tr>
-          <td style="border-bottom: none">
-            <br />
-
-            <input class="findButton" type="submit" value="아이디찾기" />
-          </td>
-        </tr>
-      </form>
-    </fieldset>
+            </li>
+            <li>
+              <input class="loginButton" type="submit" value="계정찾기" />
+            </li>
+            <li class="joingo_li">
+              <div class="joingo_div">
+                <a href="../find/pwFind.html">비밀번호찾기>></a>
+              </div>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

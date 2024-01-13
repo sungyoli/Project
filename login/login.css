@@ -1,0 +1,138 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  li {
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+
+#container{
+    max-width: 1000px; /* 최대폭 */
+    height: 770px;
+    margin-left: auto;
+    margin-right: auto; /* 상하여백 15px | 좌우여백 10px*/
+    margin-top: 70px;
+    border: 1px solid #ccc;
+
+}
+
+#logo_img{
+  background-image: url(../logo/scope1.png);
+  background-size: 300px;
+  width: 300px;
+  height: 350px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#logininfo{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logininput input[type=text]{
+    width: 450px;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 5px 0;
+    /*box-sizing: border-box;*/
+    border: 1px solid #5A5AFF;
+}
+
+.logininput input[type=text]:focus{
+  background-color: aliceblue;
+}
+
+.logininput input[type=password]{
+    width: 450px;
+    height: 50px;
+    padding: 12px 20px;
+    margin: 5px 0;
+    /*box-sizing: border-box;*/
+    border: 1px solid #5A5AFF;
+}
+
+.logininput input[type=password]:focus{
+  background-color: aliceblue;
+}
+.loginButton{
+    width: 450px;
+    height: 50px;
+    margin: 5px 0;
+    font-size: 20px;
+    color: white;
+    background-color: #5A5AFF;
+    border: none;
+}
+
+.loginButton:hover{
+  background-color: #3CB4FF;
+}
+
+.save_and_find{
+  width: 450px;
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: left;
+}
+
+#save_ckb{
+  accent-color: #3CB4FF;
+}
+
+#naver{
+    width: 450px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.Nlogin_button{
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.Klogin_button{
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+
+
+}
+
+.find {
+  font-size: 10px;
+  color: gray;
+}
+
+.find a:hover{
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.joingo_div{
+  width: 450px;
+  height: 50px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.joingo_div a{
+  position: relative;
+  top: 25%;
+  color:  dimgray;
+  
+}
+
+.joingo_div a:hover{
+  color: #5A5AFF;
+}

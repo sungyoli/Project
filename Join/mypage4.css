@@ -8,17 +8,24 @@ body {
   }
 
   .wrap {
-    position: relative;
+    margin-bottom: 90%;
   }
 
-  .head {
-    font-size: 0px;
+  .icon {
+   margin-left:75%;
+   position: relative;
   }
 
+  .icon img {
+    width: 40px; /* 원하는 가로 크기로 설정 */
+    
+  }
+ .max_icon{
+  display: flex;
+}
   .dropdownbtn {
-    position: relative;
-    display: inline-block;
-    margin-left: 1100px;
+    height: 50px;
+    margin-left: 10px;
   }
 
   .profile {
@@ -30,17 +37,17 @@ body {
 
   .dropdowncontent {
     display: none;
-    position: absolute;
     right: 0;
     background-color: #f9f9f9;
-    min-width: 160px;
+    min-width: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    width: 150px; /* 조절하고자 하는 너비로 변경하세요 */
   }
 
   .dropdowncontent a {
     display: block;
-    padding: 12px 16px;
+    padding: 10px;
     text-decoration: none;
     color: #333;
   }
@@ -54,34 +61,52 @@ body {
   }
 
   .content {
-    margin-top: 20px;
-   margin-left: 20%;
+    margin-bottom:90%;
+    margin-left: 20%;
+   
+  }
+    
+  ul {
+    padding: 0;
+    list-style-type:none;
+  }
+
+ 
+hr {
+    border: 1px solid #cccccc3f; /* 기본 선 스타일 및 색상 */
+  }
+
+  .btn{
     
   }
 
-  ul {
-    padding: 0;
-    list-style-type: none;
-  }
-
-  li {
-    margin-top: 20px; /* 수정된 여백 값 */
-  }
-.con_1 li {display: flex;}
-  hr {
-    margin: 20px 0; /* 수정된 간격 값 */
-  }
-
-  .con_1{
+  .con{
     margin-left: 20px;
+    font-weight: bold;
   }
 
-  .con_1 img {
+  .con li {display: flex;}
+
+  .con img {
     width: 50px; /* 원하는 너비(px)로 조절 */
     height: 50px; /* 원하는 높이(px)로 조절 */
     border-radius: 50%;
     margin-right: 10px; /* 이미지와 텍스트 간격 조절 */
   }
+
+  .con:hover {
+    box-shadow: 10 4px 9px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+    background-color: #f0f0f0; /* 배경 색상 변경 */
+  }
+
+  .desc_2{
+    color:rgba(146, 138, 138, 0.911);
+    font-weight: bold;
+  }
+  
+
+  
+  
 
   
   

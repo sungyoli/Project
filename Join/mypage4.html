@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>근태관리</title>
+  <title>전체 알림</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="mypage4.css" />
   
@@ -11,124 +11,229 @@
 
 <body>
   <div class="wrap">
-      <h3>근태관리</h3>
+    <div class="max_icon">
+    <div class="icon">
+      <img src="../join/image/question.png" style="width: 70px;">
+      <img src="../join/image/bell.png" style="width:60px">
+    </div>
+      
+  
+      
       <div class="dropdownbtn">
         <img class="profile" src="image/4301-212117.png" />
         <div class="dropdowncontent">
           <a href="mypage1.html">기본정보</a>
-          <a href="#">알림설정</a>
+          <a href="mypage2.html">알림설정</a>
           <a href="#">로그아웃</a>
+        
         </div>
       </div>
+    </div>
     
 
     <div class="content">
+      <h1>전체 알림</h1>
+
+      <div class="btn">
+        <input type="button" value="전체 삭제" onclick="openModal('삭제하시겠습니까?')" />
+      </div>
+      
       <ul>
-        
-          <div class="con_1">
+          <div class="con">
             <li >
               <img src="../join/image/4301-212117.png">
             <div class="desc">
               <p>
-                [알림] 부(부)서장 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.<br>
+              [커뮤니티 폐쇄] '역전할머니맥주 모임 '가 폐쇄되었습니다. ('334')
               </p>
                 <p>
                   1시간 전 김상후 대표이사
                 </p>
+              </div>
+            </li>
             </div>
           </li>
-          </div>
-        </li>
-        <hr>
+          <hr>
 
-        <li>
-          <div class="con_2">
-            [알림] 운영자 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.<br>
-            01-11 08:47 김상후 대표이사
-          </div>
-        </li>
-        <hr>
         
-        <li>
-            <div class="con_3">
-                [알림] 부(부)서장 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.<br>
-                01-11 08:47 김상후 대표이사
+          <div class="con">
+            <li >
+              <img src="../join/image/4301-212117.png">
+            <div class="desc_2">
+              <p>
+              [커뮤니티 생성] '역전할머니맥주 모임 ' 생성이 완료되었습니다.
+              </p>
+                <p>
+                  2시간 전 김상후 대표이사
+                </p>
+              </div>
+            </li>
             </div>
           </li>
           <hr>
+        
+        <div class="con">
+          <li >
+            <img src="../join/image/naeun.jpg">
+          <div class="desc_2">
+            <p>
+            [결재 도착][의견 포함] '김지연 부장'이(가) 작성한 '조퇴신청서'이(가) 도착했습니다.
+            </p>
+              <p>
+                2시간 전 김지연 부장
+              </p>
+            </div>
+          </li>
+          </div>
+        </li>
+        <hr>
+    
+        <div class="con">
+        <li >
+          <img src="../join/image/naeun.jpg">
+        <div class="desc">
+          <p>
+            [결재 도착] '한성준 과장'이(가) 작성한 '(신규)휴가신청-연차관리연동'이(가) 도착했습니다.
+          </p>
+            <p>
+              2시간 전 김지연 부장
+            </p>
+          </div>
+        </li>
+        </div>
+      </li>
+      <hr>
+      
+      <div class="con">
+        <li >
+          <img src="../join/image/4301-212117.png">
+        <div class="desc_2">
+          <p>
+            [알림] 부(부)서장 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.<br>
+          </p>
+            <p>
+              3시간 전 김상후 대표이사
+            </p>
+          </div>
+        </li>
+        </div>
+      </li>
+      <hr>
+  
+      <div class="con">
+      <li >
+        <img src="../join/image/4301-212117.png">
+      <div class="desc_2">
+        <p>
+          [알림] 운영자 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.
+        </p>
+          <p>
+            3시간 전 김상후 대표이사
+          </p>
+        </div>
+      </li>
+      </div>
+      </li>
+      <hr>
 
-          <li>
-            <div class="con_4">
-                [알림] 운영자 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.<br>
-                01-10 13:15 김상후 대표이사
-            </div>
-          </li>
-          <hr>
+      <div class="con">
+      <li >
+        <img src="../join/image/5548-1450200.jpg">
+      <div class="desc">
+        <p>
+        [알림] 부(부)서장 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.
+        </p>
+          <p>
+            8시간 전 전병헌 차장
+          </p>
+        </div>
+      </li>
+      </div>
+      </li>
+      <hr>
+      
+      <div class="con">
+        <li >
+          <img src="../join/image/5548-1450200.jpg">
+        <div class="desc_2">
+          <p>
+            [댓글 등록] '김치볶음밥 먹고 싶네요 ㅎ' 댓글이 등록되었습니다.
+          </p>
+            <p>
+              8시간 전 전병헌 차장
+            </p>
+          </div>
+        </li>
+        </div>
+      </li>
+      <hr>
+      
+      <div class="con">
+        <li >
+          <img src="../join/image/v.jpg">
+        <div class="desc_2">
+          <p>
+            [댓글 등록] '갈비집 점심 특선 ㄱㄱ' 댓글이 등록되었습니다.
+          </p>
+            <p>
+              8시간 전 한성준 과장
+            </p>
+          </div>
+        </li>
+        </div>
+      </li>
+      <hr>
 
-          <li>
-            <div class="con_5">
-                [알림] 부(부)서장 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.<br>
-                01-09 10:20 김상후 대표이사
-            </div>
-          </li>
-          <hr>
+      <div class="con">
+        <li >
+          <img src="../join/image/naeun.jpg">
+        <div class="desc_2">
+          <p>
+           [댓글 등록] 'good ' 댓글이 등록되었습니다.
+          </p>
+            <p>
+              01-11 17:08 김지연 부장
+            </p>
+          </div>
+        </li>
+        </div>
+      </li>
+      <hr>
+          
+      <div class="con">
+        <li >
+          <img src="../join/image/4301-212117.png">
+        <div class="desc">
+          <p>
+            [알림] 운영자 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.
+          </p>
+            <p>
+              01-11 08:47 김상후 대표이사
+            </p>
+          </div>
+        </li>
+        </div>
+      </li>
+      <hr>
 
-          <li>
-            <div class="con_6">
-                [알림] 운영자 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.<br>
-                01-09 10:20 김상후 대표이사
-            </div>
-          </li>
-          <hr>
-
-          <li>
-            <div class="con_7">
-                [알림] 부(부)서장 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.<br>
-                01-08 13:35 김상후 대표이사
-            </div>
-          </li>
-          <hr>
-
-          <li>
-            <div class="con_8">
-                [알림] 운영자 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.<br>
-                01-08 13:35 김상후 대표이사
-            </div>
-          </li>
-          <hr>
-
-          <li>
-            <div class="con_9">
-                [알림] 부(부)서장 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.<br>
-                01-05 10:17 김상후 대표이사
-            </div>
-          </li>
-          <hr>
-
-          <li>
-            <div class="con_10">
-                [알림] 운영자 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.<br>
-                01-05 10:17 김상후 대표이사
-            </div>
-          </li>
-          <hr>
-
-          <li>
-            <div class="con_11">
-                [알림] 부(부)서장 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.<br>
-                01-04 17:55 김상후 대표이사
-            </div>
-          </li>
-          <hr>
-
-          <li>
-            <div class="con_12">
-                [알림] 운영자 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.<br>
-                01-04 17:55 김상후 대표이사
-            </div>
-          </li>
-          <hr>
+      <div class="con">
+        <li >
+          <img src="../join/image/4301-212117.png">
+        <div class="desc">
+          <p>
+            [알림] 부(부)서장 확인이 필요한 근태 정보가 있습니다. 근태관리에서 확인하세요.
+          </p>
+            <p>
+              01-11 08:47 김상후 대표이사
+            </p>
+          </div>
+        </li>
+        </div>
+      </li>
+      <hr>
       </ul>
+   
+   
     </div>
   </div>
 </body>

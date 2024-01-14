@@ -89,17 +89,24 @@ font-weight: 500;
 }
 
 .table th:nth-child(2) {
-  width: 160px;
+  width: 200px;
 }
 
 .table th:nth-child(3) {
-  width: 1680px;
+  width: 1350px;
 }
 .table th:nth-child(4) {
   width: 90px;
 }
-
-
+.table th:nth-child(5) {
+  width: 100px;
+}
+.table th:nth-child(6) {
+  width: 100px;
+}
+.table th:nth-child(7) {
+  width: 100px;
+}
 
 .tablewrap table {
   border-collapse: collapse;
@@ -114,10 +121,6 @@ font-weight: 500;
   text-align: left;
   padding: 15px;
   padding-left: 25px;
-}
-
-.tablewrap td {
-  padding: 25px;
 }
 
 .tablewrap table th {

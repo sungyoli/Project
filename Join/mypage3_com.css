@@ -21,10 +21,30 @@ body {
   margin: 0 auto;
 }
 
+.max_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 70%;
+}
+
+.icon-dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 20px;
+  position: relative;
+}
+
+.icon img {
+  width: 40px;
+}
+
 .dropdownbtn {
   position: relative;
   display: inline-block;
-  margin-left: 95%;
 }
 
 .profile {
@@ -51,7 +71,7 @@ body {
 }
 
 .dropdowncontent a:hover {
-  background-color: #93d9e0;
+  background-color: #3cb4ff;
 }
 
 .dropdownbtn:hover .dropdowncontent {
@@ -152,7 +172,7 @@ button:hover {
   color: #fff;
   padding: 11px 0 17px;
   border-radius: 10px;
-  background-color: skyblue;
+  background-color: #3cb4ff;
 }
 
 .join_btn input[value="취소"] {

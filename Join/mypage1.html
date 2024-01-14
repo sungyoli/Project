@@ -1,65 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <script type="text/javascript">
-    function come() {
-      alert("저장되었습니다.");
-    }
- </script>
- <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
- <script>
-    function execDaumPostcode() {
-        new daum.Postcode( {
-          oncomplete: function( data ) {
-            document.getElementById( 'zip-code' ).value = data.zonecode;
-            document.getElementById( 'address-1' ).value = data.address;
-            document.getElementById( 'address-1-1' ).value = data.jibunAddress;
-            document.getElementById( 'address-2' ).focus();
-          }
-        } ).open();
-      }
-      function execDaumPostcodeReset() {
-        document.getElementById( 'zip-code' ).value = null;
-        document.getElementById( 'address-1' ).value = null;
-        document.getElementById( 'address-1-1' ).value = null;
-        document.getElementById( 'address-2' ).value = null;
-      }
- </script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("inputImage").addEventListener("change", function () {
-      var selectedFile = this.files[0];
-      var reader = new FileReader();
-
-      reader.onload = function (e) {
-        document.getElementById("previewImage").src = e.target.result;
-        document.getElementById("previewImage").style.display = "block";
-      };
-
-      reader.readAsDataURL(selectedFile);
-    });
-  });
-
-  function join() {
-    // join 함수 구현 (저장 또는 취소 버튼 클릭 시 동작)
-  }
-</script>
-  
-  <script src="../importJS/headerIpt.js"></script>
-  
-  <script
-  type="module"
-  src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-></script>
   <head>
     <meta charset="UTF-8" />
-    <title>마이페이지_일반</title>
+    <title>마이페이지_관리자</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="mypage1.css" />
-<<<<<<< HEAD
-    <link rel="stylesheet" href="../header/header.css" />
-=======
-    <link rel="shortcut icon" href="../logo/scope3.png">
+   
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("inputImage").addEventListener("change", function () {
@@ -79,32 +25,74 @@
         // join 함수 구현 (저장 또는 취소 버튼 클릭 시 동작)
       }
     </script>
->>>>>>> b213bfbee059d92842a4957ed23dc22f361b8fbc
-  </head>
+
+<script>
+  function come() {
+    alert("저장되었습니다.");
+  }
+</script>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+  function execDaumPostcode() {
+      new daum.Postcode( {
+        oncomplete: function( data ) {
+          document.getElementById( 'zip-code' ).value = data.zonecode;
+          document.getElementById( 'address-1' ).value = data.address;
+          document.getElementById( 'address-1-1' ).value = data.jibunAddress;
+          document.getElementById( 'address-2' ).focus();
+        }
+      } ).open();
+    }
+    function execDaumPostcodeReset() {
+      document.getElementById( 'zip-code' ).value = null;
+      document.getElementById( 'address-1' ).value = null;
+      document.getElementById( 'address-1-1' ).value = null;
+      document.getElementById( 'address-2' ).value = null;
+    }
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("inputImage").addEventListener("change", function () {
+    var selectedFile = this.files[0];
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      document.getElementById("previewImage").src = e.target.result;
+      document.getElementById("previewImage").style.display = "block";
+    };
+
+    reader.readAsDataURL(selectedFile);
+  });
+});
+
+function join() {
+  // join 함수 구현 (저장 또는 취소 버튼 클릭 시 동작)
+}
+</script>
+</head>
   
   <body>
     <div class="wrap">
-      <!-- 왼쪽 메뉴 -->
-      <div id="header"></div>
-      <div id="left_menu">
-        <h3>설정</h3>
-          <div class="panel">
-            <p><a href="#">기본정보</a></p>
-            <p><a href="#">환경설정</a></p>
-            <p><a href="#">알림설정</a></p>
-            <p><a href="#">보안설정</a></p>
+      
+      <div class="max_icon">
+        <div class="icon-dropdown">
+          <div class="icon">
+            <img src="../join/image/question.png" alt="Question Icon">
+            <img src="../join/image/bell.png" alt="Bell Icon">
+          </div>
+    
+          <div class="dropdownbtn">
+            <img class="profile" src="image/4301-212117.png" alt="Profile Icon">
+            <div class="dropdowncontent">
+              <a href="mypage1.html">기본정보</a>
+              <a href="#">알림설정</a>
+              <a href="#">로그아웃</a>
+            </div>
           </div>
         </div>
-      
-      
-      <div class="dropdownbtn">
-        <img class="profile" src="image/4301-212117.png">
-        <div class="dropdowncontent">
-          <a href="#">기본정보</a>
-          <a href="mypage2.html">알림설정</a>
-          <a href="#">로그아웃</a>
-        </div>
       </div>
+    </div>
 
       <div class="login">
         <div class="login_title">
@@ -120,15 +108,14 @@
                 <img src="" id="previewImage">
                 <button id="sendButton" onclick="deleteImage()">삭제하기</button>
                 <img src="" class="uploadImage">
+                </div>
               </li>
 
             
             
             <div class="name_con">
               <label for="id">이름</label>
-              <div class="name_box">
-                <input type="text" id="id" class="int_box" maxlength="20" placeholder="이름 2~20자 이내" />
-              </div>
+              <input type="text" id="id" class="int_box" maxlength="20" placeholder="이름 2~20자 이내" />
             </div>
 
             <div class="company_con">
@@ -168,13 +155,13 @@
               <input type="text" id="zip-code" placeholder="우편번호">
               <input type="button" onclick="execDaumPostcode()" value="우편번호 찾기">
               <input type="button" onclick="execDaumPostcodeReset()" value="초기화">
-    <p>
-            <p>
+
             </p>
+            <p>
               <input type="text" id="address-1" placeholder="도로명주소" style="width: 500px" readonly>
               <input type="text" id="address-1-1" placeholder="지번주소" style="width: 500px" readonly>
-            <p>
             </p>
+            <p>
               <input type="text" id="address-2" placeholder="상세주소" style="width: 500px">
             </p>
             </div>
@@ -203,8 +190,9 @@
                 </div>
               </div>
             </div>
+          </div>
         </ul>
-
+      
 
         <!-- JOIN BTN-->
         <div class="join_btn" align="center">
@@ -215,5 +203,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+   
   </body>
 </html>

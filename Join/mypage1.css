@@ -25,62 +25,6 @@ body {
 }
 
 
-#header {
-  width: 60px;
-  display: none;
-}
-
-#left_menu {
-  margin: 2%;
-  width: 200px;
-  height:100vh;
-  line-height: 90px;
-  font-size: 20px;
-  margin-right: 20px;
-  
-  
-}
-
-.panel {
-  color: #333;
-  width: 300px;
-  height: 100vh;
-  line-height: 40px;
-  border-right: 1px solid #ddd;
-  padding-right: 10px;
-}
-
-/* 각 항목에 대한 효과 추가 */
-
-.panel p {
-  margin: 0;
-  transition: background-color 0.3s; /* 부드러운 전환 효과 추가 */
-}
-
-.panel p:hover {
-  background-color: #f0f0f0;
-}
-
-.panel a {
-  text-decoration: none;
-  color: #333;
-  transition: color 0.3s; /* 부드러운 전환 효과 추가 */
-}
-
-.panel a:hover {
-  color: #007bff;
-  font-weight: bold; /* 텍스트 굵게 효과 추가 */
-}
-
-.panel input[type="text"] {
-  border: 1px solid #ddd;
-  transition: border-color 0.3s; /* 부드러운 전환 효과 추가 */
-}
-
-.panel input[type="text"]:hover {
-  border-color: #3cb4ff;
-}
-
 .max_icon {
   display: flex;
   justify-content: space-between;
@@ -146,9 +90,7 @@ body {
   max-width: 1000px; /* 최대 너비 업데이트 */
 }
   
- 
 
-  
 .login label {
   font-weight: 700;
 }
@@ -193,6 +135,7 @@ input {
   height: 40px;
   vertical-align: middle;
   padding: 0px 15px;
+  border:none;
 }
 
 .name_con{

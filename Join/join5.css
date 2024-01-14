@@ -22,8 +22,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 950px;
-  height: 1180px;
+  width: 900px;
+  height: 1150px;
   margin-top: 60px;
   margin-bottom: 60px;
   background: #ffffff;
@@ -107,7 +107,7 @@ body {
 .phone-input {
   width: 90px; /* 너비 조절 */
   border-radius: 5px;
-  margin:10px
+  margin:10px;
 }
 .auth {
   display: flex;

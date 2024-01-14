@@ -17,11 +17,19 @@
   font-weight: normal;
  
 }
+.icon {
+  margin-left:75%;
+  position: relative;
+ }
 
-.bell-icon {
-  font-size: 100%;
-  transform: scale(1.5); /* 이 값은 필요에 따라 조절 가능 */
+ .icon img {
+   width: 40px; /* 원하는 가로 크기로 설정 */
+   
+ }
+.max_icon{
+ display: flex;
 }
+
 .dropdownbtn {
   position: relative;
   display: inline-block;

@@ -142,7 +142,7 @@ li {
   width: 380px;
 }
 
-.sender_li_span{
+.sender_li_span {
   position: relative;
   left: 60px;
 }
@@ -164,7 +164,7 @@ li {
   overflow: hidden;
 }
 
-.mailtitle_date{
+.mailtitle_date {
   display: inline-block;
   width: 90px;
   text-overflow: ellipsis;

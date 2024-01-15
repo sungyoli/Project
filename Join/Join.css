@@ -7,9 +7,8 @@
   font-family: "Noto Sans CJK KR";
   font-style: normal;
 }
-li{
-    list-style: none;
-
+li {
+  list-style: none;
 }
 
 body {
@@ -23,19 +22,20 @@ body {
   flex-direction: column;
   align-items: center;
   width: 900px;
-  height: 1150px;
+  height: 1300px;
   margin-top: 60px;
   margin-bottom: 60px;
   background: #ffffff;
   border: 1px solid lightgray;
+  border-radius: 10px;
 }
 
 .member-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top:100px;
-  height:100vh;
+  padding-top: 100px;
+  height: 100vh;
   line-height: 2;
 }
 
@@ -54,7 +54,6 @@ body {
   font-weight: 800;
   width: 500px;
   padding-right: 40px;
- 
 }
 
 .int_box {
@@ -64,26 +63,24 @@ body {
   height: 50px;
   background: #fff;
   font-size: 18px;
-  border:2px solid #3cb4ff;
+  border: 2px solid #3cb4ff;
 }
 
-.id_box{
-    display: flex;
-    height: 50px;
-    width: 100%;
-   }
-
-.id_check{
-    border:none;
-    background-color:#3cb4ff;
-    color: #fff;
-    padding:10px 30px;
-    
-    
+.id_box {
+  display: flex;
+  height: 50px;
+  width: 100%;
 }
 
-#box int_id button { 
- position: absolute;
+.id_check {
+  border: none;
+  background-color: #3cb4ff;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+#box int_id button {
+  position: absolute;
   width: 90px;
   height: 40px;
   top: 0;
@@ -94,21 +91,15 @@ body {
 }
 
 .pwd_con {
-    width: 500px;
-    padding-right: 40px;
+  width: 500px;
+  padding-right: 40px;
 }
 
 .pwdconf_con {
-    width: 500px;
-    padding-right: 40px;
-    
+  width: 500px;
+  padding-right: 40px;
 }
 
-.phone-input {
-  width: 90px; /* 너비 조절 */
-  border-radius: 5px;
-  margin:10px;
-}
 .auth {
   display: flex;
 }
@@ -122,7 +113,6 @@ body {
   text-align: center;
   font-weight: 700;
   font-size: 15px;
- 
 }
 
 .auth button {
@@ -130,7 +120,6 @@ body {
   background-color: #fff;
   color: black;
   border-radius: 10px;
-  
 }
 
 .timer div {
@@ -145,15 +134,12 @@ body {
   background-color: #fff;
   color: black;
   border-radius: 10px;
-  
 }
 
 .birth_con {
-    width: 100%;
-    padding-right: 40px;
-    display: table;
-   
- 
+  width: 100%;
+  padding-right: 40px;
+  display: table;
 }
 
 #bir_yy {
@@ -178,8 +164,8 @@ body {
 }
 
 .email_con {
-    width: 500px;
-    padding-right: 40px;
+  width: 500px;
+  padding-right: 40px;
 }
 
 .agree-check {
@@ -205,8 +191,66 @@ button:hover {
 .join_btn input {
   width: 100%;
   border: none;
-  background-color:#3cb4ff;
+  background-color: #3cb4ff;
   font-size: 20px;
   color: #fff;
   padding: 21px 0 17px;
+}
+.phone-input {
+  width: 30%;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid #3cb4ff;
+}
+.terms iframe {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+}
+.terms iframe #text {
+  width: 100%;
+}
+.auth {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+#sendMessage,
+#completion {
+  width: 30%;
+  top: 10px;
+  position: absolute;
+  right: 10px;
+}
+
+.timer {
+  display: flex;
+  position: relative;
+}
+
+.auth div {
+  font-weight: 700;
+  font-size: 15px;
+  margin: auto;
+}
+
+.auth button {
+  width: 50%;
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+}
+
+.timer div {
+  font-weight: 700;
+  font-size: 15px;
+  margin: auto;
+}
+
+.timer button {
+  width: 50%;
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
 }

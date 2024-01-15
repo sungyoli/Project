@@ -84,6 +84,7 @@ font-weight: 500;
   cursor: pointer;
 }
 
+/* 열너비 조절 */
 .table th:nth-child(1) {
   width: 160px;
 }
@@ -93,12 +94,20 @@ font-weight: 500;
 }
 
 .table th:nth-child(3) {
-  width: 1680px;
+  width: 160px;
 }
 .table th:nth-child(4) {
-  width: 90px;
+  width: 1270px;
 }
-
+.table th:nth-child(5) {
+  width: 100px;
+}
+.table th:nth-child(6) {
+  width: 100px;
+}
+.table th:nth-child(7) {
+  width: 130px;
+}
 
 
 .tablewrap table {
@@ -114,10 +123,6 @@ font-weight: 500;
   text-align: left;
   padding: 15px;
   padding-left: 25px;
-}
-
-.tablewrap td {
-  padding: 25px;
 }
 
 .tablewrap table th {

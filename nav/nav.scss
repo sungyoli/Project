@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+// 기본 css설정
+nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 69px;
+  border: 1px solid #ddf;
+  background-color: #ddd;
+  position: relative;
+  .logo {
+    background-image: url(../logo/scope2.png);
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    left: 50px;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    .input {
+      width: 200px;
+      height: 35px;
+      border: 1px solid #000;
+      background: none;
+      position: relative;
+      #btn-search{
+        background: url(../images/ic_gnb.png);
+        width: 27px;
+        height: 12px;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: -483px -661px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      input {
+        position: relative;
+        border-radius: 5px;
+        width: 150px;
+        height: 34px;
+        border: none;
+        background: none;
+
+        &::placeholder {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}

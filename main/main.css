@@ -161,6 +161,7 @@ article {
   padding: 10px;
 }
 .user-profile .inputBotton li {
-  width: 100px;
+  width: 50%;
+  text-align: center;
   text-overflow: ellipsis;
 }/*# sourceMappingURL=main.css.map */

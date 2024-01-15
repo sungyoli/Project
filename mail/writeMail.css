@@ -22,10 +22,10 @@ li {
   width: 100vw;
 }
 
-.right_contents{
+.right_contents {
   margin-top: 0;
   width: 100vw; /* 늘리고자 하는 가로 길이로 조정 */
-  display: flex;  
+  display: flex;
   min-width: 1200px;
   flex-direction: column;
 }
@@ -176,7 +176,6 @@ li {
   font-size: 12px;
 }
 
-
 .middle_menu span {
   display: flex;
   align-items: baseline; /* 기준선을 통해 아래쪽 정렬 */
@@ -240,4 +239,3 @@ textarea {
   height: 200px;
 }
 /* middle 끝 */
-

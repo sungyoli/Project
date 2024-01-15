@@ -97,6 +97,7 @@ li {
 
 .popup .table2-top {
   width: 100%;
+
 }
 /* 행높이조절  */
 .popup .table2 table {
@@ -107,14 +108,15 @@ li {
   background-color: rgb(230, 230, 230);
   border-bottom: 1px solid rgb(201, 201, 201);
   text-align: left;
-  padding-left: 10px;
+  padding-left: 15px;
   width: 100%;
   height: 40px;
 }
 
 .popup .table2 td {
   text-align: left;
-  padding-left: 10px;
+  padding-left: 15px;
+  padding-top: 20px;
 }
 
 #confirm-button {
@@ -174,7 +176,7 @@ body {
 
 .popup li span {
   font-size: 13px;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .popup li:before,
@@ -279,3 +281,10 @@ summary {
   background: #fff;
   color: #3cb4ff;
 } */
+
+/* 양식 클릭버튼 css */
+.parent button {
+  border:none;
+  background-color: white;
+  cursor: pointer;
+}

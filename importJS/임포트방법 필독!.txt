@@ -22,3 +22,8 @@
     위와 같음.
     code:
     <script src="../importJS/approvalIpt.js"></script>
+
+4. boardMenu 임포트
+
+    code:
+    <script src="../importJS/boardMenuIpt.js"></script>

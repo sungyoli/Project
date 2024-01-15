@@ -1,5 +1,5 @@
 
-fetch("../Approval/approvalMenu.html")
+fetch("../board/boardBar.html")
 .then((response) => response.text())
 .then((html) => {
   const tempDiv = document.createElement("div");
@@ -10,7 +10,7 @@ fetch("../Approval/approvalMenu.html")
     const href = linkTag.getAttribute("href");
     const link = document.createElement("link");
     link.setAttribute("rel", "stylesheet");
-    link.setAttribute("href", "../Approval/" + href); // 상대 경로로 수정
+    link.setAttribute("href", "../board/" + href); // 상대 경로로 수정
     document.head.appendChild(link);
   });
 
@@ -18,7 +18,7 @@ fetch("../Approval/approvalMenu.html")
   scriptTags.forEach((scriptTag) => {
     const src = scriptTag.getAttribute("src");
     const script = document.createElement("script");
-    script.setAttribute("src", "../Approval/" + src); // 상대 경로로 수정
+    script.setAttribute("src", "../board/" + src); // 상대 경로로 수정
     document.body.appendChild(script);
   });
 

@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="boardBar.css" />
+    <link rel="shortcut icon" href="../logo/scope3.png" />
+
   </head>
   <body>
-    <div class="wrap"></div>
-    <div id="header"></div>
     <div id="left_menu">
-      <div><h3>게시판</h3></div>
+      <h3 class="title">게시판</h3>
       <input
         type="button"
         id="write-button"
@@ -19,14 +19,17 @@
       />
       <div class="menu">
         <a href="boardList.html">전체게시판</a>
-        <a>부서게시판</a>
-
-        <p><a href="boardList_development.html">개발팀</a></p>
-        <p><a href="boardList_maintenance.html">유지보수(관리)팀</a></p>
-        <p><a href="boardList_generalAffairs.html">총무팀</a></p>
-        <p><a href="boardList_marketing.html">마케팅팀</a></p>
-        <p><a href="boardList_sales.html">영업팀</a></p>
+        <ul class="list">
+          <span class="title">부서게시판</span>
+          <li><a href="boardList_development.html">개발팀</a></li>
+          <li><a href="boardList_maintenance.html">유지보수(관리)팀</a></li>
+          <li><a href="boardList_generalAffairs.html">총무팀</a></li>
+          <li><a href="boardList_marketing.html">마케팅팀</a></li>
+          <li><a href="boardList_sales.html">영업팀</a></li>
+        </ul>
       </div>
     </div>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="boardBar.js"></script>
   </body>
 </html>

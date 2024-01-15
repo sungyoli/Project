@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <script type="text/javascript">
+    function openModal(btnText) {
+      var modal = document.getElementById("myModal");
+      var modalText = document.getElementById("modalText");
+
+      // 모달에 버튼 텍스트 추가
+      modalText.textContent = "" + btnText;
+
+      // 모달 표시
+      modal.style.display = "block";
+    }
+
+    function closeModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+    }
+
+    // 모달 외부를 클릭하면 모달이 닫히도록
+    window.onclick = function (event) {
+      var modal = document.getElementById("myModal");
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
   <head>
     <meta charset="UTF-8" />
-    <title>Accordion Example</title>
+    <title>마이페이지(관리자)</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="mypage2.css" />
-    <link rel="shortcut icon" href="../logo/scope3.png">
+    <link rel="shortcut icon" href="../logo/scope3.png" />
   </head>
   <body>
     <!-- 1 -->
     <div class="wrap">
-      <div class="dropdownbtn">
-        <img class="profile" src="image/4301-212117.png" />
-        <div class="dropdowncontent">
-          <a href="#">기본정보</a>
-          <a href="#">알림설정</a>
-          <a href="#">로그아웃</a>
+      <div class="max_icon">
+        <div class="icon-dropdown">
+          <div class="icon">
+            <img src="../join/image/question.png" alt="Question Icon" />
+            <img src="../join/image/bell.png" alt="Bell Icon" />
+          </div>
+
+          <div class="dropdownbtn">
+            <img
+              class="profile"
+              src="image/4301-212117.png"
+              alt="Profile Icon"
+            />
+            <div class="dropdowncontent">
+              <a href="mypage1.html">기본정보</a>
+              <a href="#">알림설정</a>
+              <a href="#">로그아웃</a>
+            </div>
+          </div>
         </div>
       </div>
-
-      <h3>메뉴별 알림설정</h3>
+      <div class="title">
+        <h3>메뉴별 알림설정</h3>
+      </div>
 
       <div class="accordion">
         <div class="accordion-item">
@@ -962,9 +1001,20 @@
           </div>
         </div>
 
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modalText"></p>
+          </div>
+        </div>
+
         <!-- JOIN BTN-->
         <div class="join_btn">
-          <input type="submit" value="저장" onclick="join()" />
+          <input
+            type="button"
+            value="저장"
+            onclick="openModal('저장되었습니다')"
+          />
           <input
             type="submit"
             value="취소"

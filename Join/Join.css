@@ -7,11 +7,9 @@
   font-family: "Noto Sans CJK KR";
   font-style: normal;
 }
-li{
-    list-style: none;
-
+li {
+  list-style: none;
 }
-
 
 body {
   display: flex;
@@ -23,22 +21,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 700px;
-  height: 950px;
+  width: 900px;
+  height: 1300px;
   margin-top: 60px;
   margin-bottom: 60px;
   background: #ffffff;
-  border: 1px solid #aacdff;
-  box-shadow: blue;
-  border-radius: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
 }
 
 .member-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top:100px;
-  height:100vh;
+  padding-top: 100px;
+  height: 100vh;
   line-height: 2;
 }
 
@@ -57,37 +54,33 @@ body {
   font-weight: 800;
   width: 500px;
   padding-right: 40px;
- 
 }
-
 
 .int_box {
   display: block;
   position: relative;
   width: 100%;
-  height: 40px;
+  height: 50px;
   background: #fff;
   font-size: 18px;
-  border:none;
+  border: 2px solid #3cb4ff;
 }
 
-.id_box{
-    display: flex;
-    height: 40px;
-    width: 100%;
-   }
-
-.id_check{
-    border:none;
-    background-color: #0069a685;
-    color: #fff;
-    padding:10px 30px
+.id_box {
+  display: flex;
+  height: 50px;
+  width: 100%;
 }
 
+.id_check {
+  border: none;
+  background-color: #3cb4ff;
+  color: #fff;
+  padding: 10px 30px;
+}
 
 #box int_id button {
-    
-position: absolute;
+  position: absolute;
   width: 90px;
   height: 40px;
   top: 0;
@@ -98,51 +91,21 @@ position: absolute;
 }
 
 .pwd_con {
-    width: 500px;
-    padding-right: 40px;
+  width: 500px;
+  padding-right: 40px;
 }
 
 .pwdconf_con {
-    width: 500px;
-    padding-right: 40px;
-    
-}
-
-.phone {
-  display: flex;
-  justify-content: space-between;
-  line-height: 35px;
-}
-
-.phbox{
-  
-}
-
-#phone1 {
-  width: 18%;
-  border-radius: 10px;
-}
-
-#phone2 {
-  width: 30%;
-  border-radius: 10px;
-}
-
-#phone3 {
-  width: 30%;
-  border-radius: 10px;
+  width: 500px;
+  padding-right: 40px;
 }
 
 .auth {
   display: flex;
-  justify-content: space-between;
-  
 }
 
 .timer {
   display: flex;
-  justify-content: space-between;
- 
 }
 
 .auth div {
@@ -150,15 +113,13 @@ position: absolute;
   text-align: center;
   font-weight: 700;
   font-size: 15px;
- 
 }
 
 .auth button {
-  width: 70%;
+  width: 50%;
   background-color: #fff;
   color: black;
   border-radius: 10px;
-  
 }
 
 .timer div {
@@ -169,20 +130,16 @@ position: absolute;
 }
 
 .timer button {
-  width: 70%;
+  width: 50%;
   background-color: #fff;
   color: black;
   border-radius: 10px;
-  
 }
 
-
 .birth_con {
-    width: 100%;
-    padding-right: 40px;
-    display: table;
-   
- 
+  width: 100%;
+  padding-right: 40px;
+  display: table;
 }
 
 #bir_yy {
@@ -207,8 +164,8 @@ position: absolute;
 }
 
 .email_con {
-    width: 500px;
-    padding-right: 40px;
+  width: 500px;
+  padding-right: 40px;
 }
 
 .agree-check {
@@ -234,8 +191,66 @@ button:hover {
 .join_btn input {
   width: 100%;
   border: none;
-  background-color: #0069a685;
+  background-color: #3cb4ff;
   font-size: 20px;
   color: #fff;
   padding: 21px 0 17px;
+}
+.phone-input {
+  width: 30%;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid #3cb4ff;
+}
+.terms iframe {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+}
+.terms iframe #text {
+  width: 100%;
+}
+.auth {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+#sendMessage,
+#completion {
+  width: 30%;
+  top: 10px;
+  position: absolute;
+  right: 10px;
+}
+
+.timer {
+  display: flex;
+  position: relative;
+}
+
+.auth div {
+  font-weight: 700;
+  font-size: 15px;
+  margin: auto;
+}
+
+.auth button {
+  width: 50%;
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+}
+
+.timer div {
+  font-weight: 700;
+  font-size: 15px;
+  margin: auto;
+}
+
+.timer button {
+  width: 50%;
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
 }

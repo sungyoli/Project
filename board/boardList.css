@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +16,6 @@ li {
 .table_div {
   margin-top: 20px;
   width: calc(100% - 390px); /* 늘리고자 하는 가로 길이로 조정 */
-  
 }
 .table_div table {
   width: 100%;
@@ -160,17 +158,17 @@ td {
 }
 
 /* Pagination links */
-.pagination{
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	margin-bottom:10px;
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .pagination a {
   color: black;
   padding: 8px 16px;
   text-decoration: none;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
 }
 
 /* Style the active/current link */
@@ -180,7 +178,9 @@ td {
 } */
 
 /* Add a grey background color on mouse-over */
-.pagination a:hover:not(.active) {background-color: #ddd;}
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
 
 /*------------------------------------------------*/
 .accordion {
@@ -232,7 +232,8 @@ table {
   margin-bottom: 50px;
 }
 
-th, td {
+th,
+td {
   /* ... 다른 스타일 속성들 ... */
   border: none;
 }
@@ -240,9 +241,8 @@ th, td {
 table th {
   border-top: 1px solid #dfdfdf;
   border-bottom: 1px solid #dfdfdf;
-} 
+}
 
 table tr:hover td {
   background-color: #d8d8d8; /* 해당 행 전체에 hover 효과를 줍니다. */
 }
-

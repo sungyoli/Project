@@ -60,8 +60,7 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
             </article>
 
             <article>
-              <div id="calendarContainer"></div>
-              <iframe src="../calender/calendar.html" srcdoc="<div class='calenderWrap'></div>"  frameborder="0" scrolling="no" allow="fullscreen"></iframe>
+              <div id="calendar"></div>
             </article>
           </section>
 
@@ -121,36 +120,7 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="../importJS/headerIpt.js"></script>
-
-    <script>
-      fetch("../calender/calendar.html")
-        .then((response) => response.text())
-        .then((html) => {
-          const tempDiv = document.createElement("div");
-          tempDiv.innerHTML = html;
-
-          const linkTags = tempDiv.querySelectorAll("link[href]");
-          linkTags.forEach((linkTag) => {
-            const href = linkTag.getAttribute("href");
-            const link = document.createElement("link");
-            link.setAttribute("rel", "stylesheet");
-            link.setAttribute("href", "../calendar" + href); // 캘린더 파일이 위치한 상대 경로로 수정
-            document.head.appendChild(link);
-          });
-
-          const scriptTags = tempDiv.querySelectorAll("script[src]");
-          scriptTags.forEach((scriptTag) => {
-            const src = scriptTag.getAttribute("src");
-            const script = document.createElement("script");
-            script.setAttribute("src", "../calendar" + src); // 캘린더 파일이 위치한 상대 경로로 수정
-            document.body.appendChild(script);
-          });
-
-          document.getElementById("calendarContainer").innerHTML = html; // 캘린더를 추가할 요소의 ID로 수정
-        })
-        .catch((error) => {
-          console.log("캘린더 로딩 오류", error);
-        });
-    </script>
+    <script src="../calender/FullCalendar.js"></script>
+    
   </body>
 </html>

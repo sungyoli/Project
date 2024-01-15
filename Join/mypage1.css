@@ -16,15 +16,95 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.wrap {
-  max-width: 900px;
-  margin: 0 auto;
+  .wrap {
+    max-width: 800px;
+    flex-direction: column; /* 수직 방향으로 배치 */
+    margin-left: auto; /* 가운데 정렬을 위한 수정 */
+    margin-right: auto; /* 가운데 정렬을 위한 수정 */
+    margin-bottom: 20px; /* 여백 추가 */
+}
+
+
+#header {
+  width: 60px;
+  display: none;
+}
+
+#left_menu {
+  margin: 2%;
+  width: 200px;
+  height:100vh;
+  line-height: 90px;
+  font-size: 20px;
+  margin-right: 20px;
+  
+  
+}
+
+.panel {
+  color: #333;
+  width: 300px;
+  height: 100vh;
+  line-height: 40px;
+  border-right: 1px solid #ddd;
+  padding-right: 10px;
+}
+
+/* 각 항목에 대한 효과 추가 */
+
+.panel p {
+  margin: 0;
+  transition: background-color 0.3s; /* 부드러운 전환 효과 추가 */
+}
+
+.panel p:hover {
+  background-color: #f0f0f0;
+}
+
+.panel a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s; /* 부드러운 전환 효과 추가 */
+}
+
+.panel a:hover {
+  color: #007bff;
+  font-weight: bold; /* 텍스트 굵게 효과 추가 */
+}
+
+.panel input[type="text"] {
+  border: 1px solid #ddd;
+  transition: border-color 0.3s; /* 부드러운 전환 효과 추가 */
+}
+
+.panel input[type="text"]:hover {
+  border-color: #3cb4ff;
+}
+
+.max_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 70%;
+}
+
+.icon-dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 20px;
+  position: relative;
+}
+
+.icon img {
+  width: 40px;
 }
 
 .dropdownbtn {
   position: relative;
   display: inline-block;
-  margin-left: 95%;
 }
 
 .profile {
@@ -51,7 +131,7 @@ body {
 }
 
 .dropdowncontent a:hover {
-  background-color: #93d9e0;
+  background-color:  #3cb4ff;
 }
 
 .dropdownbtn:hover .dropdowncontent {
@@ -60,11 +140,15 @@ body {
 
 .login {
   background-color: #becaca09;
-  padding: 60px;
-  border: 3px solid #aacdff;
-  border-radius: 60px;
-  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid lightgray;
+  margin: 70px auto; /* 상단 여백을 70px로 설정하고 좌우 여백을 자동으로 조절 */
+  max-width: 1000px; /* 최대 너비 업데이트 */
 }
+  
+ 
+
+  
 .login label {
   font-weight: 700;
 }
@@ -76,26 +160,28 @@ body {
 }
 
 .box {
-  display: flex;
+  
   flex-wrap: wrap;
-  max-width: 30%;
   margin: 50px;
+  line-height: 20px;
+  max-width: 100%; /* 수정된 부분 */
 }
 #inputImage {
   border: none;
 }
 .login input {
   border-radius: 5px;
-  border: 1px solid #ddd;
+  border: 2px solid #3cb4ff;
+  
 }
-.int_box {
-  width: 300px; /* 원하는 너비 값으로 조절 */
-  height: 40px; /* 원하는 높이 값으로 조절 */
-  display: flex;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-sizing: border-box; /* 패딩과 테두리를 요소의 크기에 포함 */
-}
+ .int_box {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    padding: 10px; /* 여백을 줄임 */
+    margin-bottom: 10px;
+  }
+
 
 #previewImage {
   max-width: 200px;
@@ -103,12 +189,61 @@ body {
   display: none;
 }
 
+input {
+  height: 40px;
+  vertical-align: middle;
+  padding: 0px 15px;
+}
+
+.name_con{
+  line-height: 30px;
+  
+}
+
+.company_con{
+  line-height: 30px;
+}
+
+.select {
+  width: 150px;
+  height: 35px;
+  background: url('https://freepikpsd.com/media/2019/10/down-arrow-icon-png-7-Transparent-Images.png') calc(100% - 5px) center no-repeat;
+  background-size: 20px;
+  padding: 5px 30px 5px 10px;
+  border-radius: 4px;
+  outline: 0 none;
+  border: 2px solid #3cb4ff;
+
+}
+.select option {
+  background:#fff;
+  color:black;
+  padding: 3px 0;
+}
+
+.email_con{
+  line-height: 50px;
+}
+
+.address_con{
+  line-height: 30px;
+}
+
+.phon_con{
+  line-height: 30px;
+}
+
+.birth_con{
+  line-height: 30px;
+}
 .join_btn {
   width: 100%;
   font-weight: 700;
   background-color: rgba(0, 0, 0, 0);
   margin: 60px 0 91px;
   border: 0;
+  text-align: center;
+  margin-top: 15px;
 }
 
 button:hover {
@@ -122,7 +257,7 @@ button:hover {
   color: #fff;
   padding: 11px 0 17px;
   border-radius: 10px;
-  background-color: skyblue;
+  background-color: #3cb4ff;
 }
 
 .join_btn input[value="취소"] {
@@ -130,3 +265,6 @@ button:hover {
   color: black;
   border: none;
 }
+
+
+

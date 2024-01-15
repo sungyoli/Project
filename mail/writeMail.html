@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>메일쓰기</title>
-    <link rel="shortcut icon" href="../logo/scope3.png">
+    <link rel="shortcut icon" href="../logo/scope3.png" />
     <!-- CDN방식 -->
     <!-- 장점 내가 가지고 있지 않아도 됨 단점 인터넷연결이 안되어있으면 사용불가 -->
     <link rel="stylesheet" href="writeMail.css" />
@@ -32,144 +32,134 @@
       }
     </script>
     <script
-    type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-  ></script>
-  <script src="../importJS/headerIpt.js"></script>
-  <script src="../importJS/mailIpt.js"></script>
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../importJS/headerIpt.js"></script>
+    <script src="../importJS/mailIpt.js"></script>
     <script
       src="http://kit.fontawesome.com/a4539ed26c.js"
       crossorigin="anonymous"
     ></script>
-    </head>
-    <body> 
-      <div class="wrap">
-        <div id="header"></div>
-        <div id="mailLeftmenu"></div>
-        <!-- 오른쪽 -->
-        <div class="right_contents">
-          <!-- 위 -->
-          <div class="table_name">
-            <div id="mail_tt">
-              <span id="mailtt_span">메일쓰기</span>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="header"></div>
+      <div id="mailLeftmenu"></div>
+      <!-- 오른쪽 -->
+      <div class="right_contents">
+        <!-- 위 -->
+        <div class="table_name">
+          <div id="mail_tt">
+            <span id="mailtt_span">메일쓰기</span>
+          </div>
+          <div>
+            <div id="dropdown">
+              <button type="button" class="btn btn-light">
+                <a href="sendMailBox.html" onclick="submitForm()">보내기</a>
+              </button>
+              <button type="button" class="btn btn-light">
+                <a href="temporaryBox.html" onclick="submitForm()">임시저장</a>
+              </button>
             </div>
-            <div>
-              <div id="dropdown">
-                <button type="button" class="btn btn-light">
-                  <a href="sendMailBox.html" onclick="submitForm()">보내기</a>
-                </button>
-                <button type="button" class="btn btn-light">
-                  <a href="temporaryBox.html" onclick="submitForm()"
-                    >임시저장</a
-                  >
-                </button>
-              </div>
 
-              <div class="center">
-                <span class="board_select">
-                  <select class="select" value="검색대상선택">
-                    <option value="board">제목</option>
-                    <option value="board">보낸사람</option>
-                    <option value="board">받는사람</option>
-                  </select>
-                </span>
-
-                <input
-                  type="text"
-                  id="search-input"
-                  placeholder="검색어를 입력하세요"
-                />
-                <button id="search-button">
-                  <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-                </button>
-              </div>
+            <div class="center">
+              <span class="board_select">
+                <select class="select" value="검색대상선택">
+                  <option value="board">제목</option>
+                  <option value="board">보낸사람</option>
+                  <option value="board">받는사람</option>
+                </select>
+              </span>
+              <input
+                type="text"
+                id="search-input"
+                placeholder="검색어를 입력하세요"
+              />
+              <button id="search-button">
+                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+              </button>
             </div>
           </div>
-          <!-- 아래1 -->
-          <!-- 메일쓰기 -->
-          <form id="top">
-            <div id="middle">
-              <ul class="middle_menu">
-                <li>
-                  <span>
-                    <label for="subjectInput">받는사람</label>
-                      <input
-                      type="text"
-                      id="recipientEmail"
-                      placeholder="이메일 입력"
-                      required
-                    />
-                    <input
-                      type="button"
-                      class="addressButton"
-                      value="조직도"
-                      onclick="openOrgChartModal()"
-                    />
-                    <div id="addressBookModal" class="modal">
-                      <p>조직도</p>
-                      <p>
-                        <iframe
-                          id="oc"
-                          width="400"
-                          height="400"
-                          style="border: none"
-                          src="../OC/OC.html"
-                        ></iframe>
-                      </p>
-                      <span class="close" onclick="closeModal()">&times;</span>
-                    </div>
-                  </span>
-                </li>
-                <li>
-                  <span>
-                    <label for="ccInput">참조</label>
-                    <input
-                      type="text"
-                      id="ccInput"
-                      placeholder="참조 이메일 입력"
-                    />
-                    <input
-                      type="button"
-                      class="addressButton"
-                      value="조직도"
-                      onclick="openOrgChartModal()"
-                    />
-                  </span>
-                </li>
-                <li>
-                  <label for="subjectInput">제목</label>
+        </div>
+        <!-- 아래1 -->
+        <!-- 메일쓰기 -->
+        <form id="top">
+          <div id="middle">
+            <ul class="middle_menu">
+              <li>
+                <span>
+                  <label for="subjectInput">받는사람</label>
                   <input
                     type="text"
-                    id="subjectInput"
-                    placeholder="제목"
+                    id="recipientEmail"
+                    placeholder="이메일 입력"
                     required
                   />
-                </li>
-                <li>
-                  <label for="fileInput">파일첨부</label>
-                  <input class="file" type="file" value="파일선택" />
-                </li>
-              </ul>
-              <form class="middle_content">
-                <textarea
-                  name="editor1"
-                  id="editor1"
-                  rows="10"
+                  <input
+                    id="tree"
+                    type="button"
+                    class="addressButton"
+                    value="조직도"
+                    onclick="openOrgChartModal()"
+                  />
+                  <div id="addressBookModal" class="modal">
+                    <p>조직도</p>
+                    <p>여기 수정하다 끝남</p>
+                    <span class="close" onclick="closeModal()">&times;</span>
+                  </div>
+                </span>
+              </li>
+              <li>
+                <span>
+                  <label for="ccInput">참조</label>
+                  <input
+                    type="text"
+                    id="ccInput"
+                    placeholder="참조 이메일 입력"
+                  />
+                  <input
+                    type="button"
+                    class="addressButton"
+                    value="조직도"
+                    onclick="openOrgChartModal()"
+                  />
+                </span>
+              </li>
+              <li>
+                <label for="subjectInput">제목</label>
+                <input
+                  type="text"
+                  id="subjectInput"
+                  placeholder="제목"
                   required
-                ></textarea>
-              </form>
-            </div>
-          </form>
-        </div>
+                />
+              </li>
+              <li>
+                <label for="fileInput">파일첨부</label>
+                <input class="file" type="file" value="파일선택" />
+              </li>
+            </ul>
+            <form class="middle_content">
+              <textarea
+                name="editor1"
+                id="editor1"
+                rows="10"
+                required
+              ></textarea>
+            </form>
+          </div>
+        </form>
       </div>
-      <script>
-        CKEDITOR.replace("editor1", {
-          language: "ko",
-        });
-      </script>
-    </body>
+    </div>
+    <script>
+      CKEDITOR.replace("editor1", {
+        language: "ko",
+      });
+    </script>
+  </body>
 </html>

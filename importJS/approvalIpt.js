@@ -10,7 +10,7 @@ fetch("../Approval/approvalMenu.html")
     const href = linkTag.getAttribute("href");
     const link = document.createElement("link");
     link.setAttribute("rel", "stylesheet");
-    link.setAttribute("href", "../mail/" + href); // 상대 경로로 수정
+    link.setAttribute("href", "../Approval/" + href); // 상대 경로로 수정
     document.head.appendChild(link);
   });
 
@@ -18,7 +18,7 @@ fetch("../Approval/approvalMenu.html")
   scriptTags.forEach((scriptTag) => {
     const src = scriptTag.getAttribute("src");
     const script = document.createElement("script");
-    script.setAttribute("src", "../mail/" + src); // 상대 경로로 수정
+    script.setAttribute("src", "../Approval/" + src); // 상대 경로로 수정
     document.body.appendChild(script);
   });
 

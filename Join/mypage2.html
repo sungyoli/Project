@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>마이페이지(관리자)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="mypage2.css" />
+  <link rel="shortcut icon" href="../logo/scope3.png">
+
   <script type="text/javascript">
-    function openModal(btnText) {
-      var modal = document.getElementById("myModal");
-      var modalText = document.getElementById("modalText");
+    document.addEventListener("DOMContentLoaded", function () {
+      function openModal(btnText) {
+        var modal = document.getElementById("myModal");
+        var modalText = document.getElementById("modalText");
 
       // 모달에 버튼 텍스트 추가
       modalText.textContent = "" + btnText;
@@ -23,8 +32,21 @@
       if (event.target == modal) {
         modal.style.display = "none";
       }
-    };
+
+      // 모달 외부를 클릭하면 모달이 닫히도록
+      window.onclick = function (event) {
+        var modal = document.getElementById("myModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    }})
+;
   </script>
+</head>
+
+<body>
+
   <head>
     <meta charset="UTF-8" />
     <title>마이페이지(관리자)</title>
@@ -33,7 +55,6 @@
     <link rel="shortcut icon" href="../logo/scope3.png" />
   </head>
   <body>
-    <!-- 1 -->
     <div class="wrap">
       <div class="max_icon">
         <div class="icon-dropdown">
@@ -1023,7 +1044,7 @@
           />
         </div>
       </div>
-    </div>
+    
 
     <script>
       function toggleAccordion(accordionId) {

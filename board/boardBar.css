@@ -1,50 +1,99 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
- 
- a{
-    text-decoration: none;
-    color: inherit;
- }
- 
- li{
-    list-style: none;
- }
-.table_name {
-    font-size: 30px;
-  }
-  .wrap {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    height: 100vh;
-    width: 100%;
-  }
-  
-  #left_menu {
-    margin: 2%;
-    width: 200px;
-  }
-  #write-button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: hsl(203, 100%, 62%);
-    color: whitesmoke;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 15px;
-  }
-  .menu a {
-    display: block; /* 블록 요소로 설정하여 전체 너비에 링크 적용 */
-    padding: 10px; /* 안쪽 여백 설정 */
-    color: #333; /* 글자색 설정 */
-    border-radius: 5px; /* 모서리 둥글게 설정 */
-  }
-  #header {
-    width: 60px;
-  }
-  
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  height: 100vh;
+  position: fixed;
+}
+#boardLeftmenu {
+  width: 300px;
+  z-index: 998;
+}
+#left_menu {
+  width: 290px;
+  height: 100vh;
+  margin-right: 0px;
+  margin-top: 0;
+  border-right: 1px solid #ccc;
+  background: #fff;
+  text-align: center;
+}
+
+#letter1 {
+  text-align: left;
+  padding-top: 60px;
+  padding-left: 30px;
+  color: black;
+}
+
+.buttonSections {
+  width: 80%;
+  height: 55px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #3cb4ff;
+  color: #3cb4ff;
+  font-weight: 700;
+  font-size: 18px;
+}
+.buttonSections:hover {
+  background: #fff;
+  color: #3cb4ff;
+}
+
+#write-button {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.accordion-button {
+  width: 50%;
+  height: 50px;
+  border: none;
+  background: #fff;
+  margin: 40px 0 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
+}
+
+#boardkind {
+  padding-left: 0;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-bottom: 0%;
+  cursor: pointer;
+}
+
+.boardkind_li {
+  height: 40px;
+  text-align: left;
+}
+
+/*.boardkind_li:hover{
+  background-color: #F0F8FF;
+}*/
+
+.boardkind_span {
+  position: relative;
+  top: 25%;
+  padding-bottom: 6px;
+  color: #999;
+}
+
+.boardkind_span:hover {
+  color: black;
+  border-bottom: 1px solid black;
+}

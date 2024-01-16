@@ -1,12 +1,16 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+*.mailkind_li:hover {
+  background-color: #F0F8FF;
+}
+
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -16,10 +20,12 @@ body {
   height: 100vh;
   position: fixed;
 }
+
 #mailLeftmenu {
   width: 300px;
   z-index: 998;
 }
+
 #left_menu {
   width: 290px;
   height: 100vh;
@@ -82,18 +88,13 @@ body {
   text-align: left;
 }
 
-/*.mailkind_li:hover{
-  background-color: #F0F8FF;
-}*/
-
 .mailkind_span {
   position: relative;
   top: 25%;
   padding-bottom: 6px;
   color: #999;
 }
-
 .mailkind_span:hover {
   color: black;
   border-bottom: 1px solid black;
-}
+}/*# sourceMappingURL=mailLeftmenu.css.map */

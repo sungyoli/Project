@@ -5,66 +5,81 @@
     <!-- 반응형 웹 -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="OC.css" />
-	<link rel="shortcut icon" href="../logo/scope3.png">
-	<script src="OC.js"></script>
+    <link rel="shortcut icon" href="../logo/scope3.png" />
+    <script src="OC.js"></script>
 
     <script
       src="https://kit.fontawesome.com/67a1f076db.js"
       crossorigin="anonymous"
     ></script>
-    
-	<title>조직도</title>
-</head>
-<body>
-	<div class="popup" id="popup-1">
-		<div class="overlay"></div>
-		<div class="content">
-			<div class="close-btn" onclick="togglePopup()">&times;</div>
-			<div class="table">
-				<div class="table1">
-					<table>
-						<ul class="tree">
-							<li class="parent">
-								<details>
-									<summary><i class="fa-solid fa-user-tie"></i> 김상후 대표이사</summary>
-								</details></li>
-							<li class="parent">
-								<details>
-									<summary><i class="fa-solid fa-user-tie"></i> 구정모 사장</summary>
-								</details></li>
-								<li class="parent">
-									<details>
-										<summary><i class="fa-solid fa-user-tie"></i> 이재오 전무</summary>
-									</details></li>
-							<li class="parent">
-								<details>
-									<summary><span>영업팀</span></summary>
-									<ul>
-										<li><i class="fa-solid fa-user"></i> 마장웅 상무</li>
-										<li><i class="fa-solid fa-user"></i> 허각 이사</li>
-										<li><i class="fa-solid fa-user"></i> 고단비 대리</li>
-										<li><i class="fa-solid fa-user"></i> 김사원 사원</li>
-									</ul>
-								</details>
-							</li>
-							<li class="parent">
-								<details>
-									<summary><span>인사팀</span></summary>
-									<ul>
-										<li><i class="fa-solid fa-user"></i> 곽영준 차장</li>
-										<li><i class="fa-solid fa-user"></i> 임순옥 과장</li>
-										<li><i class="fa-solid fa-user"></i> 방희진 사원</li>
-									</ul>
-								</details>
-							</li>
-						</ul>
-					</table>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	
-	<button onclick="togglePopup()">Show Popup</button>
-</body>
+
+    <title>조직도</title>
+  </head>
+  <body>
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="close-btn" onclick="togglePopup()">&times;</div>
+        <div class="table">
+          <div class="table1">
+            <table>
+              <ul class="tree">
+                <li class="parent">
+                  <details>
+                    <summary>
+                      <i class="fa-solid fa-user-tie"></i> 김상후 대표이사
+                    </summary>
+                  </details>
+                </li>
+                <li class="parent">
+                  <details>
+                    <summary>
+                      <i class="fa-solid fa-user-tie"></i> 구정모 사장
+                    </summary>
+                  </details>
+                </li>
+                <li class="parent">
+                  <details>
+                    <summary>
+                      <i class="fa-solid fa-user-tie"></i> 이재오 전무
+                    </summary>
+                  </details>
+                </li>
+                <li class="parent">
+                  <details>
+                    <summary><span>영업팀</span></summary>
+                    <ul>
+                      <li><i class="fa-solid fa-user"></i> 마장웅 상무</li>
+                      <li><i class="fa-solid fa-user"></i> 허각 이사</li>
+                      <li><i class="fa-solid fa-user"></i> 고단비 대리</li>
+                      <li><i class="fa-solid fa-user"></i> 김사원 사원</li>
+                    </ul>
+                  </details>
+                </li>
+                <li class="parent">
+                  <details>
+                    <summary><span>인사팀</span></summary>
+                    <ul>
+                      <li><i class="fa-solid fa-user"></i> 곽영준 차장</li>
+                      <li><i class="fa-solid fa-user"></i> 임순옥 과장</li>
+                      <li><i class="fa-solid fa-user"></i> 방희진 사원</li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <button onclick="togglePopup()">Show Popup</button>
+  </body>
 </html>

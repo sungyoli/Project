@@ -31,7 +31,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="mypage1.css" />
 
-    <script>
+  <script>
+      // 페이지 전환을 처리하는 함수
+      function navigateToNotificationPage() {
+        // 새로운 페이지 URL로 이동
+          window.location.href = "mypage4.html";
+      }
+
       document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("inputImage").addEventListener("change", function () {
           var selectedFile = this.files[0];
@@ -56,7 +62,8 @@
     <div class="wrap">
       <div class="max_icon">
         <div class="icon-dropdown">
-          <div class="icon">
+          <div class="icon"  onclick="navigateToNotificationPage()">
+            <a href="mypage4.html"></a>
             <img src="../join/image/question.png" alt="Question Icon">
             <img src="../join/image/bell.png" alt="Bell Icon">
           </div>

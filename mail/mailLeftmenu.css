@@ -3,40 +3,55 @@
   padding: 0;
   box-sizing: border-box;
 }
+*.mailkind_li:hover {
+  background-color: #F0F8FF;
+}
 
-ul,
 li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   height: 100vh;
+  position: fixed;
+}
+
+#mailLeftmenu {
+  width: 300px;
+  z-index: 998;
 }
 
 #left_menu {
-  width: 300px;
-  height: 100%;
+  width: 290px;
+  height: 100vh;
   margin-right: 0px;
   margin-top: 0;
-  box-shadow: 0 0 3px;
+  border-right: 1px solid #ccc;
   background: #fff;
   text-align: center;
 }
 
 #letter1 {
-  text-align: center;
+  text-align: left;
+  padding-top: 60px;
+  padding-left: 30px;
+  color: black;
 }
 
 .buttonSections {
-  width: 70%;
-  height: 50px;
+  width: 80%;
+  height: 55px;
   border-radius: 10px;
-  background: #3cb4ff;
-  border: 2px solid #3cb4ff;
-  color: #fff;
+  background: white;
+  border: 1px solid #3cb4ff;
+  color: #3cb4ff;
   font-weight: 700;
   font-size: 18px;
-  margin: 10px;
 }
 .buttonSections:hover {
   background: #fff;
@@ -44,11 +59,12 @@ body {
 }
 
 #write-button {
-  margin-top: 60px;
+  margin-top: 30px;
+  margin-left: 10px;
 }
 
 .accordion-button {
-  width: 100%;
+  width: 50%;
   height: 50px;
   border: none;
   background: #fff;
@@ -57,14 +73,28 @@ body {
   font-weight: bold;
   text-align: left;
   position: relative;
-  padding-left: 10%;
 }
-.accordion-button span::after {
-  content: url(../localImages/arrow.wbm);
-  position: absolute;
-  right: 10%;
-  top: 50%;
-  width: 50px;
-  height: 50px;
-  transform: translateY(-50%);
+
+#mailkind {
+  padding-left: 0;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-bottom: 0%;
+  cursor: pointer;
+}
+
+.mailkind_li {
+  height: 40px;
+  text-align: left;
+}
+
+.mailkind_span {
+  position: relative;
+  top: 25%;
+  padding-bottom: 6px;
+  color: #999;
+}
+.mailkind_span:hover {
+  color: black;
+  border-bottom: 1px solid black;
 }/*# sourceMappingURL=mailLeftmenu.css.map */

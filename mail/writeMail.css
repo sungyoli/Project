@@ -48,28 +48,11 @@ li {
   font-size: 30px;
   font-weight: bold;
   margin-right: 5px;
-}
-
-.mail_cnt {
-  color: #999;
-}
-
-.cnt {
-  font-weight: bold;
-}
-
-#dropdown_center_div {
-  justify-content: flex-end;
+  color: #4d4d4d;
 }
 
 #dropdown {
   display: inline-block;
-}
-
-#chk_box {
-  margin-right: 40px;
-  width: 18px;
-  height: 18px;
 }
 
 .btn-light {
@@ -85,10 +68,6 @@ li {
 
 .btn-light:hover {
   background-color: #e9e9e969;
-}
-
-.icon {
-  margin-right: 8px;
 }
 
 .center {

@@ -10,7 +10,7 @@ fetch("../OC/OC.html") // 수정
     const href = linkTag.getAttribute("href");
     const link = document.createElement("link");
     link.setAttribute("rel", "stylesheet");
-    link.setAttribute("href", "../writeMail/" + href); // 상대 경로로 수정 // 수정
+    link.setAttribute("href", "../OC/" + href); // 상대 경로로 수정 // 수정
     document.head.appendChild(link);
   });
 
@@ -18,7 +18,7 @@ fetch("../OC/OC.html") // 수정
   scriptTags.forEach((scriptTag) => {
     const src = scriptTag.getAttribute("src");
     const script = document.createElement("script");
-    script.setAttribute("src", "../writeMail/" + src); // 상대 경로로 수정 // 수정
+    script.setAttribute("src", "../OC/" + src); // 상대 경로로 수정 // 수정
     document.body.appendChild(script);
   });
 

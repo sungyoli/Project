@@ -36,9 +36,10 @@ nav {
     .input {
       width: 200px;
       height: 35px;
-      border: 1px solid #000;
-      background: none;
+      border: 1px solid #ddd;
+      background: #fff;
       position: relative;
+      border-radius: 5px;
       #btn-search {
         background: url(../localImages/ic_gnb.png);
         width: 27px;
@@ -47,6 +48,7 @@ nav {
         background-repeat: no-repeat;
         background-position: -483px -661px;
         top: 0;
+        color: rgba(0, 0, 0, 0);
         cursor: pointer;
       }
 

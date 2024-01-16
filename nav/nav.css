@@ -40,9 +40,10 @@ nav ul {
 nav ul .input {
   width: 200px;
   height: 35px;
-  border: 1px solid #000;
-  background: none;
+  border: 1px solid #ddd;
+  background: #fff;
   position: relative;
+  border-radius: 5px;
 }
 nav ul .input #btn-search {
   background: url(../localImages/ic_gnb.png);
@@ -52,6 +53,7 @@ nav ul .input #btn-search {
   background-repeat: no-repeat;
   background-position: -483px -661px;
   top: 0;
+  color: rgba(0, 0, 0, 0);
   cursor: pointer;
 }
 nav ul .input input {

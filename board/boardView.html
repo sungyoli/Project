@@ -1,160 +1,163 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<script src="http://kit.fontawesome.com/a4539ed26c.js" crossorigin="anonymous"></script>
-<<<<<<< HEAD
+  <head>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
+    <script
+      src="http://kit.fontawesome.com/a4539ed26c.js"
+      crossorigin="anonymous"
+    ></script>
+    <<<<<<< HEAD =======
+    <link rel="shortcut icon" href="../logo/scope3.png" />
+    >>>>>>> 3ca4acab5ab9a1314d58d5d9d77455a6b7719619
+    <script>
+      function updatePost() {
+        const result = confirm("수정하겠습니까?");
 
-=======
-<link rel="shortcut icon" href="../logo/scope3.png">
->>>>>>> 3ca4acab5ab9a1314d58d5d9d77455a6b7719619
-<script>
-	function updatePost(){
-		const result = confirm("수정하겠습니까?");
-	
-		if(result){
-			alert("수정되었습니다.");
-		}
-	}
-	function deletePost(){
-		const result = confirm("삭제하겠습니까?");
-	
-		if(result){
-			alert("삭제되었습니다.");
-		}
-	}
-</script>
-<link rel="stylesheet" href="boardView.css">
+        if (result) {
+          alert("수정되었습니다.");
+        }
+      }
+      function deletePost() {
+        const result = confirm("삭제하겠습니까?");
 
-</head>
-<body>
+        if (result) {
+          alert("삭제되었습니다.");
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="boardView.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- 왼쪽 메뉴 -->
+      <div id="header"></div>
+      <div id="left_menu">
+        <div><h3>게시판</h3></div>
+        <input
+          type="button"
+          id="write-button"
+          onclick="window.location='boardTable.html'"
+          value="글쓰기"
+        />
+        <div class="menu">
+          <a href="boardList.html">전체게시판</a>
+          <a>부서게시판</a>
 
-<div class="wrap">
-	<!-- 왼쪽 메뉴 -->
-	<div id="header"></div>
-	<div id="left_menu">
-		<div><h3>게시판</h3></div>
-		<input type="button" id="write-button" onclick="window.location='boardTable.html'" value="글쓰기">			
-		<div class="menu">
-			<a href="boardList.html">전체게시판</a>
-			<a>부서게시판</a> 
-		
-					<p><a href="boardList_development.html">개발팀</a></p>
-					<p><a href="boardList_maintenance.html">유지보수(관리)팀</a></p>
-					<p><a href="boardList_generalAffairs.html">총무팀</a></p>
-					<p><a href="boardList_marketing.html">마케팅팀</a></p>
-					<p><a href="boardList_sales.html">영업팀</a></p>
-	
-		</div>	
-	</div>
-	
-	<!-- 가운데 게시판 목록 리스트 -->
-	<div class="table_div">
-		<div class="table_name"><b>전체게시판</b></div><br>
-		
-		 <div class="bt_wrap">
-              <a href="boardTable.html" class="on"><i class="fa-regular fa-pen-to-square"></i>글쓰기</a>
-              <a href="#" class="on" onclick="updatePost()"><i class="fa-solid fa-pen-to-square"></i>수정</a>
-              <a href="#" class="on" onclick="deletePost()"><i class="fa-regular fa-trash-can"></i>삭제</a>
-              <a href="boardList.html" class="on"><i class="fa-solid fa-list"></i>목록</a>
-         </div>
-           
+          <p><a href="boardList_development.html">개발팀</a></p>
+          <p><a href="boardList_maintenance.html">유지보수(관리)팀</a></p>
+          <p><a href="boardList_generalAffairs.html">총무팀</a></p>
+          <p><a href="boardList_marketing.html">마케팅팀</a></p>
+          <p><a href="boardList_sales.html">영업팀</a></p>
+        </div>
+      </div>
 
-         
-		<div class="board-container">
-		    <div class="board-header">
-		      <h2>[공유] 1월 프로젝트 진행</h2><br>
-   			 </div>
+      <!-- 가운데 게시판 목록 리스트 -->
+      <div class="table_div">
+        <div class="table_name"><b>전체게시판</b></div>
+        <br />
 
+        <div class="bt_wrap">
+          <a href="boardTable.html" class="on"
+            ><i class="fa-regular fa-pen-to-square"></i>글쓰기</a
+          >
+          <a href="#" class="on" onclick="updatePost()"
+            ><i class="fa-solid fa-pen-to-square"></i>수정</a
+          >
+          <a href="#" class="on" onclick="deletePost()"
+            ><i class="fa-regular fa-trash-can"></i>삭제</a
+          >
+          <a href="boardList.html" class="on"
+            ><i class="fa-solid fa-list"></i>목록</a
+          >
+        </div>
 
-     
-  		<div class="board-details">
-	      <div class="flex">
-		      <p><img src="img/pic.jpg" width="30px" height="30px"></p>
-		      <p><strong>홍길동 차장</strong></p>
-		      <p>2024-01-08(월) 14:36</p>
-	      </div>
-        	
-		</div>
+        <div class="board-container">
+          <div class="board-header">
+            <h2>[공유] 1월 프로젝트 진행</h2>
+            <br />
+          </div>
 
-   
+          <div class="board-details">
+            <div class="flex">
+              <p><img src="img/pic.jpg" width="30px" height="30px" /></p>
+              <p><strong>홍길동 차장</strong></p>
+              <p>2024-01-08(월) 14:36</p>
+            </div>
+          </div>
 
-        <div class="board-content">
-	      <p>안녕하세요. 홍길동 입니다.</p>
-	      <p>진행 관련 내용은 첨부 파일 확인 부탁드립니다.</p>
-	      <p>감사합니다.</p>
-	      <br><br>
-	      <p><i class="fa-solid fa-paperclip"></i><strong> 첨부파일 : </strong><a href="#">filename.txt</a></p>
-     	</div>
-    
-    	<div class="board-details">
-	      <div class="flex">
-		      <p><img src="img/pic.jpg" width="30px" height="30px"></p>
-		      <p><strong>한성준 과장</strong></p>
-		      <p>2024-01-08(월) 14:36</p>
-		      
-	      </div>
-	      <div><p>확인 하였습니다.</p></div>
-  		<!-- 댓글 추가 -->
-	  	<div class="flex">
-		  	<div><img src="img/pic.jpg" width="30px" height="30px"></div>
-		  	<input class=search type="text">
-		  	<button type="submit">댓글 등록</button>
-	  	</div>	      
-	      
-		</div>
-  </div>
- 
-		</div>
+          <div class="board-content">
+            <p>안녕하세요. 홍길동 입니다.</p>
+            <p>진행 관련 내용은 첨부 파일 확인 부탁드립니다.</p>
+            <p>감사합니다.</p>
+            <br /><br />
+            <p>
+              <i class="fa-solid fa-paperclip"></i><strong> 첨부파일 : </strong
+              ><a href="#">filename.txt</a>
+            </p>
+          </div>
 
-		<!-- 오른쪽 글 목록 -->
-	<div id="right_post">
-		<p class="right_m">전사 공지</p>
-			<div class="right_f">
-				<li>it 최근 이슈1</li>
-				<span class date>06-01</span>
-			</div>
-			<div class="flex">
-				<li>헬스케어 향후 전망</li>
-				<span class date>06-01</span>
-			</div>
-			<div class="flex">
-				<li>it 상반기 정책</li>
-				<span class date>06-01</span>
-			</div>
-			<div class="flex">
-				<li>AI 플랫폼 2024 유망 서비스</li>
-				<span class date>06-01</span>
-			</div>
-			
-		
-		<p class="right_m">부서게시판</p>
-		<div class="flex">
-			<li>[공지] 금주 실행 계획</li>
-			<span class date>06-01</span>
-		</div>
-		<div class="flex">
-			<li>[중요]상반기 프로젝트</li>
-			<span class date>06-01</span>
-		</div>
-		<div class="flex">
-			<li>[공유] 무선 네트워크</li>
-			<span class date>06-01</span>
-		</div>
-	</div>
-	
-</div>
+          <div class="board-details">
+            <div class="flex">
+              <p><img src="img/pic.jpg" width="30px" height="30px" /></p>
+              <p><strong>한성준 과장</strong></p>
+              <p>2024-01-08(월) 14:36</p>
+            </div>
+            <div><p>확인 하였습니다.</p></div>
+            <!-- 댓글 추가 -->
+            <div class="flex">
+              <div><img src="img/pic.jpg" width="30px" height="30px" /></div>
+              <input class="search" type="text" />
+              <button type="submit">댓글 등록</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<script
-type="module"
-src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-></script>
-<script
-nomodule
-src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-></script>
-<script src="../importJS/headerIpt.js"></script>
+      <!-- 오른쪽 글 목록 -->
+      <div id="right_post">
+        <p class="right_m">전사 공지</p>
+        <div class="right_f">
+          <li>it 최근 이슈1</li>
+          <span class date>06-01</span>
+        </div>
+        <div class="flex">
+          <li>헬스케어 향후 전망</li>
+          <span class date>06-01</span>
+        </div>
+        <div class="flex">
+          <li>it 상반기 정책</li>
+          <span class date>06-01</span>
+        </div>
+        <div class="flex">
+          <li>AI 플랫폼 2024 유망 서비스</li>
+          <span class date>06-01</span>
+        </div>
 
-</body>
+        <p class="right_m">부서게시판</p>
+        <div class="flex">
+          <li>[공지] 금주 실행 계획</li>
+          <span class date>06-01</span>
+        </div>
+        <div class="flex">
+          <li>[중요]상반기 프로젝트</li>
+          <span class date>06-01</span>
+        </div>
+        <div class="flex">
+          <li>[공유] 무선 네트워크</li>
+          <span class date>06-01</span>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../importJS/headerIpt.js"></script>
+  </body>
 </html>

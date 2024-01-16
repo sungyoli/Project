@@ -167,4 +167,24 @@ details > ul {
     transform:translate(-50%, -50%) scale(1);
 }
 
+/* 조직도 클릭 버튼 */
+.OC-btn button{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color:#3cb4ff;
+    width:300px;
+    height:60px;
+    border: none;
+}
 
+.OC-btn span{
+    margin-left: 15px;
+    font-size: 15px;
+}
+
+.OC-btn button {
+    display: flex;
+    align-items: center;
+}

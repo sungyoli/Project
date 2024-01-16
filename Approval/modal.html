@@ -12,7 +12,6 @@
       src="https://kit.fontawesome.com/67a1f076db.js"
       crossorigin="anonymous"
     ></script>
-
 <title>전자결재</title>
 </head>
 <body>
@@ -29,15 +28,24 @@
                             <details>
                                 <summary><i class="fa-regular fa-folder"></i> 연차</summary>
                                 <ul>
-                                    <li><i class="fa-regular fa-file"></i>  연차신청서</li>
+                                    <button type="button" onclick='document.getElementById("test").innerHTML = "연차신청서"'>
+                                        <li><i class="fa-regular fa-file"></i>
+                                            연차신청서</button>
+                                    <!-- <li><i class="fa-regular fa-file"></i>  연차신청서</li> -->
                                 </ul>
                             </details></li>
                         <li class="parent">
                             <details>
                                 <summary><i class="fa-regular fa-folder"></i><span> 근태</span></summary>
                                 <ul>
-                                    <li><i class="fa-regular fa-file"></i> 휴가신청</li>
-                                    <li><i class="fa-regular fa-file"></i> 연장근무신청</li>
+                                    <button type="button" onclick='document.getElementById("test").innerHTML = "휴일근무신청"'>
+                                        <li><i class="fa-regular fa-file"></i>
+                                            휴일근무신청</button>
+                                    <button type="button" onclick='document.getElementById("test").innerHTML = "연장근무신청"'>
+                                        <li><i class="fa-regular fa-file"></i>
+                                            연장근무신청</button>
+                                    <!-- <li><i class="fa-regular fa-file"></i> 휴일근무신청</li>
+                                    <li><i class="fa-regular fa-file"></i> 연장근무신청</li> -->
                                 </ul>
                             </details>
                         </li>
@@ -51,7 +59,7 @@
                     </tr>
                     <tr>
                         <td>제목</td>
-                        <td>휴일근무신청</td>
+                        <td id="test">연차신청서</td>
                     </tr>
                     <tr>
                         <td>부서문서함</td>

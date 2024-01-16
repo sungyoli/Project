@@ -18,6 +18,29 @@
         };
 
         reader.readAsDataURL(selectedFile);
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <title>마이페이지_관리자</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="mypage1.css" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("inputImage")
+          .addEventListener("change", function () {
+            var selectedFile = this.files[0];
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+              document.getElementById("previewImage").src = e.target.result;
+              document.getElementById("previewImage").style.display = "block";
+            };
+
+            reader.readAsDataURL(selectedFile);
+          });
+>>>>>>> 01fe2082aa9bfb42c1f3c1f1d67a184c563742ff
       });
     });
 

@@ -5,77 +5,110 @@
     <!-- 반응형 웹 -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="modal.css" />
-    <link rel="shortcut icon" href="../logo/scope3.png">
+    <link rel="shortcut icon" href="../logo/scope3.png" />
     <script src="modal.js"></script>
 
     <script
       src="https://kit.fontawesome.com/67a1f076db.js"
       crossorigin="anonymous"
     ></script>
-
-<title>전자결재</title>
-</head>
-<body>
-<div class="popup" id="popup-1">
-    <div class="overlay"></div>
-    <div class="content">
+    <title>전자결재</title>
+  </head>
+  <body>
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+      <div class="content">
         <div class="close-btn" onclick="togglePopup()">&times;</div>
         <div class="title"><span>결재양식 선택</span></div>
         <div class="table">
-            <div class="table1">
-                <table>
-                    <ul class="tree">
-                        <li class="parent">
-                            <details>
-                                <summary><i class="fa-regular fa-folder"></i> 연차</summary>
-                                <ul>
-                                    <li><i class="fa-regular fa-file"></i>  연차신청서</li>
-                                </ul>
-                            </details></li>
-                        <li class="parent">
-                            <details>
-                                <summary><i class="fa-regular fa-folder"></i><span> 근태</span></summary>
-                                <ul>
-                                    <li><i class="fa-regular fa-file"></i> 휴가신청</li>
-                                    <li><i class="fa-regular fa-file"></i> 연장근무신청</li>
-                                </ul>
-                            </details>
-                        </li>
+          <div class="table1">
+            <table>
+              <ul class="tree">
+                <li class="parent">
+                  <details>
+                    <summary><i class="fa-regular fa-folder"></i> 연차</summary>
+                    <ul>
+                      <button
+                        type="button"
+                        onclick='document.getElementById("test").innerHTML = "연차신청서"'
+                      >
+                        <li><i class="fa-regular fa-file"></i> 연차신청서</li>
+                      </button>
+
+                      <!-- <li><i class="fa-regular fa-file"></i>  연차신청서</li> -->
                     </ul>
-                </table>
-            </div>
-            <div class="table2">
-                <table>
-                    <tr class="table2-top">
-                        <th colspan="2">상세정보</th>
-                    </tr>
-                    <tr>
-                        <td>제목</td>
-                        <td>휴일근무신청</td>
-                    </tr>
-                    <tr>
-                        <td>부서문서함</td>
-                        <td>
-							<select id="deptFoderId">
-								<option>영업팀</option>
-								<option>인사팀</option>
-							</select>
-						</td>
-                    </tr>
-                    <tr>
-                        <td>보존연한</td>
-                        <td>5년</td>
-                    </tr>
-                </table>
-            </div>
+                  </details>
+                </li>
+                <li class="parent">
+                  <details>
+                    <summary>
+                      <i class="fa-regular fa-folder"></i><span> 근태</span>
+                    </summary>
+                    <ul>
+                      <button
+                        type="button"
+                        onclick='document.getElementById("test").innerHTML = "휴일근무신청"'
+                      >
+                        <li><i class="fa-regular fa-file"></i> 휴일근무신청</li>
+                      </button>
+
+                      <button
+                        type="button"
+                        onclick='document.getElementById("test").innerHTML = "연장근무신청"'
+                      >
+                        <li><i class="fa-regular fa-file"></i> 연장근무신청</li>
+                      </button>
+
+                      <!-- <li><i class="fa-regular fa-file"></i> 휴일근무신청</li>
+                                    <li><i class="fa-regular fa-file"></i> 연장근무신청</li> -->
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+            </table>
+          </div>
+          <div class="table2">
+            <table>
+              <tr class="table2-top">
+                <th colspan="2">상세정보</th>
+              </tr>
+              <tr>
+                <td>제목</td>
+                <td id="test">연차신청서</td>
+              </tr>
+              <tr>
+                <td>부서문서함</td>
+                <td>
+                  <select id="deptFoderId">
+                    <option>영업팀</option>
+                    <option>인사팀</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>보존연한</td>
+                <td>5년</td>
+              </tr>
+            </table>
+          </div>
         </div>
         <div class="button">
-            <input type="button" id="confirm-button" onclick="window.location='ReauestLeave.html'" value="확인">
-            <input type="button" id="cancel-button" onclick="window.location='approval.html'" value="취소">
+          <input
+            type="button"
+            id="confirm-button"
+            onclick="window.location='ReauestLeave.html'"
+            value="확인"
+          />
+          <input
+            type="button"
+            id="cancel-button"
+            onclick="window.location='approval.html'"
+            value="취소"
+          />
         </div>
+      </div>
     </div>
-</div>
 
-<button class="first-btn" onclick="togglePopup()">새결재 진행</button>
-</body>
+    <button class="first-btn" onclick="togglePopup()">새결재 진행</button>
+  </body>
 </html>

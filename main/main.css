@@ -99,11 +99,7 @@ article {
 }
 
 .section2 {
-  width: 50%;
-}
-
-.section3 {
-  width: 30%;
+  width: 80%;
 }
 
 .section3 article:nth-child(2) {
@@ -161,6 +157,7 @@ article {
   padding: 10px;
 }
 .user-profile .inputBotton li {
-  width: 100px;
+  width: 50%;
+  text-align: center;
   text-overflow: ellipsis;
 }/*# sourceMappingURL=main.css.map */

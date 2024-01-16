@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut" href="../logo/scope3.png" />
+    <link rel="stylesheet" href="./nav.css" />
+    <title>navi</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul>
+        <li class="input">
+          <input type="text" placeholder="통합검색" />
+          <input type="submit" id="btn-search" title="검색" />
+        </li>
+        <li class="noti_btn">
+          <a href="#"></a>
+        </li>
+        <li class="thumbnail">
+          <a href="#"></a>
+          <ul class="infoList">
+            <li><a href="#">기본정보</a></li>
+            <li><a href="#">환경설정</a></li>
+            <li><a href="#">알림설정</a></li>
+            <li><a href="#">보안설정</a></li>
+            <li><a href="#">로그아웃</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".thumbnail a").click(function () {
+          $(".infoList").toggle();
+        });
+      });
+    </script>
+  </body>
+</html>

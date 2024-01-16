@@ -30,7 +30,6 @@ body {
 .left_menu {
   background: white;
   border-radius: 5px;
-  padding: 20px;
   width: 250px;
   height: 1080px;
 }
@@ -54,9 +53,9 @@ body {
 }
 
 .menu_top h3 {
-  font-weight: 500;
-  font-size: 22px;
-  color: #333;
+  font-size: 30px;
+  color: #4d4d4d;
+  padding-top : 60px;
 }
 
 #dateDisplay {
@@ -103,7 +102,7 @@ body {
 .menu_bottom {
   margin-left: -30px;
   cursor: pointer;
-  color: #333;
+  color: #999;
   list-style: none;
   font-weight: 400;
 }

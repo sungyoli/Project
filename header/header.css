@@ -40,14 +40,14 @@ body {
   transition: 0.5s;
 }
 .sidebar.barInfo {
-  width: 250px;
+  width: 300px;
 }
 .sidebar ul {
   position: relative;
   height: 100vh;
 }
 .sidebar ul li :hover {
-  background: #0ca2ff;
+  background: #3cb4ff;
 }
 .sidebar ul li .logo {
   margin-bottom: 50px;
@@ -94,6 +94,4 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-}
-
-/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=header.css.map */

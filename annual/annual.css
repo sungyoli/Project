@@ -33,13 +33,11 @@ body {
 
 /* left_Main 시작 */	
 .left_menu {
-	
-	background : white;
-	border-radius : 5px;
-	padding : 20px;
-	width : 250px;
-	height : 1080px;
-}
+	background: white;
+	border-radius: 5px;
+	width: 250px;
+	height: 1080px;
+  }
 
 .menu_middle img {
 	
@@ -64,19 +62,17 @@ body {
 }
 
 .menu_top h3 {
-	
-	font-weight : 500;
-	font-size : 22px;
-	color : #333;
-}
+	font-size: 30px;
+	color: #4d4d4d;
+	padding-top : 60px;
+  }
 
-#dateDisplay {
-	
+  #dateDisplay {
 	font-weight: 400;
-	font-size : 12px;
+	font-size: 12px;
 	color: #888;
-	margin : 15px 0 10px 0;
-}
+	margin: 15px 0 10px 0;
+  }
 
 #timeDisplay {
 	
@@ -105,7 +101,7 @@ body {
 	
 	margin-left : -30px;
 	cursor: pointer;
-	color : #333;
+	color: #999;
 	list-style : none;	
 	font-weight : 400;	
 }

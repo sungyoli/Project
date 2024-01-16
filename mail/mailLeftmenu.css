@@ -8,10 +8,6 @@ ul,
 li {
   list-style: none;
 }
-a{
-  text-decoration: none;
-  color: inherit;
-}
 
 body {
   height: 100vh;
@@ -61,33 +57,14 @@ body {
   font-weight: bold;
   text-align: left;
   position: relative;
+  padding-left: 10%;
 }
-
-#mailkind{
-  padding-left: 0;
-  margin-top: 50px;
-  margin-left: 40px;
-  margin-bottom: 0%;
-  cursor: pointer;
-}
-
-.mailkind_li{
-  height: 40px;
-  text-align: left;
-}
-
-/*.mailkind_li:hover{
-  background-color: #F0F8FF;
-}*/
-
-.mailkind_span{
-  position: relative;
-  top: 25%;
-  padding-bottom: 6px;
-  color: #999
-}
-
-.mailkind_span:hover{
-  color:black;
-  border-bottom: 1px solid black;
-}
+.accordion-button span::after {
+  content: url(../localImages/arrow.wbm);
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=mailLeftmenu.css.map */

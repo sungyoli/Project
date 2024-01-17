@@ -8,43 +8,6 @@
     <!-- CDN방식 -->
     <!-- 장점 내가 가지고 있지 않아도 됨 단점 인터넷연결이 안되어있으면 사용불가 -->
     <link rel="stylesheet" href="writeMail.css" />
-    <script src="../ckeditor/ckeditor.js"></script>
-    <script src="../importJS/OCIpt.js"></script>
-    <script src="http://cdn.ckeditor.com/4.23.0-lts/standard/ckeditor.js"></script>
-    <script type="text/javascript">
-      function submitForm() {
-        alert("등록되었습니다.");
-        location.href = "boardList.html";
-      }
-
-      function save() {
-        alert("임시저장되었습니다.");
-      }
-
-      function openOrgChartModal() {
-        var modal = document.getElementById("addressBookModal");
-        modal.style.display = "block";
-      }
-
-      function closeModal() {
-        var modal = document.getElementById("addressBookModal");
-        modal.style.display = "none";
-      }
-    </script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script src="../importJS/headerIpt.js"></script>
-    <script src="../importJS/mailIpt.js"></script>
-    <script
-      src="http://kit.fontawesome.com/a4539ed26c.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
     <div class="wrap">
@@ -156,10 +119,23 @@
         </form>
       </div>
     </div>
-    <script>
-      CKEDITOR.replace("editor1", {
-        language: "ko",
-      });
-    </script>
+    <script src="../ckeditor/ckeditor.js"></script>
+    <script src="../importJS/OCIpt.js"></script>
+    <script src="http://cdn.ckeditor.com/4.23.0-lts/standard/ckeditor.js"></script>
+    <script src="writeMail.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../importJS/headerIpt.js"></script>
+    <script src="../importJS/mailIpt.js"></script>
+    <script
+      src="http://kit.fontawesome.com/a4539ed26c.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

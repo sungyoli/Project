@@ -30,7 +30,6 @@ body {
 .left_menu {
   background: white;
   border-radius: 5px;
-  padding: 20px;
   width: 250px;
   height: 1080px;
 }
@@ -54,9 +53,9 @@ body {
 }
 
 .menu_top h3 {
-  font-weight: 500;
-  font-size: 22px;
-  color: #333;
+  font-size: 30px;
+  color: #4d4d4d;
+  padding-top : 60px;
 }
 
 #dateDisplay {
@@ -103,7 +102,7 @@ body {
 .menu_bottom {
   margin-left: -30px;
   cursor: pointer;
-  color: #333;
+  color: #999;
   list-style: none;
   font-weight: 400;
 }
@@ -135,7 +134,12 @@ body {
 #left_Main {
   display: flex;
   flex-direction: column;
-  margin: 0 25px 0 20px;
+  padding-left: 20px;
+}
+
+#left_Main {
+
+  border : 1px solid #ccc;
 }
 
 #main_top h1 {
@@ -147,7 +151,7 @@ body {
   border-radius: 5px;
   padding: 10px;
   width: 1650px;
-  margin-top: 10px;
+
 }
 
 #main_middle {

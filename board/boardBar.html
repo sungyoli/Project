@@ -3,32 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="boardBar.css" />
     <link rel="shortcut icon" href="../logo/scope3.png" />
+    <link rel="stylesheet" href="boardBar.css" />
+    <title>게시판사이드메뉴바</title>
   </head>
   <body>
     <div id="left_menu">
-      <h3 class="title">게시판</h3>
-      <input
-        type="button"
+      <div class="letter1_div">
+        <h1 id="letter1">게시판</h1>
+      </div>
+      <button
         id="write-button"
-        onclick="window.location='boardTable.html'"
-        value="글쓰기"
-      />
-      <div class="menu">
-        <a href="boardList.html">전체게시판</a>
-        <ul class="list">
-          <span class="title">부서게시판</span>
-          <li><a href="boardList_development.html">개발팀</a></li>
-          <li><a href="boardList_maintenance.html">유지보수(관리)팀</a></li>
-          <li><a href="boardList_generalAffairs.html">총무팀</a></li>
-          <li><a href="boardList_marketing.html">마케팅팀</a></li>
-          <li><a href="boardList_sales.html">영업팀</a></li>
+        class="buttonSections"
+        onclick="location.href='writeBoard.html'"
+      >
+        글쓰기
+      </button>
+
+      <div
+        id="panelsStayOpen-collapseOne"
+        class="accordion-collapse collapse show"
+      >
+        <ul id="boardkind">
+          <li
+            class="boardkind_li"
+            onclick="location.href='incomingBoardBox.html'"
+          >
+            <span class="boardkind_span">전체게시판</span>
+          </li>
+          <li class="boardkind_li" onclick="location.href='sendBoardBox.html'">
+            <span class="boardkind_span">개발팀</span>
+          </li>
+          <li class="boardkind_li" onclick="location.href='temporaryBox.html'">
+            <span class="boardkind_span">유지보수팀</span>
+          </li>
+          <li class="boardkind_li" onclick="location.href='temporaryBox.html'">
+            <span class="boardkind_span">총무팀</span>
+          </li>
+          <li class="boardkind_li" onclick="location.href='temporaryBox.html'">
+            <span class="boardkind_span">마케팅팀</span>
+          </li>
+          <li class="boardkind_li" onclick="location.href='temporaryBox.html'">
+            <span class="boardkind_span">영업팀</span>
+          </li>
         </ul>
       </div>
     </div>
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="boardBar.js"></script>
   </body>
 </html>

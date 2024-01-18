@@ -16,6 +16,7 @@
 # Ignore all local history of files
 .history
 .ionide
+target/
 
 # Support for Project snippet scope
 !.vscode/*.code-snippets
@@ -26,3 +27,70 @@ dist/*
 build/*
 *.log
 .DS_Store
+
+# Eclipse IDE
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders/
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# AJDT-specific (AspectJ Development Tools)
+.ajdt
+
+# Metadata used by Eclipse
+*.log
+
+# BlueJ
+.bluej/
+
+# JDT-specific (Java Development Tools)
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders/
+
+# Code Recommenders
+.recommenders/
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# TPTP (Test and Performance Tools Platform)
+.tptp/
+
+# libgdx
+.idea/
+*.iml
+*.ipr
+*.iws
+.gradle/
+build/

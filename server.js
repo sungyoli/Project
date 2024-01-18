@@ -8,7 +8,7 @@ const server = http.createServer((req, res) => {
 });
 
 // 서버가 8080 포트에서 동작하도록 설정합니다.
-const PORT = 8080;
+const PORT = 80;
 server.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

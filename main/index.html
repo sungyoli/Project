@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../header/header.css" />
     <link rel="stylesheet" href="main.css" />
-    <link rel="shortcut icon" href="../logo/scope3.png">
+    <link rel="shortcut icon" href="../logo/scope3.png" />
     <!-- <link rel="stylesheet" href="profile.css" /> -->
     <script
       src="https://kit.fontawesome.com/67a1f076db.js"
@@ -30,47 +30,11 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
             <article class="user-profile">
               <div class="profile"></div>
               <div class="profileInfo">
-                <div id="username">홍길동</div>
+                <h3 id="username">홍길동</h3>
                 <div class="description">
                   <div><span id="city">ICT그룹</span></div>
                 </div>
-                <ul class="inputBotton">
-                  <li>
-                    <a href="../mail/incomingMail.html"><span>오늘 온 메일</span></a>
-                  </li>
-                  <li>
-                    <a href="../calender/calendar.html"><span>오늘의 일정</span></a>
-                  </li>
-                </ul>
               </div>
-            </article>
-
-            <article id="calendar">
-            </article>
-          </section>
-
-          <section class="section2">
-            <article>
-              <ul>
-                <h2>게시판 최근 글</h2>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </article>
-
-            <article>
-              <a id="mailbox">메일함</a>
-            </article>
-          </section>
-
-          <!-- <section class="section3">
-            <article>
-              <a href="../Approval/waitApprove.html" id="approval">결재 대기 문서</a>
-            </article>
-
-            <article>
-              <a id="attendance">근태관리</a>
             </article>
 
             <ul class="write-links">
@@ -91,7 +55,33 @@ defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표�
                 />
               </li>
             </ul>
-          </section> -->
+            <!-- <article id="calendar"> -->
+            <article>
+              <a id="attendance">근태관리</a>
+            </article>
+            <article></article>
+          </section>
+
+          <section class="section2">
+            <article>
+              <ul>
+                <h2>게시판 최근 글</h2>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </article>
+
+            <article id="mailBox">
+              <iframe id="iframe" src="../mail/mainMailBox.html" scrolling="no" frameborder="0" allowfullscreen></iframe>
+            </article>
+
+            <article>
+              <a href="../Approval/waitApprove.html" id="approval"
+                >결재 대기 문서</a
+              >
+            </article>
+          </section>
         </div>
       </div>
     </div>

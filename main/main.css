@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import url(../header/header.css);
-@import url(mainMedia.css);
 * {
   padding: 0;
   margin: 0;
@@ -21,10 +19,17 @@ li {
   width: 60px;
 }
 
+#calendar .Wrapper {
+  width: 300px;
+  height: 300px;
+}
+
 /* ^ 기본 css 설정 */
 .wrap {
   display: flex;
   width: 100%;
+  min-width: 1200px;
+  background: #fdfdfd;
 }
 
 .wrapline {
@@ -81,49 +86,69 @@ li {
   min-width: 1600px;
   margin-top: 5px;
 }
-
-section {
-  text-align: center;
-  align-items: center;
-}
-
-article {
+.section_wrap article {
   height: 300px; /* 원하는 높이 지정 */
   background-color: #efefef;
   border-radius: 15px;
   margin: 10px; /* 네비게이션 바의 너비만큼 여백을 주어 옆에 위치하도록 함 */
 }
+.section_wrap section {
+  text-align: center;
+  align-items: center;
+}
+
+#iframe {
+  width: 100%;
+  height: 100%;
+}
 
 .section1 {
-  width: 20%;
+  width: 300px;
+  border-right: 1px solid #ddd;
+  margin: 0;
+  padding: 0;
+}
+.section1 article {
+  background: #fff;
+  margin: 0;
+}
+.section1 ul {
+  display: flex;
+}
+.section1 ul li {
+  width: 100%;
+  height: 50px;
+  margin: 10px;
+}
+.section1 ul li .inputBtn {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid #3cb4ff;
+  color: #3cb4ff;
+  background: #fff;
+  padding: 5px 10px 5px 10px;
+}
+.section1 ul li .inputBtn:hover {
+  background: #3cb4ff;
+  color: #fff;
+  font-weight: 700;
 }
 
 .section2 {
   width: 80%;
 }
+.section2 #mailBox {
+  overflow: hidden;
+}
+.section2 #mailBox iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
 
 .section3 article:nth-child(2) {
   height: 200px;
-}
-
-.write-links {
-  display: flex;
-  margin-left: 10px;
-}
-
-.write-links li {
-  width: 100%;
-  height: 100px;
-  margin: 10px;
-}
-
-.inputBtn {
-  width: 100%;
-  height: 100%;
-  border-radius: 7px;
-  border: none;
-  background: #efefef;
-  padding: 5px 10px 5px 10px;
 }
 
 .user-profile {
@@ -151,13 +176,4 @@ article {
   transform: translateX(-50%);
   width: 100%;
   bottom: 30px;
-}
-.user-profile .inputBotton {
-  display: flex;
-  padding: 10px;
-}
-.user-profile .inputBotton li {
-  width: 50%;
-  text-align: center;
-  text-overflow: ellipsis;
 }/*# sourceMappingURL=main.css.map */

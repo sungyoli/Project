@@ -1,28 +1,33 @@
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode
+HELP.md
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
-# Local History for Visual Studio Code
-.history/
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
 
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-.ionide
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# Support for Project snippet scope
-!.vscode/*.code-snippets
-
-# nodejs
-node_modules
-dist/*
-build/*
-*.log
-.DS_Store
+### VS Code ###
+.vscode/

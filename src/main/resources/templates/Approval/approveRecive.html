@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../logo/scope3.png" />
+    <title>수신문서함</title>
+    <script
+      src="http://kit.fontawesome.com/a4539ed26c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="approveRecive.css" />
+
+    <script
+      src="https://kit.fontawesome.com/67a1f076db.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="header"></div>
+      <div id="leftMenu"></div>
+      <!-- 가운데 게시판 목록 리스트 -->
+      <div class="tablewrap">
+        <!-- 상단메뉴바 -->
+        <div class="critical_bottom">
+          <ul class="tab_nav">
+            <li id="tab_all" class="first">
+              <span>전체</span>
+            </li>
+            <li id="tab_pending" class="first">
+              <span>대기</span>
+            </li>
+            <li id="tab_complete" class="first">
+              <span>완료</span>
+            </li>
+          </ul>
+        </div>
+        <div class="table">
+          <br />
+          <table>
+            <tr>
+              <th>접수일</th>
+              <th>결재양식</th>
+              <th>제목</th>
+              <th>첨부</th>
+              <th>기안자</th>
+              <th>담당자</th>
+              <th>문서번호</th>
+              <th>수신부서</th>
+              <th>결재상태</th>
+            </tr>
+            <tr onclick="redirectTo('WeekendWork_f.html')">
+              <td>2023-12-25</td>
+              <td>휴일근무신청</td>
+              <td>휴일근무신청합니다.</td>
+              <td></td>
+              <td>김상후</td>
+              <td>한성준</td>
+              <td>2024-0001</td>
+              <td>인사팀</td>
+              <td><button class="btn completed">완료</button></td>
+            </tr>
+
+            <tr onclick="redirectTo('ReauestLeave_f.html')">
+              <td>2023-12-25</td>
+              <td>연차신청</td>
+              <td>연차신청합니다.</td>
+              <td></td>
+              <td>조은정</td>
+              <td>김상후</td>
+              <td>2024-0002</td>
+              <td>영업팀</td>
+              <td><button class="btn completed">완료</button></td>
+            </tr>
+
+            <tr onclick="redirectTo('OvertimeWork_f.html')">
+              <td>2023-12-25</td>
+              <td>연차신청</td>
+              <td>연차신청합니다.</td>
+              <td></td>
+              <td>한성준</td>
+              <td>조은정</td>
+              <td>2024-0003</td>
+              <td>영업팀</td>
+              <td><button class="btn completed">완료</button></td>
+            </tr>
+          </table>
+        </div>
+        <!-- 검색창 -->
+        <div class="table-bottom">
+          <div class="pagination center">
+            <a href="#">&laquo;</a>
+            <a class="active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+          </div>
+
+          <div class="center">
+            <div class="select_text">
+              <div class="board_select">
+                <select class="select" value="게시판선택">
+                  <option selected disabled>제목</option>
+                  <option value="board">기안자</option>
+                  <option value="board">결재양식</option>
+                </select>
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="검색어를 입력하세요"
+                />
+                <button id="search-button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" src="../importJS/headerIpt.js"></script>
+    <script type="module" src="../importJS/approvalIpt.js"></script>
+    <script src="approval.js"></script>
+  </body>
+</html>

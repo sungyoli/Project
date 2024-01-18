@@ -48,17 +48,7 @@
        background-color: #ddd;
        color: #333;
  }
- #write-button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: hsl(203, 100%, 62%);
-    color: whitesmoke;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 15px;
- }
+
  
  .table_div  table {
     border-collapse: collapse;	

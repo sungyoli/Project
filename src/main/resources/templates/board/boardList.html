@@ -15,24 +15,9 @@
     <div class="wrap">
       <!-- 왼쪽 메뉴 -->
       <div id="header"></div>
-      <div id="left_menu">
-        <h3>게시판</h3>
-        <input
-          type="button"
-          id="write-button"
-          onclick="window.location='boardTable.html'"
-          value="글쓰기"
-        />
-        <div class="menu">
-          <a href="#">전체게시판</a>
-          <a>부서게시판</a>
-          <p><a href="boardList_development.html">개발팀</a></p>
-          <p><a href="boardList_maintenance.html">유지보수(관리)팀</a></p>
-          <p><a href="boardList_generalAffairs.html">총무팀</a></p>
-          <p><a href="boardList_marketing.html">마케팅팀</a></p>
-          <p><a href="boardList_sales.html">영업팀</a></p>
-        </div>
-      </div>
+      <div id="leftMenu"></div>
+
+      <div class="rightMenu">
 
       <!-- 가운데 게시판 목록 리스트 -->
       <div class="table_div">
@@ -148,6 +133,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="../importJS/headerIpt.js"></script>
+    <script src="../importJS/boardMenuIpt.js"></script>
     <script src="./boardList.js"></script>
   </body>
 </html>

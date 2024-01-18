@@ -7,9 +7,9 @@
       src="http://kit.fontawesome.com/a4539ed26c.js"
       crossorigin="anonymous"
     ></script>
-    <<<<<<< HEAD =======
+    <link rel="stylesheet" href="../header/header.css" />
     <link rel="shortcut icon" href="../logo/scope3.png" />
-    >>>>>>> 3ca4acab5ab9a1314d58d5d9d77455a6b7719619
+    <link rel="stylesheet" href="boardList.css" />
     <script>
       function updatePost() {
         const result = confirm("수정하겠습니까?");
@@ -32,25 +32,9 @@
     <div class="wrap">
       <!-- 왼쪽 메뉴 -->
       <div id="header"></div>
-      <div id="left_menu">
-        <div><h3>게시판</h3></div>
-        <input
-          type="button"
-          id="write-button"
-          onclick="window.location='boardTable.html'"
-          value="글쓰기"
-        />
-        <div class="menu">
-          <a href="boardList.html">전체게시판</a>
-          <a>부서게시판</a>
+      <div id="leftMenu"></div>
 
-          <p><a href="boardList_development.html">개발팀</a></p>
-          <p><a href="boardList_maintenance.html">유지보수(관리)팀</a></p>
-          <p><a href="boardList_generalAffairs.html">총무팀</a></p>
-          <p><a href="boardList_marketing.html">마케팅팀</a></p>
-          <p><a href="boardList_sales.html">영업팀</a></p>
-        </div>
-      </div>
+      <div class="rightMenu">
 
       <!-- 가운데 게시판 목록 리스트 -->
       <div class="table_div">
@@ -159,5 +143,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <script src="../importJS/headerIpt.js"></script>
+    <script src="../importJS/boardMenuIpt.js"></script>
+    <script src="./boardList.js"></script>
   </body>
 </html>

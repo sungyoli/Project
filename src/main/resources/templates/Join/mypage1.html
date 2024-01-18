@@ -2,12 +2,10 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <title>마이페이지(일반)</title>
+    <title>마이페이지(관리자)</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="mypage1.css" />
     <script src="mypage.js"></script>
-    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -36,7 +34,7 @@
 
       <div class="login">
         <div class="login_title">
-          <h2>기본정보</h2>
+          <h4>기본정보</h4>
         </div>
 
         <ul>
@@ -61,7 +59,7 @@
                   id="name"
                   class="int_box"
                   maxlength="20"
-                  placeholder="이름을 입력하세요"
+                  placeholder="이름"
                   autocomplete="name"
                 />
               </div>
@@ -105,53 +103,10 @@
                   id="email"
                   class="int_box"
                   maxlength="20"
-                  placeholder="이메일을 입력하세요"
+                  placeholder="이메일"
                   autocomplete="email"
                 />
               </div>
-            </div>
-
-            <div class="address_con">
-              <label for="zip-code">주소</label>
-              <p>
-                <input type="text" id="zip-code" placeholder="우편번호" />
-                <input
-                  type="button"
-                  onclick="execDaumPostcode()"
-                  value="우편번호 찾기"
-                />
-                <input
-                  type="button"
-                  onclick="execDaumPostcodeReset()"
-                  value="초기화"
-                />
-              </p>
-
-              <p>
-                <input
-                  type="text"
-                  id="address-1"
-                  placeholder="도로명주소"
-                  style="width: 500px"
-                  readonly
-                />
-                <input
-                  type="text"
-                  id="address-1-1"
-                  placeholder="지번주소"
-                  style="width: 500px"
-                  readonly
-                />
-              </p>
-
-              <p>
-                <input
-                  type="text"
-                  id="address-2"
-                  placeholder="상세주소"
-                  style="width: 500px"
-                />
-              </p>
             </div>
 
             <div class="phon_con">

@@ -12,11 +12,7 @@
     <form class="container">
       <div class="member-container">
         <div class="header">
-          <pre>
- 회원 가입을 위해
- 정보를 입력해주세요
-            </pre
-          >
+          <h4>회원가입</h4>
         </div>
         <ul>
           <li>
@@ -84,32 +80,17 @@
             </div>
           </li>
 
-          <tr id="ph">
-            <th>핸드폰 번호</th>
-            <br />
-            <td>
-              <input
-                type="tel"
-                name="phone1"
-                class="phone-input"
-                maxlength="3"
-              />
-              <span>-</span>
-              <input
-                type="tel"
-                name="phone2"
-                class="phone-input"
-                maxlength="4"
-              />
-              <span>-</span>
-              <input
-                type="tel"
-                name="phone3"
-                class="phone-input"
-                maxlength="4"
-              />
-            </td>
-          </tr>
+          <li>
+            <div class="ph_con">
+              <label for="ph">핸드폰 번호</label>
+              <br />
+              <td>
+                <input type="tel" name="phone1" class="phone-input" /> -
+                <input type="tel" name="phone2" class="phone-input" /> -
+                <input type="tel" name="phone3" class="phone-input" />
+              </td>
+            </div>
+          </li>
 
           <li class="auth">
             <div id="phoneNum">000000</div>
@@ -126,7 +107,7 @@
           </li>
 
           <li>
-            <div class="id_con">
+            <div class="email_con">
               <label for="mail">이메일</label>
               <div class="id_box">
                 <input
@@ -151,7 +132,7 @@
                     id="yy"
                     class="int_box"
                     maxlength="4"
-                    placeholder="년(4자)"
+                    placeholder="연도 월 일"
                   />
                 </div>
               </div>
@@ -172,14 +153,17 @@
               </div>
             </div>
           </li>
+
           <li class="terms">
             <p>이용약관</p>
             <iframe src="termsofUse.html" frameborder="0"></iframe>
           </li>
+
           <li class="agree-check">
             <input type="checkbox" /> 이용약관 개인정보 수집 및 이용, 마케팅
             활용 선택에 모두 동의합니다.
           </li>
+
           <!-- JOIN BTN-->
           <li class="join_btn">
             <input type="button" value="가입하기" onclick="join()" />

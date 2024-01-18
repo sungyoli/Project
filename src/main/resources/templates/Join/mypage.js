@@ -19,28 +19,6 @@ document
 
 });
 
-
-// 우편번호 찾기
-
-function execDaumPostcode() {
-    new daum.Postcode({
-      oncomplete: function (data) {
-        document.getElementById('zip-code').value = data.zonecode;
-        document.getElementById('address-1').value = data.address;
-        document.getElementById('address-1-1').value = data.jibunAddress;
-        document.getElementById('address-2').focus();
-      }
-    }).open();
-  }
-
-    function execDaumPostcodeReset() {
-    document.getElementById('zip-code').value = null;
-    document.getElementById('address-1').value = null;
-    document.getElementById('address-1-1').value = null;
-    document.getElementById('address-2').value = null;
-    }
-
- 
     //저장 버튼 누른후
     function come() {
         alert("저장되었습니다.");
@@ -64,24 +42,6 @@ function execDaumPostcode() {
         });
     });
 
-    // 우편번호 찾기
-
-    function execDaumPostcode() {
-        new daum.Postcode( {
-          oncomplete: function( data ) {
-            document.getElementById( 'zip-code' ).value = data.zonecode;
-            document.getElementById( 'address-1' ).value = data.address;
-            document.getElementById( 'address-1-1' ).value = data.jibunAddress;
-            document.getElementById( 'address-2' ).focus();
-          }
-        } ).open();
-      }
-      function execDaumPostcodeReset() {
-        document.getElementById( 'zip-code' ).value = null;
-        document.getElementById( 'address-1' ).value = null;
-        document.getElementById( 'address-1-1' ).value = null;
-        document.getElementById( 'address-2' ).value = null;
-      }
 
     //저장 버튼 누른후
     

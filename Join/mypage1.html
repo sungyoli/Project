@@ -1,140 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <title>마이페이지_관리자</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="mypage1.css" />
-  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById("inputImage").addEventListener("change", function () {
-        var selectedFile = this.files[0];
-        var reader = new FileReader();
-
-        reader.onload = function (e) {
-          document.getElementById("previewImage").src = e.target.result;
-          document.getElementById("previewImage").style.display = "block";
-        };
-
-        reader.readAsDataURL(selectedFile);
   <head>
     <meta charset="UTF-8" />
-    <title>마이페이지_관리자</title>
+    <title>마이페이지(일반)</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="mypage1.css" />
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .getElementById("inputImage")
-          .addEventListener("change", function () {
-            var selectedFile = this.files[0];
-            var reader = new FileReader();
-
-            reader.onload = function (e) {
-              document.getElementById("previewImage").src = e.target.result;
-              document.getElementById("previewImage").style.display = "block";
-            };
-
-            reader.readAsDataURL(selectedFile);
-          });
-      });
-    });
-
-    function come() {
-      alert("저장되었습니다.");
-    }
-
-<<<<<<< HEAD
-    function execDaumPostcode() {
-      new daum.Postcode({
-        oncomplete: function (data) {
-          document.getElementById('zip-code').value = data.zonecode;
-          document.getElementById('address-1').value = data.address;
-          document.getElementById('address-1-1').value = data.jibunAddress;
-          document.getElementById('address-2').focus();
-        }
-      }).open();
-    }
-
-    function execDaumPostcodeReset() {
-      document.getElementById('zip-code').value = null;
-      document.getElementById('address-1').value = null;
-      document.getElementById('address-1-1').value = null;
-      document.getElementById('address-2').value = null;
-    }
-  </script>
-</head>
-<body>
-  <div class="wrap">
-    <div class="max_icon">
-      <div class="icon-dropdown">
-        <div class="icon">
-          <img src="../join/image/question.png" alt="Question Icon">
-          <img src="../join/image/bell.png" alt="Bell Icon">
-        </div>
-
-        <div class="dropdownbtn">
-          <img class="profile" src="image/4301-212117.png" alt="Profile Icon">
-          <div class="dropdowncontent">
-            <a href="mypage1.html">기본정보</a>
-            <a href="#">알림설정</a>
-            <a href="#">로그아웃</a>
-=======
-    <script>
-      function come() {
-        alert("저장되었습니다.");
-      }
-    </script>
+    <script src="mypage.js"></script>
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-    <script>
-      function execDaumPostcode() {
-        new daum.Postcode({
-          oncomplete: function (data) {
-            document.getElementById("zip-code").value = data.zonecode;
-            document.getElementById("address-1").value = data.address;
-            document.getElementById("address-1-1").value = data.jibunAddress;
-            document.getElementById("address-2").focus();
-          },
-        }).open();
-      }
-      function execDaumPostcodeReset() {
-        document.getElementById("zip-code").value = null;
-        document.getElementById("address-1").value = null;
-        document.getElementById("address-1-1").value = null;
-        document.getElementById("address-2").value = null;
-      }
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        document
-          .getElementById("inputImage")
-          .addEventListener("change", function () {
-            var selectedFile = this.files[0];
-            var reader = new FileReader();
-
-            reader.onload = function (e) {
-              document.getElementById("previewImage").src = e.target.result;
-              document.getElementById("previewImage").style.display = "block";
-            };
-
-            reader.readAsDataURL(selectedFile);
-          });
-      });
-
-      function join() {
-        // join 함수 구현 (저장 또는 취소 버튼 클릭 시 동작)
-      }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
 
   <body>
     <div class="wrap">
       <div class="max_icon">
         <div class="icon-dropdown">
-          <div class="icon">
+          <div class="icon" onclick="navigateToNotificationPage()">
+            <a href="mypage4.html"></a>
             <img src="../join/image/question.png" alt="Question Icon" />
             <img src="../join/image/bell.png" alt="Bell Icon" />
           </div>
@@ -147,34 +28,13 @@
             />
             <div class="dropdowncontent">
               <a href="mypage1.html">기본정보</a>
-              <a href="#">알림설정</a>
+              <a href="mypage2.html">알림설정</a>
               <a href="#">로그아웃</a>
             </div>
->>>>>>> 01fe2082aa9bfb42c1f3c1f1d67a184c563742ff
           </div>
         </div>
       </div>
 
-<<<<<<< HEAD
-    <div class="login">
-      <div class="login_title">
-        <h2>기본정보</h2>
-      </div>
-
-      <ul>
-        <div class="box">
-          <li>
-            <div class="picture_con">
-              <label for="id">사진</label>
-              <input type="file" id="inputImage">
-              <img src="" id="previewImage">
-              <button id="sendButton" onclick="deleteImage()">삭제하기</button>
-              <img src="" class="uploadImage">
-            </div>
-          </li>
-            
-            
-=======
       <div class="login">
         <div class="login_title">
           <h2>기본정보</h2>
@@ -194,27 +54,30 @@
               </div>
             </li>
 
->>>>>>> 01fe2082aa9bfb42c1f3c1f1d67a184c563742ff
             <div class="name_con">
               <label for="id">이름</label>
-              <input
-                type="text"
-                id="id"
-                class="int_box"
-                maxlength="20"
-                placeholder="이름 2~20자 이내"
-              />
+              <div class="input-box">
+                <input
+                  type="text"
+                  id="email"
+                  class="int_box"
+                  maxlength="20"
+                  placeholder="이름을 입력하세요"
+                />
+              </div>
             </div>
 
             <div class="company_con">
-              <label for="id">회사</label>
-              <input
-                type="text"
-                id="id"
-                class="int_box"
-                maxlength="20"
-                placeholder="회사"
-              />
+              <label>회사</label>
+              <div class="input-box">
+                <input
+                  type="text"
+                  id="email"
+                  class="int_box"
+                  maxlength="20"
+                  placeholder="회사명"
+                />
+              </div>
             </div>
 
             <select name="option" class="select" line-height="1cm">
@@ -261,6 +124,7 @@
                   value="초기화"
                 />
               </p>
+
               <p>
                 <input
                   type="text"
@@ -277,6 +141,7 @@
                   readonly
                 />
               </p>
+
               <p>
                 <input
                   type="text"
@@ -315,21 +180,20 @@
                 </div>
               </div>
             </div>
+
+            <!-- JOIN BTN-->
+            <div class="join_btn" align="center">
+              <input type="submit" value="저장" onclick="come()" />
+              <input
+                type="submit"
+                value="취소"
+                style="background-color: rgba(128, 128, 128, 0.062)"
+                onclick="come()"
+              />
+            </div>
           </div>
         </ul>
-
-        <!-- JOIN BTN-->
-        <div class="join_btn" align="center">
-          <input type="submit" value="저장" onclick="come()" />
-          <input
-            type="submit"
-            value="취소"
-            style="background-color: rgba(128, 128, 128, 0.062)"
-            onclick="come()"
-          />
-        </div>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </body>
 </html>

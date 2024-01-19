@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../templates/Approval/OvertimeWork.css" />
+    <link rel="shortcut icon" href="../../templates/logo/scope3.png" />
+    <title>연장근무신청서</title>
+
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- <script type="text/javascript">
+      function handleCancelClick() {
+        const result = confirm("취소 하시겠습니까?");
+        if (result) {
+          // [확인] 버튼을 클릭하면 true를 반환하고,
+          window.location.href = "approval.html";
+        } else {
+          // [취소] 버튼을 클릭하면 false를 반환
+        }
+      }
+
+      function handleRequestClick() {
+        const result2 = confirm("결재요청 하시겠습니까?");
+        if (result2) {
+          // [확인] 버튼을 클릭하면 true를 반환하고,
+          alert("요청 완료되었습니다.");
+          window.location.href = "ReauestLeaveCompleted.html";
+        } else {
+          // [취소] 버튼을 클릭하면 false를 반환
+          // alert("취소되었습니다");
+        }
+      }
+    </script> -->
+  </head>
+  <body>
+    <div class="button-top">
+      <button type="button" class="btn" onclick="handleRequestClick()">
+        <div class="icon"><ion-icon name="create-outline"></ion-icon></div>
+        <a href="ReauestLeaveCompleted.html">결재요청</a>
+      </button>
+      <button type="button" class="btn" onclick="handleCancelClick()">
+        <div class="icon">
+          <ion-icon name="close-circle-outline"></ion-icon>
+        </div>
+        <a href="approval.html">취소</a>
+      </button>
+      <button type="button" class="btn">
+        <div class="icon"><ion-icon name="menu-outline"></ion-icon></div>
+        <a href="approval.html">목록</a>
+      </button>
+    </div>
+    <div class="wrap">
+      <div class="content">
+        <div class="img">
+          <img src="../../templates/Approval/연장근무신청서.png" />
+        </div>
+        <div class="file">
+          <ul>
+            <li>파일첨부</li>
+          </ul>
+          <div class="file-add">
+            <ul>
+              <li>
+                <ion-icon name="attach-outline"></ion-icon><span>파일선택</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="right-menu">
+        <div class="button">
+          <ul class="tab_nav">
+            <li id="tab_1" class="first">
+              <span>결재선</span>
+            </li>
+            <!-- <li id="tab_2" class="first">
+                <span>문서정보</span>
+              </li> -->
+          </ul>
+        </div>
+        <div class="profile1">
+          <img src="../../templates/Approval/profile.jpg" />
+          <ul>
+            <li>김상후 대표이사</li>
+            <li>결재대기</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../../templates/Approval/OvertimeWork.js"></script>
+  </body>
+</html>

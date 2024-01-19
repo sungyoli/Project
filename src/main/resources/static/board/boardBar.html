@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../templates/logo/scope3.png" />
+    <link rel="stylesheet" href="../../templates/board/boardBar.css" />
+    <title>게시판사이드메뉴바</title>
+  </head>
+  <body>
+    <div id="left_menu">
+      <div class="letter1_div">
+        <h1 id="letter1">게시판</h1>
+      </div>
+      <button
+        id="write-button"
+        class="buttonSections"
+        onclick="location.href='writeBoard.html'"
+      >
+        글쓰기
+      </button>
+
+      <div
+        id="panelsStayOpen-collapseOne"
+        class="accordion-collapse collapse show"
+      >
+        <ul id="boardkind">
+          <li
+            class="boardkind_li"
+            onclick="location.href='incomingBoardBox.html'"
+          >
+            <span class="boardkind_span">전체게시판</span>
+          </li>
+          <li class="boardkind_li" onclick="location.href='sendBoardBox.html'">
+            <span class="boardkind_span">개발팀</span>
+          </li>
+          <li class="boardkind_li" onclick="location.href='temporaryBox.html'">
+            <span class="boardkind_span">유지보수팀</span>
+          </li>
+          <li class="boardkind_li" onclick="location.href='temporaryBox.html'">
+            <span class="boardkind_span">총무팀</span>
+          </li>
+          <li class="boardkind_li" onclick="location.href='temporaryBox.html'">
+            <span class="boardkind_span">마케팅팀</span>
+          </li>
+          <li class="boardkind_li" onclick="location.href='temporaryBox.html'">
+            <span class="boardkind_span">영업팀</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>마이페이지(일반)</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="../../templates/logo/scope3.png" />
+    <link rel="stylesheet" href="../../templates/Join/mypage3_com.css" />
+    <script src="../../templates/Join/mypage.js"></script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="max_icon">
+        <div class="icon-dropdown">
+          <div class="icon" onclick="navigateToNotificationPage()">
+            <a href="mypage4.html"></a>
+            <img src="../../templates/Join/image/question.png" alt="Question Icon" />
+            <img src="../../templates/Join/image/bell.png" alt="Bell Icon" />
+          </div>
+
+          <div class="dropdownbtn">
+            <img
+              class="profile"
+              src="../../templates/Join/image/4301-212117.png"
+              alt="Profile Icon"
+            />
+            <div class="dropdowncontent">
+              <a href="mypage1.html">기본정보</a>
+              <a href="mypage2.html">알림설정</a>
+              <a href="#">로그아웃</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="login">
+        <div class="login_title">
+          <h4>기본정보</h4>
+        </div>
+
+        <ul>
+          <div class="box">
+            <li>
+              <div class="picture_con">
+                <label for="inputImage">사진</label>
+                <input type="file" id="inputImage" />
+                <img src="" id="previewImage" />
+                <button id="sendButton" onclick="deleteImage()">
+                  삭제하기
+                </button>
+                <img src="" class="uploadImage" />
+              </div>
+            </li>
+
+            <div class="name_con">
+              <label>이름</label>
+            </div>
+
+            <div class="company_con">
+              <label>회사</label>
+            </div>
+
+            <div class="division_con">
+              <label>부서</label>
+            </div>
+
+            <div class="option_con">
+              <label>직위</label>
+            </div>
+
+            <div class="email_con">
+              <label for="email">이메일</label>
+              <div class="input-box">
+                <input
+                  type="text"
+                  id="email"
+                  class="int_box"
+                  maxlength="20"
+                  placeholder="이메일"
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+
+            <div class="phon_con">
+              <label for="cell">Cell.</label>
+              <div class="input-box">
+                <input type="text" id="cell" class="int_box" maxlength="20" />
+              </div>
+            </div>
+
+            <div class="phon_con2">
+              <label for="dir">Dir.</label>
+              <div class="input-box">
+                <input type="text" id="dir" class="int_box" maxlength="20" />
+              </div>
+            </div>
+
+            <div class="birth_con">
+              <label for="yy">생년월일</label>
+              <div id="bir_wrap" class="input-box">
+                <div id="birth">
+                  <input
+                    type="date"
+                    id="yy"
+                    class="int_box"
+                    length="20"
+                    placeholder="년(4자)"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- JOIN BTN-->
+            <div class="join_btn" align="center">
+              <input type="submit" value="저장" onclick="come()" />
+              <input
+                type="submit"
+                value="취소"
+                style="background-color: rgba(128, 128, 128, 0.062)"
+                onclick="come()"
+              />
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

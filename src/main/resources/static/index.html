@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 반응형 웹 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../templates/main/main.css" />
+    <link rel="shortcut icon" href="../../templates/logo/scope3.png" />
+    <!-- <link rel="stylesheet" href="profile.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/67a1f076db.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../../templates/calender/createday.js"></script>
+    <!-- (3-3-2). 자바스크립트 소스 추가
+defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표시가 안되는 것을 방지 -->
+    <title>main</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- header 시작 -->
+      <div id="header"></div>
+      <!-- header 끝 -->
+
+      <div class="wrapline">
+        <div id="nav"></div>
+        <div class="section_wrap">
+          <section class="section1">
+            <article class="user-profile">
+              <div class="profile"></div>
+              <div class="profileInfo">
+                <h3 id="username">홍길동</h3>
+                <div class="description">
+                  <div><span id="city">ICT그룹</span></div>
+                </div>
+              </div>
+            </article>
+
+            <ul class="write-links">
+              <li>
+                <input
+                  class="inputBtn"
+                  type="button"
+                  value="메일쓰기"
+                  onclick="window.location='mail/writeMail.html'"
+                />
+              </li>
+              <li>
+                <input
+                  class="inputBtn"
+                  type="button"
+                  value="기안작성"
+                  onclick="window.location='Approval/approval.html'"
+                />
+              </li>
+            </ul>
+            <!-- <article id="calendar"> -->
+            <article>
+              <a id="attendance">근태관리</a>
+            </article>
+            <article></article>
+          </section>
+
+          <section class="section2">
+            <article>
+              <ul>
+                <h2>게시판 최근 글</h2>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </article>
+
+            <article id="mailBox">
+              <iframe id="iframe" src="mail/mainMailBox.html" scrolling="no" frameborder="0" allowfullscreen></iframe>
+            </article>
+
+            <article>
+              <a href="Approval/waitApprove.html" id="approval"
+                >결재 대기 문서</a
+              >
+            </article>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../../templates/importJS/headerIpt.js"></script>
+    <script src="../../templates/importJS/navIpt.js"></script>
+    <script src="../../templates/importJS/calendarIpt.js"></script>
+  </body>
+</html>

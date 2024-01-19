@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  height: 100vh;
+  position: fixed;
+}
+#mailLeftmenu {
+  width: 300px;
+  z-index: 998;
+}
+#left_menu {
+  width: 290px;
+  height: 100vh;
+  margin-right: 0px;
+  margin-top: 0;
+  border-right: 1px solid #ccc;
+  background: #fff;
+  text-align: center;
+}
+#letter1 {
+  text-align: left;
+  padding-top: 60px;
+  padding-left: 30px;
+  color: #4d4d4d;
+}
+.buttonSections {
+  width: 80%;
+  height: 55px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #3cb4ff;
+  color: #3cb4ff;
+  font-weight: 700;
+  font-size: 18px;
+  &:hover {
+     background: #fff;
+     color: #3cb4ff;
+  }
+}
+#write-button {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.accordion-button {
+  width: 50%;
+  height: 50px;
+  border: none;
+  background: #fff;
+  margin: 40px 0 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  position: relative;
+}
+#mailkind {
+  padding-left: 0;
+  margin-top: 50px;
+  margin-left: 40px;
+  margin-bottom: 0%;
+  cursor: pointer;
+}
+.mailkind_li {
+  height: 40px;
+  text-align: left;
+}
+.mailkind_span {
+  position: relative;
+  top: 25%;
+  padding-bottom: 6px;
+  color: #999;
+  &:hover {
+     color: black;
+     border-bottom: 1px solid black;
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>마이페이지(일반)</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="mypage1.css" />
+    <script src="mypage.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="max_icon">
+        <div class="icon-dropdown">
+          <div class="icon" onclick="navigateToNotificationPage()">
+            <a href="mypage4.html"></a>
+            <img src="../join/image/question.png" alt="Question Icon" />
+            <img src="../join/image/bell.png" alt="Bell Icon" />
+          </div>
+
+          <div class="dropdownbtn">
+            <img
+              class="profile"
+              src="image/4301-212117.png"
+              alt="Profile Icon"
+            />
+            <div class="dropdowncontent">
+              <a href="mypage1.html">기본정보</a>
+              <a href="mypage2.html">알림설정</a>
+              <a href="#">로그아웃</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="login">
+        <div class="login_title">
+          <h2>기본정보</h2>
+        </div>
+
+        <ul>
+          <div class="box">
+            <li>
+              <div class="picture_con">
+                <label for="id">사진</label>
+                <input type="file" id="inputImage" />
+                <img src="" id="previewImage" />
+                <button id="sendButton" onclick="deleteImage()">
+                  삭제하기
+                </button>
+                <img src="" class="uploadImage" />
+              </div>
+            </li>
+
+            <div class="name_con">
+              <label for="id">이름</label>
+              <div style="height: 50px"></div>
+            </div>
+
+            <div class="company_con">
+              <label>회사</label>
+              <div style="height: 50px"></div>
+            </div>
+
+            <div class="division_con">
+              <label>부서</label>
+              <div style="height: 50px"></div>
+            </div>
+
+            <div class="option_con">
+              <label>직위</label>
+              <div style="height: 50px"></div>
+            </div>
+
+            <div class="email_con">
+              <label for="email">이메일</label>
+              <div class="input-box">
+                <input
+                  type="text"
+                  id="email"
+                  class="int_box"
+                  maxlength="20"
+                  placeholder="이메일을 입력하세요"
+                />
+              </div>
+            </div>
+
+            <div class="address_con">
+              <label for="id">주소</label>
+              <p>
+                <input type="text" id="zip-code" placeholder="우편번호" />
+                <input
+                  type="button"
+                  onclick="execDaumPostcode()"
+                  value="우편번호 찾기"
+                />
+                <input
+                  type="button"
+                  onclick="execDaumPostcodeReset()"
+                  value="초기화"
+                />
+              </p>
+
+              <p>
+                <input
+                  type="text"
+                  id="address-1"
+                  placeholder="도로명주소"
+                  style="width: 500px"
+                  readonly
+                />
+                <input
+                  type="text"
+                  id="address-1-1"
+                  placeholder="지번주소"
+                  style="width: 500px"
+                  readonly
+                />
+              </p>
+
+              <p>
+                <input
+                  type="text"
+                  id="address-2"
+                  placeholder="상세주소"
+                  style="width: 500px"
+                />
+              </p>
+            </div>
+
+            <div class="phon_con">
+              <label for="id">Cell.</label>
+              <div class="input-box">
+                <input type="text" id="id" class="int_box" maxlength="20" />
+              </div>
+            </div>
+
+            <div class="phon_con2">
+              <label for="id">Dir.</label>
+              <div class="input-box">
+                <input type="text" id="id" class="int_box" maxlength="20" />
+              </div>
+            </div>
+
+            <div class="birth_con">
+              <label for="yy">생년월일</label>
+              <div id="bir_wrap" class="input-box">
+                <div id="birth">
+                  <input
+                    type="date"
+                    id="yy"
+                    class="int_box"
+                    length="20"
+                    placeholder="년(4자)"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- JOIN BTN-->
+            <div class="join_btn" align="center">
+              <input type="submit" value="저장" onclick="come()" />
+              <input
+                type="submit"
+                value="취소"
+                style="background-color: rgba(128, 128, 128, 0.062)"
+                onclick="come()"
+              />
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

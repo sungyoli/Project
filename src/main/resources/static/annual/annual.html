@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../templates/annual/annual.css" />
+    <link rel="shortcut icon" href="../../templates/logo/scope3.png" />
+    <script
+      src="https://kit.fontawesome.com/67a1f076db.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 이모티콘 사용 안하면 삭제 예정 -->
+
+    <title>근태관리</title>
+    <script src="../../templates/annual/annual.js" defer></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="header"></div>
+      <!-- left_Main 시작 -->
+      <section id="left_Main">
+        <nav class="left_menu">
+          <div class="menu_top">
+            <h3>근태관리</h3>
+            <h4 id="dateDisplay"></h4>
+            <h4 id="timeDisplay"></h4>
+            <hr />
+          </div>
+
+          <div class="menu_middle">
+            <table>
+              <tr>
+                <td colspan="2">
+                  <img src="../../templates/annual/img/pic.jpg" width="150px" height="150px" />
+                </td>
+              </tr>
+              <tr>
+                <th>출근시간</th>
+                <td id="startTime">미등록</td>
+              </tr>
+              <tr>
+                <th>퇴근시간</th>
+                <td id="endTime">미등록</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div>
+                    <input
+                      class="inputButton"
+                      type="button"
+                      value="연차신청"
+                      onclick="window.location='../Approval/ReauestLeave.html'"
+                    />
+                    <input
+                      class="inputButton"
+                      type="button"
+                      value="캘린더"
+                      onclick="window.location='../calendar/calendar.html'"
+                    />
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <hr />
+          <ul class="menu_bottom">
+            <li><a href="../status/status.html"> 내 근태 현황 </a></li>
+            <li><a href="annual.html"> 내 연차 내역 </a></li>
+          </ul>
+        </nav>
+      </section>
+      <!-- left_Main 끝 -->
+
+      <!-- right_Main 시작 -->
+      <section id="right_Main">
+        <!-- main_top 시작 -->
+        <div id="main_top">
+          <h1>내 연차 내역</h1>
+        </div>
+        <!-- main_top 끝 -->
+        <!-- main_middle 시작 -->
+        <section id="main_middle">
+          <div class="column">
+            <img src="../../templates/annual/img/pic.jpg" width="120px" height="120px" />
+            <p><b>홍길동 상무님</b></p>
+          </div>
+          <div class="column1">
+            <h2>총 연차</h2>
+            <p>(총 연차)</p>
+            <!-- <p><img src="img/test.png" width="150px" height="150px" /></p> -->
+            <!-- 이런식으로 원형 그래프 넣을까 생각중 수정 예정 -->
+          </div>
+          <div class="column1">
+            <h2>사용 연차</h2>
+            <p>(사용 연차)</p>
+          </div>
+          <div class="column1">
+            <h2>잔여 연차</h2>
+            <p>(잔여 연차)</p>
+          </div>
+        </section>
+        <!-- main_middle 끝 -->
+
+        <!-- main_bottom 시작 -->
+        <section id="main_bottom">
+          <form name="#" action="#" method="post">
+            <h2>사용 내역</h2>
+            <table>
+              <tr>
+                <th>이름</th>
+                <th>부서명</th>
+                <th>휴가종류</th>
+                <th>연차사용기간</th>
+                <th>사용 연차 내용</th>
+                <th>승인</th>
+              </tr>
+              <tr>
+                <td>홍길동</td>
+                <td>인사부</td>
+                <td>연차</td>
+                <td>2024-01-08~2024-01-09</td>
+                <td>개인 사유</td>
+                <td>
+                  <label
+                    ><input type="checkbox" name="check" value="check" checked
+                  /></label>
+                </td>
+              </tr>
+              <tr>
+                <td>홍길동</td>
+                <td>인사부</td>
+                <td>연차</td>
+                <td>2024-01-08~2024-01-09</td>
+                <td>개인 사유</td>
+                <td>
+                  <label
+                    ><input type="checkbox" name="check" value="check" checked
+                  /></label>
+                </td>
+              </tr>
+              <tr>
+                <td>홍길동</td>
+                <td>인사부</td>
+                <td>연차</td>
+                <td>2024-01-08~2024-01-09</td>
+                <td>개인 사유</td>
+                <td>
+                  <label
+                    ><input type="checkbox" name="check" value="check" checked
+                  /></label>
+                </td>
+              </tr>
+              <tr>
+                <td>홍길동</td>
+                <td>인사부</td>
+                <td>연차</td>
+                <td>2024-01-08~2024-01-09</td>
+                <td>개인 사유</td>
+                <td>
+                  <label
+                    ><input type="checkbox" name="check" value="check" checked
+                  /></label>
+                </td>
+              </tr>
+            </table>
+          </form>
+          <form name="#" action="#" method="post">
+            <h2>신청 내역</h2>
+            <table>
+              <tr>
+                <th>이름</th>
+                <th>부서명</th>
+                <th>휴가종류</th>
+                <th>연차사용기간</th>
+                <th>사용 연차 내용</th>
+                <th>승인</th>
+              </tr>
+              <tr>
+                <td>홍길동</td>
+                <td>인사부</td>
+                <td>연차</td>
+                <td>2024-01-08~2024-01-09</td>
+                <td>개인 사유</td>
+                <td>
+                  <label
+                    ><input type="checkbox" name="check" value="check"
+                  /></label>
+                </td>
+              </tr>
+              <tr>
+                <td>홍길동</td>
+                <td>인사부</td>
+                <td>연차</td>
+                <td>2024-01-08~2024-01-09</td>
+                <td>개인 사유</td>
+                <td>
+                  <label
+                    ><input type="checkbox" name="check" value="check"
+                  /></label>
+                </td>
+              </tr>
+              <tr>
+                <td>홍길동</td>
+                <td>인사부</td>
+                <td>연차</td>
+                <td>2024-01-08~2024-01-09</td>
+                <td>개인 사유</td>
+                <td>
+                  <label
+                    ><input type="checkbox" name="check" value="check"
+                  /></label>
+                </td>
+              </tr>
+              <tr>
+                <td>홍길동</td>
+                <td>인사부</td>
+                <td>연차</td>
+                <td>2024-01-08~2024-01-09</td>
+                <td>개인 사유</td>
+                <td>
+                  <label
+                    ><input type="checkbox" name="check" value="check"
+                  /></label>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </section>
+        <!-- main_bottom 끝 -->
+      </section>
+      <!-- right_Main 끝 -->
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../../templates/importJS/headerIpt.js"></script>
+  </body>
+</html>

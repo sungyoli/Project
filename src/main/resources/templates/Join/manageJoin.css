@@ -7,9 +7,9 @@
   font-family: "Noto Sans CJK KR";
   font-style: normal;
 }
-li{
-    list-style: none;
 
+li {
+  list-style: none;
 }
 
 body {
@@ -18,192 +18,234 @@ body {
   justify-content: center;
 }
 
+ul li {
+  margin-bottom: 20px; /* 각 li 요소 사이에 5px 간격을 줍니다. */
+}
+
+/*전체 폼  */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 950px;
-  height: 1400px;
+  width: 900px;
+  height: 1500px;
   margin-top: 60px;
   margin-bottom: 60px;
   background: #ffffff;
   border: 1px solid lightgray;
   border-radius: 10px;
 }
-.phone-input {
-  width: 30%;
-  height: 50px; 
-  border: 1px solid #3cb4ff;
-}
+
+/*폼안에 글자들 */
 .member-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top:100px;
-  height:100vh;
+  padding-top: 100px;
+  height: 100vh;
   line-height: 2;
 }
 
+/* 제목 */
 .header {
   width: 500px;
   height: 94px;
   font-weight: 700;
   font-size: 32px;
   line-height: 47px;
-  color: black;
+  color: #4d4d4d;
 }
 
-.id_con {
-  margin: 19px 0 8px;
-  font-size: 14px;
-  font-weight: 800;
-  width: 500px;
-  padding-right: 40px;
- 
-}
-
+/* 박스들(입력칸) */
 .int_box {
   display: block;
   position: relative;
   width: 100%;
   height: 50px;
   background: #fff;
-  font-size: 18px;
-  border:2px solid#3cb4ff;
+  font-size: 15px;
+  border: 1px solid lightgrey;
 }
 
-.id_box{
-    display: flex;
-    height: 50px;
-    width: 100%;
-   }
-
-.id_check{
-    border:none;
-    background-color:#3cb4ff;
-    color: #fff;
-    padding:10px 30px;
+.int_box::placeholder {
+  font-size: 14px; 
+  letter-spacing: 1px;
+  padding: 7px; 
 }
 
-.int_box button { 
- position: absolute;
-  width: 90px;
-  height: 40px;
-  top: 0;
-  bottom: 0;
-  right: 5px;
-  margin: auto 0;
-  border-radius: 3px;
-}
-.terms iframe{
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  border: 1px solid #ddd;
-}
-.terms iframe #text {
-  width: 100%;
+ /* 아이디 */
+.id_con {
+  margin: 19px 0 8px;
+  font-size: 14px;
+  font-weight: 800;
+  width: 500px;
+  padding-right: 40px;
 }
 
+/*아이디 이름  박스*/
+.id_box {
+  display: flex;
+  height: 50px;
+  width: 109%;
+}
+
+/* 아이디 중복확인 */
+.id_check {
+  border: none;
+  background-color: #3cb4ff;
+  color: #fff;
+  padding: 10px 30px;
+}
+
+/* 이름 */
+.name_con{
+  width: 500px;
+  padding-right: 40px;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/* 비밀번호 */
 .pwd_con {
-    width: 500px;
-    padding-right: 40px;
+  width: 540px;
+  padding-right: 40px;
+  font-size: 14px;
+  font-weight: 800;
 }
 
-.pwdconf_con {
-    width: 500px;
-    padding-right: 40px;
+/* 비밀번호 재입력 */
+.pwdconf_con{
+  width: 540px;
+  padding-right: 40px;
+  font-size: 14px;
+  font-weight: 800;
 }
 
+/* 폰번호 */
+.ph_con{
+  font-size: 14px;
+  font-weight: 800;
+}
+  
+/* 폰번호 입력칸 */
+.phone-input {
+  width:29%;
+  height: 40px;
+  border: 1px solid lightgray;
+}
+
+
+/*  인증번호 전송 */
 .auth {
-  display: flex;
   position: relative;
   width: 100%;
-}
-#sendMessage, #completion{
-  width: 30%;
-  top: 10px;
-  position: absolute;
-  right: 10px;
-}
-
-.timer {
-  display: flex;
-  position: relative;
 }
 
 .auth div {
   font-weight: 700;
   font-size: 15px;
-  margin: auto;
+  margin-left: 20px;
 }
 
+/* 인증번호 전송 버튼 */
 .auth button {
-  width: 50%;
   background-color: #fff;
   color: black;
   border-radius: 10px;
-  
+  margin-left: 200px;
+}
+
+
+/* 버튼 */
+#sendMessage,
+#completion {
+  width: 30%;
+  top: 10px;
+  position: absolute;
+  left: 120px;
+}
+
+/* 인증확인 */
+.timer {
+  position: relative;
 }
 
 .timer div {
   font-weight: 700;
   font-size: 15px;
-  margin: auto;
+  margin-left: 20px;
 }
 
+/* 인증확인 버튼 */
 .timer button {
   width: 50%;
   background-color: #fff;
   color: black;
   border-radius: 10px;
+  margin-left: 200px;
+}
+
+
+/* 이메일 */
+.email_con {
+  width: 500px;
+  padding-right: 40px;
+  font-size: 14px;
+}
+
+/* 생일 */
+.birth_con {
+  width: 100%;
+  padding-right: 40px;
+  display: table;
+  font-size: 14px;
+  font-weight: 800;
   
 }
 
-.birth_con {
-    width: 100%;
-    padding-right: 40px;
-    display: table;
-   
- 
+#yy.int_box {
+  font-size: 14px; 
+  color:gray;
+  letter-spacing: 1px;
+  padding: 7px; 
 }
 
-#bir_yy {
-  display: table-cell;
-  width: 147px;
+.num_con{
+  width: 85%;
 }
 
-#bir_mm {
-  display: table-cell;
-  width: 147px;
-  vertical-align: middle;
+/* 이용약관 */
+.terms iframe {
+  width: 93%;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ddd;
+  
 }
 
-#bir_dd {
-  display: table-cell;
-  width: 147px;
+.terms iframe #text {
+  width: 100%;
+  font-size: 14px;
 }
 
-#bir_mm,
-#bir_dd {
-  padding-left: 10px;
-}
-
-.email_con {
-    width: 500px;
-    padding-right: 40px;
-}
-
+/* 동의체크 */
 .agree-check {
-  width: 454px;
+  width: 464px;
   height: 21.06px;
   margin-top: 52.05px;
+  margin-left: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #000000;
 }
 
+p{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* 회원가입 버튼 */
 .join_btn {
   width: 100%;
   font-weight: 700;
@@ -214,16 +256,15 @@ body {
 button:hover {
   cursor: pointer;
 }
+/* 가입버튼 디자인 */
 .join_btn input {
   width: 100%;
   border: none;
-  background-color:#3cb4ff;
+  background-color: #3cb4ff;
   font-size: 20px;
   color: #fff;
   padding: 21px 0 17px;
 }
-#ph td span{
-  font-size:30px;
-  font-weight: 700;
 
-}
+
+

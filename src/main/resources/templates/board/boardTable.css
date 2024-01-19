@@ -14,7 +14,7 @@ li {
   padding: 0px;
 }
 #wrap {
-  width: 860px;
+  /* width: 860px; */
   margin: auto;
 }
 
@@ -54,7 +54,7 @@ header > h1 {
 /*게시판*/
 /*외곽잡기*/
 #content_wrap {
-  border: 1px solid #ddd;
+
   padding: 30px;
   background: white;
   width: 100%;
@@ -113,14 +113,20 @@ header > h1 {
   background: white;
   width: 100%;
   padding: 10px;
-  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+
 }
 .end a {
-  font-size: 14px;
-  border: 1px solid gold;
-  background: khaki;
-  padding: 5px;
-  border-radius: 5px;
+  display: inline-block;
+  min-width: 80px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  font-size: 15px;
+  text-align: center;
+  transition: background-color .2s;
 }
 .end a:hover {
   font-weight: bold;

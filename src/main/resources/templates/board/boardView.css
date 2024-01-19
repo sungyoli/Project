@@ -333,4 +333,5 @@
  .board-details .flex {
    display: flex;
    gap: 5px; /* 원하는 간격으로 조절 */
+   justify-content: start; 
  }

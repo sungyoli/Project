@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../templates/Join/login.css" />
+    <link rel="shortcut icon" href="../../templates/logo/scope3.png" />
+    <title>로그인</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="logo_img">
+        <!--<img src="../logo/scope1.png">-->
+      </div>
+      <div>
+        <form action="#" method="post">
+          <ul id="logininfo">
+            <li class="logininput">
+              <input
+                type="text"
+                id="id"
+                name="UserId"
+                size="20"
+                placeholder="계정"
+                autofocus
+                required
+              />
+            </li>
+            <li class="logininput">
+              <input
+                type="password"
+                id="pwd"
+                name="userPwd"
+                size="30"
+                placeholder="비밀번호"
+                required
+              />
+            </li>
+            <li>
+              <input class="loginButton" type="submit" value="로그인" />
+            </li>
+            <li class="save_and_find">
+              <label><input type="checkbox" id="save_ckb" /> 계정 저장 </label>
+              <label class="find"
+                ><a href="../find/idFind.html">계정찾기</a>/<a
+                  href="../find/pwFind.html"
+                  >비밀번호찾기</a
+                >
+              </label>
+            </li>
+            <li>
+              <div id="naver">
+                <a href="#">
+                  <img
+                    src="../../templates/login/images/btnG_축약형.png"
+                    height="30"
+                    class="Nlogin_button"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="../../templates/login/images/kakao_login_medium.png"
+                    class="Klogin_button"
+                  />
+                </a>
+              </div>
+            </li>
+            <li class="joingo_li">
+              <div class="joingo_div">
+                <a href="joinchoice.html">회원가입>></a>
+              </div>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

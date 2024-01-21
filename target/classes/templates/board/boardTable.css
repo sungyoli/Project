@@ -1,0 +1,164 @@
+body {
+  margin: 0px;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul,
+li {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+#wrap {
+  width: 860px;
+  margin: auto;
+}
+
+.wrap {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+header {
+  background: #eeeeee;
+  padding: 20px;
+}
+header > img {
+  float: left;
+  margin-right: 30px;
+  width: 120px;
+  height: 110px;
+}
+header > h1 {
+  padding: 0px;
+  margin: 0px;
+}
+.clear {
+  clear: both;
+}
+.none {
+  display: none;
+}
+
+/*게시판*/
+/*외곽잡기*/
+#content_wrap {
+  border: 1px solid #ddd;
+  padding: 30px;
+  background: white;
+  width: 100%;
+  font-size: 13px;
+  border-radius: 30px;
+}
+#content_wrap ul:nth-child(1),ul:nth-child(3) {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
+#content_wrap ul li {
+  margin-bottom: 6px;
+}
+#content_wrap ul li:nth-child(2) {
+  margin-bottom: 10px;
+}
+#content_wrap .title {
+  font-weight: bold;
+  display: inline-block;
+  width: 60px;
+}
+
+/*내부잡기 shift+home+insert */
+#content_wrap li:nth-child(1) div {
+  display: inline-block;
+}
+#content_wrap li:nth-child(1) .radiobox {
+  font-size: 13px;
+  margin-left: 50px;
+}
+/*쓰기영역 */
+.writeWrap {
+  margin: 0px;
+}
+
+.writeWrap .writeArea {
+  width: 95%;
+  padding: 5%;
+  font-size: 12px;
+  min-height: 300px;
+
+}
+.configWrap {
+  border: none;
+}
+.configWrap ul {
+  margin: 0px;
+  background: #ffffff;
+  padding: 10px;
+}
+.configWrap .tag .InputArea input {
+  width: 500px;
+}
+.end {
+  background: white;
+  width: 100%;
+  padding: 10px;
+  padding-top: 70px;
+}
+.end a {
+  font-size: 14px;
+  border: 1px solid gold;
+  background: khaki;
+  padding: 5px;
+  border-radius: 5px;
+}
+.end a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+.table_name {
+  font-size: 30px;
+}
+.wrap {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+#left_menu {
+  margin: 2%;
+  width: 200px;
+}
+#write-button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: hsl(203, 100%, 62%);
+  color: whitesmoke;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font: size 15px;
+}
+.menu a {
+  display: block; /* 블록 요소로 설정하여 전체 너비에 링크 적용 */
+  padding: 10px; /* 안쪽 여백 설정 */
+  color: #333; /* 글자색 설정 */
+  border-radius: 5px; /* 모서리 둥글게 설정 */
+}
+#header {
+  width: 60px;
+}
+

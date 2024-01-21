@@ -16,11 +16,20 @@ body {
   font-family: Arial, sans-serif;
 }
 
-.wrap {
-  max-width: 900px;
-  margin: 0 auto;
+ul li {
+  margin-bottom:30px; 
 }
 
+/* 전체폼 */
+  .wrap {
+    max-width: 800px;
+    flex-direction: column; /* 수직 방향으로 배치 */
+    margin-left: auto; /* 가운데 정렬을 위한 수정 */
+    margin-right: auto; /* 가운데 정렬을 위한 수정 */
+    margin-bottom: 20px; /* 여백 추가 */
+}
+
+/* 아이콘 드롭다운 전체 */
 .max_icon {
   display: flex;
   justify-content: space-between;
@@ -28,25 +37,30 @@ body {
   margin-left: 70%;
 }
 
+/* 아이콘 전체 */
 .icon-dropdown {
   display: flex;
   align-items: center;
 }
 
+/* 아이콘 */
 .icon {
   margin-right: 20px;
   position: relative;
 }
 
+/* 아이콘 이미지 */
 .icon img {
   width: 40px;
 }
 
+/* 드롭다운 버튼 */
 .dropdownbtn {
   position: relative;
   display: inline-block;
 }
 
+/* 드롭다운 이미지 */
 .profile {
   width: 50px;
   height: 50px;
@@ -54,6 +68,7 @@ body {
   cursor: pointer;
 }
 
+/* 드롭다운 항목 */
 .dropdowncontent {
   display: none;
   position: absolute;
@@ -71,102 +86,127 @@ body {
 }
 
 .dropdowncontent a:hover {
-  background-color: #3cb4ff;
+  background-color:  #3cb4ff;
 }
 
 .dropdownbtn:hover .dropdowncontent {
   display: block;
 }
 
+/* 폼박스 */
 .login {
-  background-color: #becaca09;
-  padding: 60px;
-  border: 3px solid lightgray;
-  margin-top: 20px;
+  padding: 70px;
+  border: 1px solid lightgray;
+  margin: 70px auto; /* 상단 여백을 70px로 설정하고 좌우 여백을 자동으로 조절 */
+  max-width: 1000px; /* 최대 너비 업데이트 */
 }
+  
+
 .login label {
   font-weight: 700;
 }
+
+/* 제목 */
 .login_title {
-  text-align: center;
+  color: #4d4d4d;
   margin-bottom: 20px;
-  font-size: 30px;
-  font-weight: 300;
+  font-size: 32px;
+  font-weight: 700;
+  
 }
 
+#h4{
+  line-height: 10px;
+}
+
+/* 폼박스2 */
 .box {
-  display: flex;
+  
   flex-wrap: wrap;
-  max-width: 30%;
   margin: 50px;
   line-height: 20px;
+  max-width: 100%; /* 수정된 부분 */
 }
+
+/* 사진 */
 #inputImage {
   border: none;
 }
-.login input {
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
 
-.int_box {
-  width: 300px; /* 원하는 너비 값으로 조절 */
-  height: 40px; /* 원하는 높이 값으로 조절 */
-  display: flex;
-  padding: 20px;
-  margin-bottom: 10px;
-  box-sizing: border-box; /* 패딩과 테두리를 요소의 크기에 포함 */
-}
-
-#previewImage {
-  max-width: 200px;
-  max-height: 200px;
-  display: none;
-}
-
+/* 사진 버튼 */
 input {
-  height: 40px;
-  vertical-align: middle;
-  border: 1px solid #dadada;
-  padding: 0px 15px;
+  height: 30px;
 }
 
-label {
-	display:inline-block;
-	text-align:center;
-	width:80px;
-	font-weight:bold
+/* 텍스트박스 */
+ .int_box {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    padding: 10px; /* 여백을 줄임 */
+    margin-bottom: 10px;
+  }
+
+/* 이름 */
+.name_con{
+  line-height: 50px;
 }
 
+/* 회사 */
+.company_con{
+  line-height: 50px;
+}
+
+/* 부서 */
+.division_con{
+  line-height: 50px;
+}
+
+/* 직위 */
+.option_con{
+  line-height: 50px;
+}
+
+
+/* 이메일,cell,dir,생년월일 박스 */
+.login input {
+  border: 1px solid lightgray;
+  
+}
+
+/* 이메일 */
 .email_con{
   line-height: 50px;
 }
 
-.address_con{
-  line-height: 30px;
-}
-
+/* cell */
 .phon_con{
-  line-height: 30px;
+  line-height: 50px;
 }
 
-.birth_con{
-  line-height: 30px;
+/* dir */
+.phon_con2{
+  line-height: 50px;
 }
+
+/* 생년월일 */
+.birth_con{
+  line-height: 50px;
+}
+
+/* 저장,취소 */
 .join_btn {
-  width: 100%;
-  font-weight: 700;
-  background-color: rgba(0, 0, 0, 0);
-  margin: 60px 0 91px;
-  border: 0;
+ margin-top: 50px;
 }
 
 button:hover {
   cursor: pointer;
 }
 
+/* 저장 버튼 디자인 */
 .join_btn input {
   width: 90px;
+  height:40px;
   border: none;
   font-size: 15px;
   color: #fff;
@@ -175,8 +215,12 @@ button:hover {
   background-color: #3cb4ff;
 }
 
+/* 취소버튼 */
 .join_btn input[value="취소"] {
   background-color: rgba(128, 128, 128, 0.062);
   color: black;
   border: none;
 }
+
+
+

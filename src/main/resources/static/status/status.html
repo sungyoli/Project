@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../templates/status/status.css" />
+    <link rel="shortcut icon" href="../../templates/logo/scope3.png" />
+    <script
+      src="https://kit.fontawesome.com/67a1f076db.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- 이모티콘 사용 안하면 삭제 예정 -->
+    <script src="../../templates/status/status.js" defer></script>
+
+    <title>근태관리</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="header"></div>
+      <!-- left_Main 시작 -->
+      <section id="left_Main">
+        <nav class="left_menu">
+          <div class="menu_top">
+            <h3>근태관리</h3>
+            <h4 id="dateDisplay"></h4>
+            <h4 id="timeDisplay"></h4>
+            <hr />
+          </div>
+
+          <div class="menu_middle">
+            <table>
+              <tr>
+                <td colspan="2">
+                  <img src="../../templates/status/img/pic.jpg" width="150px" height="150px" />
+                </td>
+              </tr>
+              <tr>
+                <th>출근시간</th>
+                <td id="currentTime">미등록</td>
+              </tr>
+              <tr>
+                <th>퇴근시간</th>
+                <td id="endTime">미등록</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div>
+                    <input
+                      class="inputButton"
+                      id="startBtn"
+                      type="button"
+                      value="출근하기"
+                      onclick="displayCurrentTime()"
+                    />
+                    <input
+                      class="inputButton"
+                      id="endBtn"
+                      type="button"
+                      value="퇴근하기"
+                      onclick="displayEndtime()"
+                    />
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <hr />
+          <ul class="menu_bottom">
+            <li><a href="status.html"> 내 근태 현황 </a></li>
+            <li><a href="../annual/annual.html"> 내 연차 내역 </a></li>
+          </ul>
+        </nav>
+      </section>
+      <!-- left_Main 끝 -->
+
+      <!-- right_Main 시작 -->
+      <section id="right_Main">
+        <!-- main_top 시작 -->
+        <section id="main_top">
+          <h1>내 근태 현황</h1>
+        </section>
+        <!-- main_top 끝 -->
+        <!-- main_middle 시작 -->
+        <section id="main_middle">
+          <div class="row">
+            <button class="accordion">1월</button>
+            <div class="panel">
+              <form name="#" action="#" method="post">
+                <table>
+                  <tr>
+                    <th>일자</th>
+                    <th>업무시작(09 : 00)</th>
+                    <th>업무종료(18 : 00)</th>
+                    <th>총 근무시간(8시간)</th>
+                    <th>상태(정상/지각/휴가)</th>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+
+            <button class="accordion">2월</button>
+            <div class="panel">
+              <form name="#" action="#" method="post">
+                <table>
+                  <tr>
+                    <th>일자</th>
+                    <th>업무시작(09 : 00)</th>
+                    <th>업무종료(18 : 00)</th>
+                    <th>총 근무시간(8시간)</th>
+                    <th>상태(정상/지각/휴가)</th>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+
+            <button class="accordion">3월</button>
+            <div class="panel">
+              <form name="#" action="#" method="post">
+                <table>
+                  <tr>
+                    <th>일자</th>
+                    <th>업무시작(09 : 00)</th>
+                    <th>업무종료(18 : 00)</th>
+                    <th>총 근무시간(8시간)</th>
+                    <th>상태(정상/지각/휴가)</th>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+
+            <button class="accordion">4월</button>
+            <div class="panel">
+              <form name="#" action="#" method="post">
+                <table>
+                  <tr>
+                    <th>일자</th>
+                    <th>업무시작(09 : 00)</th>
+                    <th>업무종료(18 : 00)</th>
+                    <th>총 근무시간(8시간)</th>
+                    <th>상태(정상/지각/휴가)</th>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+
+            <button class="accordion">5월</button>
+            <div class="panel">
+              <form name="#" action="#" method="post">
+                <table>
+                  <tr>
+                    <th>일자</th>
+                    <th>업무시작(09 : 00)</th>
+                    <th>업무종료(18 : 00)</th>
+                    <th>총 근무시간(8시간)</th>
+                    <th>상태(정상/지각/휴가)</th>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+
+            <button class="accordion">6월</button>
+            <div class="panel">
+              <form name="#" action="#" method="post">
+                <table>
+                  <tr>
+                    <th>일자</th>
+                    <th>업무시작(09 : 00)</th>
+                    <th>업무종료(18 : 00)</th>
+                    <th>총 근무시간(8시간)</th>
+                    <th>상태(정상/지각/휴가)</th>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+
+            <button class="accordion">7월</button>
+            <div class="panel">
+              <form name="#" action="#" method="post">
+                <table>
+                  <tr>
+                    <th>일자</th>
+                    <th>업무시작(09 : 00)</th>
+                    <th>업무종료(18 : 00)</th>
+                    <th>총 근무시간(8시간)</th>
+                    <th>상태(정상/지각/휴가)</th>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+
+            <button class="accordion">8월</button>
+            <div class="panel">
+              <form name="#" action="#" method="post">
+                <table>
+                  <tr>
+                    <th>일자</th>
+                    <th>업무시작(09 : 00)</th>
+                    <th>업무종료(18 : 00)</th>
+                    <th>총 근무시간(8시간)</th>
+                    <th>상태(정상/지각/휴가)</th>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+
+            <button class="accordion">9월</button>
+            <div class="panel">
+              <form name="#" action="#" method="post">
+                <table>
+                  <tr>
+                    <th>일자</th>
+                    <th>업무시작(09 : 00)</th>
+                    <th>업무종료(18 : 00)</th>
+                    <th>총 근무시간(8시간)</th>
+                    <th>상태(정상/지각/휴가)</th>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+
+            <button class="accordion">10월</button>
+            <div class="panel">
+              <form name="#" action="#" method="post">
+                <table>
+                  <tr>
+                    <th>일자</th>
+                    <th>업무시작(09 : 00)</th>
+                    <th>업무종료(18 : 00)</th>
+                    <th>총 근무시간(8시간)</th>
+                    <th>상태(정상/지각/휴가)</th>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+
+            <button class="accordion">11월</button>
+            <div class="panel">
+              <form name="#" action="#" method="post">
+                <table>
+                  <tr>
+                    <th>일자</th>
+                    <th>업무시작(09 : 00)</th>
+                    <th>업무종료(18 : 00)</th>
+                    <th>총 근무시간(8시간)</th>
+                    <th>상태(정상/지각/휴가)</th>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+
+            <button class="accordion">12월</button>
+            <div class="panel">
+              <form name="#" action="#" method="post">
+                <table>
+                  <tr>
+                    <th>일자</th>
+                    <th>업무시작(09 : 00)</th>
+                    <th>업무종료(18 : 00)</th>
+                    <th>총 근무시간(8시간)</th>
+                    <th>상태(정상/지각/휴가)</th>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                  <tr>
+                    <td>2024-01-03</td>
+                    <td>09 : 00</td>
+                    <td>18 : 00</td>
+                    <td>8시간</td>
+                    <td>정상</td>
+                  </tr>
+                </table>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- main_middle 끝 -->
+      </section>
+      <!-- right_Main 끝 -->
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../../templates/importJS/headerIpt.js"></script>
+  </body>
+</html>

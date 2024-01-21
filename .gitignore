@@ -1,96 +1,37 @@
-# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-### VisualStudioCode ###
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-*.code-workspace
-
-# Local History for Visual Studio Code
-.history/
-
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-.history
-.ionide
-target/
-
-# Support for Project snippet scope
-!.vscode/*.code-snippets
-
-# nodejs
-node_modules
-dist/*
-build/*
-*.log
-.DS_Store
-
-# Eclipse IDE
-.metadata
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.settings/
-.loadpath
-.recommenders/
-
-# External tool builders
-.externalToolBuilders/
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# PyDev specific (Python IDE for Eclipse)
-*.pydevproject
-
-# CDT-specific (C/C++ Development Tooling)
-.cproject
-
-# PDT-specific (PHP Development Tools)
-.buildpath
-
-# AJDT-specific (AspectJ Development Tools)
-.ajdt
-
-# Metadata used by Eclipse
-*.log
-
-# BlueJ
-.bluej/
-
-# JDT-specific (Java Development Tools)
-.metadata/
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.settings/
-.loadpath
-.recommenders/
-
-# Code Recommenders
-.recommenders/
-
-# STS (Spring Tool Suite)
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
 .springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
 
-# TPTP (Test and Performance Tools Platform)
-.tptp/
-
-# libgdx
-.idea/
+### IntelliJ IDEA ###
+.idea
+*.iws
 *.iml
 *.ipr
-*.iws
-.gradle/
-build/
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/

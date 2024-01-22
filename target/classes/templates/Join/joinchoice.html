@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="joinchoice.css" />
+    <link rel="shortcut icon" href="../logo/scope3.png" />
+    <script
+      src="https://kit.fontawesome.com/585765412d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>회원가입 페이지</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="header"></div>
+      <div id="container">
+        <div id="logo_img"></div>
+        <div>
+          <ul id="logininfo">
+            <form action="#" method="post">
+              <li>
+                <input
+                  class="loginButton"
+                  type="submit"
+                  value="관리자 회원가입"
+                  onclick="manage()"
+                />
+              </li>
+            </form>
+            <form action="#" method="post">
+              <li class="empjoin_li">
+                <input
+                  class="loginButton"
+                  type="submit"
+                  value="사원 회원가입"
+                  onclick="normal()"
+                />
+              </li>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      function manage() {
+        let link = "./manageJoin.html";
+        window.open(link);
+      }
+      function normal() {
+        let link = "./Join.html";
+        window.open(link);
+      }
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../importJS/headerIpt.js"></script>
+  </body>
+</html>

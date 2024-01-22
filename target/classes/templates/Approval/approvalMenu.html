@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 반응형 웹 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="../logo/scope3.png" />
+    <link rel="stylesheet" href="approvalMenu.css" />
+
+    <!-- (3-3-2). 자바스크립트 소스 추가
+defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표시가 안되는 것을 방지 -->
+    <!-- <script src="../resources/js/customer/main.js" defer></script> -->
+    <title>사이드메뉴바</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="left_menu">
+        <h3>전자결재</h3>
+        <div id="modalBtn">새 결재 진행</div>
+
+        <!-- 사이드 메뉴바 -->
+        <nav class="accordion">
+          <ul class="tab">
+            <label for="cb1" class="tab__label">결재하기</label>
+            <li class="tab__content">
+              <ul>
+                <li>
+                  <a href="waitApprove.html"><span>결재 대기 문서</span></a>
+                </li>
+                <li>
+                  <a href="recivedApproval.html"><span>결재 수신 문서</span></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="tab">
+            <label for="cb2" class="tab__label">개인 문서함</label>
+            <li class="tab__content">
+              <ul>
+                <li>
+                  <a href="../Approval/approvalLetter.html"
+                    ><span>결재 문서함</span></a
+                  >
+                </li>
+                <li>
+                  <a href="../Approval/recivedApproval.html"
+                    ><span>수신 문서함</span></a
+                  >
+                </li>
+                <li>
+                  <a href="../Approval/shippingApproval.html"
+                    ><span>발송 문서함</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <script type="module" src="../Approval/modal.js"></script>
+  </body>
+</html>

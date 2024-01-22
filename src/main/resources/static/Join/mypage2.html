@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>마이페이지(관리자)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../templates/Join/mypage2.css" />
+    <link rel="shortcut icon" href="../../templates/logo/scope3.png" />
+    <script src="../../templates/Join/mypage.js"></script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="max_icon">
+        <div class="icon-dropdown">
+          <div class="icon" onclick="navigateToNotificationPage()">
+            <img src="../../templates/Join/image/question.png" alt="Question Icon" />
+            <img src="../../templates/Join/image/bell.png" alt="Bell Icon" />
+          </div>
+
+          <div class="dropdownbtn">
+            <img
+              class="profile"
+              src="../../templates/Join/image/4301-212117.png"
+              alt="Profile Icon"
+            />
+            <div class="dropdowncontent">
+              <a href="mypage1.html">기본정보</a>
+              <a href="#">알림설정</a>
+              <a href="#">로그아웃</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="title">
+        <h3>메뉴별 알림설정</h3>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <div
+            class="accordion-header"
+            onclick="toggleAccordion('collapseOne')"
+          >
+            메일
+          </div>
+          <div id="collapseOne" class="accordion-body">
+            <ul>
+              <li>메일 수신</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 받은 메일
+            </div>
+            <hr />
+
+            <ul>
+              <li>공유메일 설정</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 공유받은 사용자
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="accordion-item">
+          <div
+            class="accordion-header"
+            onclick="toggleAccordion('collapseTwo')"
+          >
+            전자결재
+          </div>
+          <div id="collapseTwo" class="accordion-body">
+            <ul>
+              <li>결재/합의/확인/감사 도착</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 결재 대기자
+              <input type="checkbox" name="" id="" /> 합의 대기자
+              <input type="checkbox" name="" id="" /> 확인 대기자
+              <input type="checkbox" name="" id="" /> 감사 대기자
+              <input type="checkbox" name="" id="" /> 대결 대기자
+            </div>
+            <hr />
+
+            <ul>
+              <li>상신/결재/합의/확인/감사 취소 or 결재 문서 회수</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 결재 대기자
+              <input type="checkbox" name="" id="" /> 합의 대기자
+              <input type="checkbox" name="" id="" /> 확인 대기자
+              <input type="checkbox" name="" id="" /> 감사 대기자
+              <input type="checkbox" name="" id="" /> 대결 대기자
+            </div>
+            <hr />
+
+            <ul>
+              <li>결재 반려/강제 반려</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 기안자
+              <input type="checkbox" name="" id="" /> 기결재자
+              <input type="checkbox" name="" id="" /> 기합의자
+              <input type="checkbox" name="" id="" /> 기확인자
+              <input type="checkbox" name="" id="" /> 기감사자
+              <input type="checkbox" name="" id="" /> 참조자
+            </div>
+            <hr />
+
+            <ul>
+              <li>전단계 반려</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 기결재자
+              <input type="checkbox" name="" id="" /> 기합의자
+              <input type="checkbox" name="" id="" /> 기확인자
+              <input type="checkbox" name="" id="" /> 기감사자
+            </div>
+            <hr />
+
+            <ul>
+              <li>최종완료</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 기안자
+              <input type="checkbox" name="" id="" /> 기결재자
+              <input type="checkbox" name="" id="" /> 기합의자
+              <input type="checkbox" name="" id="" /> 기확인자
+              <input type="checkbox" name="" id="" /> 기감사자
+              <input type="checkbox" name="" id="" /> 참조자
+              <input type="checkbox" name="" id="" /> 열람자
+            </div>
+            <hr />
+
+            <ul>
+              <li>댓글 등록 알림</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 기안자
+              <input type="checkbox" name="" id="" /> 결재자
+              <input type="checkbox" name="" id="" /> 합의자
+              <input type="checkbox" name="" id="" /> 확인자
+              <input type="checkbox" name="" id="" /> 감사자
+              <input type="checkbox" name="" id="" /> 참조자
+              <input type="checkbox" name="" id="" /> 열람자
+            </div>
+            <hr />
+
+            <ul>
+              <li>열람자 추가</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" />추가된 열람자
+            </div>
+            <hr />
+
+            <ul>
+              <li>참조자 추가</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" />추가된 참조자(부서)
+            </div>
+            <hr />
+
+            <ul>
+              <li>수신도착</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" />수신부서의 부서문서함
+              담당자 <input type="checkbox" name="" id="" />부(부)서장
+              <input type="checkbox" name="" id="" />수신자
+            </div>
+            <hr />
+
+            <ul>
+              <li>담당자 지정 알림</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" />담당자
+            </div>
+            <hr />
+
+            <ul>
+              <li>반송/강제반송 알림</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" />원문서 기안자
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <!--3  -->
+        <div class="accordion-item">
+          <div
+            class="accordion-header"
+            onclick="toggleAccordion('collapseThree')"
+          >
+            캘린더
+          </div>
+          <div id="collapseThree" class="accordion-body">
+            <ul>
+              <li>전사 일정 등록</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 참석자
+            </div>
+            <hr />
+
+            <ul>
+              <li>일정 등록</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 참석자
+            </div>
+            <hr />
+
+            <ul>
+              <li>일정 수정</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 참석자
+              <input type="checkbox" name="" id="" /> 댓글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>관심동료 신청</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 신청을 받은 사용자
+            </div>
+            <hr />
+
+            <ul>
+              <li>관심등록 신청 수락</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 신청한 사용자
+            </div>
+            <hr />
+
+            <ul>
+              <li>관심등록 신청 거부</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 신청한 사용자
+            </div>
+            <hr />
+
+            <ul>
+              <li>일정 알림</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 참석자
+            </div>
+            <hr />
+
+            <ul>
+              <li>댓글등록</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 참석자
+              <input type="checkbox" name="" id="" /> 댓글 등록자
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <!--4  -->
+        <div class="accordion-item">
+          <div
+            class="accordion-header"
+            onclick="toggleAccordion('collapseFour')"
+          >
+            게시판
+          </div>
+          <div id="collapseFour" class="accordion-body">
+            <ul>
+              <li>게시물 등록</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 등록자 알림
+            </div>
+            <hr />
+
+            <ul>
+              <li>게시물 수정</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+            </div>
+            <hr />
+
+            <ul>
+              <li>답글 등록</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 등록자 알림
+              <input type="checkbox" name="" id="" /> 원글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>답글 수정</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 등록자 알림
+              <input type="checkbox" name="" id="" /> 원글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>댓글 알림</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 게시물 등록자
+              <input type="checkbox" name="" id="" /> 댓글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>추천(+1) 등록</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 게시물 등록자
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <!--5  -->
+        <div class="accordion-item">
+          <div
+            class="accordion-header"
+            onclick="toggleAccordion('collapseFive')"
+          >
+            커뮤니티
+          </div>
+          <div id="collapseFive" class="accordion-body">
+            <ul>
+              <li>멤버 추가</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> (부)마스터
+              <input type="checkbox" name="" id="" /> 멤버
+            </div>
+            <hr />
+
+            <ul>
+              <li>가입 신청</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> (부)마스터
+            </div>
+            <hr />
+
+            <ul>
+              <li>개설 신청</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 사이트관리자
+            </div>
+            <hr />
+
+            <ul>
+              <li>게시물 등록</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 등록자 알림
+            </div>
+            <hr />
+
+            <ul>
+              <li>게시물 수정</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 댓글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>답글 등록</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 등록자 알림
+              <input type="checkbox" name="" id="" /> 원글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>답글 수정</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 등록자 알림
+              <input type="checkbox" name="" id="" /> 원글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>댓글 알림</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 게시물 등록자
+              <input type="checkbox" name="" id="" /> 댓글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>추천(+1) 등록</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 게시물 등록자
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <!--6  -->
+        <div class="accordion-item">
+          <div
+            class="accordion-header"
+            onclick="toggleAccordion('collapseSix')"
+          >
+            설문
+          </div>
+          <div id="collapseSix" class="accordion-body">
+            <ul>
+              <li>설문 등록</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 대상자
+              <input type="checkbox" name="" id="" /> 참조자
+            </div>
+            <hr />
+
+            <ul>
+              <li>미참여자에게 알림보내기</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 대상자 중 미참여자
+            </div>
+            <hr />
+
+            <ul>
+              <li>댓글</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 등록자
+              <input type="checkbox" name="" id="" /> 대상자
+              <input type="checkbox" name="" id="" /> 참조자
+              <input type="checkbox" name="" id="" /> 댓글 등록자
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <!--7  -->
+        <div class="accordion-item">
+          <div
+            class="accordion-header"
+            onclick="toggleAccordion('collapseSeven')"
+          >
+            보고
+          </div>
+          <div id="collapseSeven" class="accordion-body">
+            <ul>
+              <li>보고자로 등록</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 보고자
+            </div>
+            <hr />
+
+            <ul>
+              <li>보고서 등록</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 참조자
+            </div>
+            <hr />
+
+            <ul>
+              <li>보고서 수정</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 참조자
+              <hr />
+
+              <ul>
+                <li>정기보고 회차 댓글 등록</li>
+              </ul>
+              <div class="checkbox">
+                <input type="checkbox" name="" id="" /> 운영자
+                <input type="checkbox" name="" id="" /> 참조자
+                <input type="checkbox" name="" id="" /> 보고 등록 대상자
+                <input type="checkbox" name="" id="" /> 댓글 등록자
+              </div>
+              <hr />
+
+              <ul>
+                <li>보고 상세 댓글 등록</li>
+              </ul>
+              <div class="checkbox">
+                <input type="checkbox" name="" id="" /> 운영자
+                <input type="checkbox" name="" id="" /> 참조자
+                <input type="checkbox" name="" id="" /> 보고자
+                <input type="checkbox" name="" id="" /> 댓글 등록자
+              </div>
+              <hr />
+
+              <ul>
+                <li>참조자로 등록</li>
+              </ul>
+              <div class="checkbox">
+                <input type="checkbox" name="" id="" /> 참조자로 등록된 사용자
+              </div>
+              <hr />
+
+              <ul>
+                <li>운영자로 설정</li>
+              </ul>
+              <div class="checkbox">
+                <input type="checkbox" name="" id="" /> 운영자로 설정된 사용자
+              </div>
+              <hr />
+            </div>
+          </div>
+        </div>
+
+        <!--8  -->
+        <div class="accordion-item">
+          <div
+            class="accordion-header"
+            onclick="toggleAccordion('collapseEight')"
+          >
+            ToDO+
+          </div>
+          <div id="collapseEight" class="accordion-body">
+            <ul>
+              <li>보드 멤버추가</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+            </div>
+            <hr />
+
+            <ul>
+              <li>카드 이동</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 담당자
+              <input type="checkbox" name="" id="" /> 댓글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>담당자 변경</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 담당자
+              <input type="checkbox" name="" id="" /> 댓글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>댓글 등록</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 담당자
+              <input type="checkbox" name="" id="" /> 댓글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>첨부파일 등록</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 담당자
+              <input type="checkbox" name="" id="" /> 댓글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>세부 작업 추가</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 담당자
+              <input type="checkbox" name="" id="" /> 댓글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>세부 작업 완료</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 담당자
+              <input type="checkbox" name="" id="" /> 댓글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>카드 등록</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <!--9 -->
+        <div class="accordion-item">
+          <div
+            class="accordion-header"
+            onclick="toggleAccordion('collapseNine')"
+          >
+            Works
+          </div>
+          <div id="collapseNine" class="accordion-body">
+            <ul>
+              <li>데이터 등록</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 공유자
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 데이터에 추가된 사용자
+              <input type="checkbox" name="" id="" /> 운영자 설정 우선
+            </div>
+            <hr />
+
+            <ul>
+              <li>상태 변경</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 공유자
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 데이터에 추가된 사용자
+              <input type="checkbox" name="" id="" /> 등록자
+              <input type="checkbox" name="" id="" /> 운영자 설정 우선
+            </div>
+            <hr />
+
+            <ul>
+              <li>데이터 정보 변경</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 공유자
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 데이터에 추가된 사용자
+              <input type="checkbox" name="" id="" /> 등록자
+              <input type="checkbox" name="" id="" /> 운영자 설정 우선
+            </div>
+            <hr />
+
+            <ul>
+              <li>활동기록 등록</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 공유자
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 데이터에 추가된 사용자
+              <input type="checkbox" name="" id="" /> 등록자
+              <input type="checkbox" name="" id="" /> 활동기록 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>활동기록 수정</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 공유자
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 데이터에 추가된 사용자
+              <input type="checkbox" name="" id="" />등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>댓글 등록</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 공유자
+              <input type="checkbox" name="" id="" /> 운영자
+              <input type="checkbox" name="" id="" /> 데이터에 추가된 사용자
+              <input type="checkbox" name="" id="" /> 등록자
+              <input type="checkbox" name="" id="" />활동기록 등록자
+              <input type="checkbox" name="" id="" />댓글 등록자
+            </div>
+            <hr />
+
+            <ul>
+              <li>데이터 연동신청</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 운영자
+            </div>
+            <hr />
+
+            <ul>
+              <li>데이터 연동수락</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 운영자
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <!--10 -->
+        <div class="accordion-item">
+          <div
+            class="accordion-header"
+            onclick="toggleAccordion('collapseTen')"
+          >
+            예약
+          </div>
+          <div id="collapseTen" class="accordion-body">
+            <ul>
+              <li>예약 등록</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 운영자
+            </div>
+            <hr />
+
+            <ul>
+              <li>예약 변경</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 운영자
+            </div>
+            <hr />
+
+            <ul>
+              <li>예약 취소</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 운영자
+            </div>
+            <hr />
+
+            <ul>
+              <li>대여 등록</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 운영자
+            </div>
+            <hr />
+
+            <ul>
+              <li>반납</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 운영자
+            </div>
+            <hr />
+
+            <ul>
+              <li>운영자로 설정</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" />운영자로 설정된 사용자
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <!--11 -->
+        <div class="accordion-item">
+          <div
+            class="accordion-header"
+            onclick="toggleAccordion('collapseEleven')"
+          >
+            문서관리
+          </div>
+          <div id="collapseEleven" class="accordion-body">
+            <ul>
+              <li>문서 등록</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" />즐겨찾기
+              <input type="checkbox" name="" id="" />운영자
+            </div>
+            <hr />
+
+            <ul>
+              <li>문서 업데이트</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 전체
+              <input type="checkbox" name="" id="" /> 즐겨찾기
+              <input type="checkbox" name="" id="" /> 운영자
+            </div>
+            <hr />
+
+            <ul>
+              <li>등록 승인 요청</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 운영자
+            </div>
+            <hr />
+
+            <ul>
+              <li>승인 요청 취소</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 운영자
+            </div>
+            <hr />
+
+            <ul>
+              <li>승인 완료</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 승인 요청자
+            </div>
+            <hr />
+
+            <ul>
+              <li>반려</li>
+            </ul>
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" />승인 요청자
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <!--12 -->
+        <div class="accordion-item">
+          <div
+            class="accordion-header"
+            onclick="toggleAccordion('collapseTwelve')"
+          >
+            자료실
+          </div>
+          <div id="collapseTwelve" class="accordion-body">
+            <ul>
+              <li>파일 등록</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 공유한 폴더
+              <input type="checkbox" name="" id="" /> 공유받은 폴더
+            </div>
+            <hr />
+
+            <ul>
+              <li>공유자 설정</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 공유받은 사용자
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <!--13 -->
+        <div class="accordion-item">
+          <div
+            class="accordion-header"
+            onclick="toggleAccordion('collapseThirteen')"
+          >
+            근태관리
+          </div>
+          <div id="collapseThirteen" class="accordion-body">
+            <ul>
+              <li>일간 알림</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 출근 체크
+              <input type="checkbox" name="" id="" /> 퇴근 체크
+              <input type="checkbox" name="" id="" />휴게시간 종료
+              <input type="checkbox" name="" id="" /> 자동퇴근
+            </div>
+            <hr />
+
+            <ul>
+              <li>주간 알림</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 40시간 초과 전
+              <input type="checkbox" name="" id="" /> 40시간 초과
+              <input type="checkbox" name="" id="" /> 52시간 초과 전
+              <input type="checkbox" name="" id="" /> 52시간 초과
+            </div>
+            <hr />
+
+            <ul>
+              <li>월간 알림</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 기본 근무시간 초과 전
+              <input type="checkbox" name="" id="" /> 기본 근무시간 초과
+              <input type="checkbox" name="" id="" /> 연장 근무시간 초과 전
+              <input type="checkbox" name="" id="" /> 연장 근무시간 초과
+            </div>
+            <hr />
+
+            <ul>
+              <li>운영자로 설정</li>
+            </ul>
+
+            <div class="checkbox">
+              <input type="checkbox" name="" id="" /> 운영자로 설정된 사용자
+            </div>
+            <hr />
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modalText"></p>
+          </div>
+        </div>
+
+        <!-- JOIN BTN-->
+        <div class="join_btn">
+          <input
+            type="button"
+            value="저장"
+            onclick="openModal('저장되었습니다')"
+          />
+          <input
+            type="submit"
+            value="취소"
+            style="background-color: rgba(128, 128, 128, 0.062)"
+            onclick="join()"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

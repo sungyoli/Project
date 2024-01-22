@@ -1,0 +1,18 @@
+@media screen and (max-width: 1024px) {
+  .fixed-header {
+    position: fixed;
+  }
+  .wrap {
+    display: block;
+  }
+  .wrap .wrapline .section_wrap {
+    display: block;
+  }
+  .wrap .wrapline .section_wrap section {
+    width: 100%;
+  }
+  .wrap .wrapline .section_wrap section article {
+    width: 100%;
+    height: 50%;
+  }
+}/*# sourceMappingURL=mainMedia.css.map */

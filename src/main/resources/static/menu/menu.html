@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- 반응형 웹 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../templates/menu/menu.css" />
+
+    <!-- (3-3-2). 자바스크립트 소스 추가
+defer : 모든 html 파일을 로딩할때까지 html이 브라우저창에 표시가 안되는 것을 방지 -->
+    <!-- <script src="../resources/js/customer/main.js" defer></script> -->
+    <title>사이드메뉴바</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="left_menu">
+        <div>전자결재</div>
+        <button id="write-button">새 결재 진행</button>
+      </div>
+
+      <!-- 사이드 메뉴바 -->
+      <section class="accordion">
+        <div class="tab">
+          <input type="checkbox" name="accordion-1" id="cb1" checked />
+          <label for="cb1" class="tab__label">결재하기</label>
+          <div class="tab__content">
+            <ul>
+              <li>
+                <a href="../결재/결재대기문서.html"
+                  ><span>결재 대기 문서</span></a
+                >
+              </li>
+              <li>
+                <a href="../결재/결재수신문서.html"
+                  ><span>결재 수신 문서</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="checkbox" name="accordion-1" id="cb2" />
+          <label for="cb2" class="tab__label">개인 문서함</label>
+          <div class="tab__content">
+            <ul>
+              <li>
+                <a href="../결재/결재문서함.html"><span>결재 문서함</span></a>
+              </li>
+              <li>
+                <a href="../결재/수신문서함.html"><span>수신 문서함</span></a>
+              </li>
+              <li>
+                <a href="../결재/발송문서함.html"><span>발송 문서함</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

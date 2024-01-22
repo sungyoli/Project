@@ -23,3 +23,13 @@ setTimeout(function () {
     location.href = "../login/login.html";
 }, 1000); // 1000 밀리초(1초) 후에 이동하도록 설정
 }
+
+//핸드폰 입력칸
+$(".phone-input").keyup(function () {
+    if (this.value.length == this.maxLength) {
+    $(this).next(".phone-input").focus();
+    }
+});
+ 
+
+

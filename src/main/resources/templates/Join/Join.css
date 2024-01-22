@@ -28,7 +28,7 @@ ul li {
   flex-direction: column;
   align-items: center;
   width: 900px;
-  height: 1400px;
+  height: 1500px;
   margin-top: 60px;
   margin-bottom: 60px;
   background: #ffffff;
@@ -214,7 +214,7 @@ ul li {
 
 /* 동의체크 */
 .agree-check {
-  width: 464px;
+  width: 474px;
   height: 21.06px;
   margin-top: 52.05px;
   margin-left: 30px;
@@ -223,6 +223,8 @@ ul li {
   line-height: 21px;
   color: #000000;
 }
+
+
 
 /* 이용약관 */
 .terms iframe {

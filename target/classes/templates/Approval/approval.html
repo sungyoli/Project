@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="../logo/scope3.png" />
+    <title>전자결재</title>
+    <!-- <script>
+      function redirectTo(link) {
+        window.location.href = link;
+      }
+    </script> -->
+    <script
+      src="http://kit.fontawesome.com/a4539ed26c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="approval.css" />
+
+    <script
+      src="https://kit.fontawesome.com/67a1f076db.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="header"></div>
+      <div id="leftMenu"></div>
+      <!-- 가운데 게시판 목록 리스트 -->
+      <div class="tablewrap">
+        <div class="table">
+          <div class="table2"><span>기안 진행 문서</span></div>
+          <br />
+          <table>
+            <tr>
+              <th>기안일</th>
+              <th>결재양식</th>
+              <th>제목</th>
+              <th>첨부</th>
+              <th>결재상태</th>
+            </tr>
+            <tr onclick="redirectTo('WeekendWork_f.html')">
+              <td>2023-12-25</td>
+              <td>휴일근무신청</td>
+              <td>휴일근무신청합니다.</td>
+              <td></td>
+              <td><button class="btn progress">진행중</button></td>
+            </tr>
+
+            <tr onclick="redirectTo('ReauestLeave_f.html')">
+              <td>2023-12-25</td>
+              <td>연차신청</td>
+              <td>연차신청합니다.</td>
+              <td></td>
+              <td><button class="btn progress">진행중</button></td>
+            </tr>
+
+            <tr onclick="redirectTo('OvertimeWork_f.html')">
+              <td>2023-12-25</td>
+              <td>연장근무신청</td>
+              <td>연장근무내역입니다.</td>
+              <td></td>
+              <td><button class="btn progress">진행중</button></td>
+            </tr>
+          </table>
+
+          <div class="table3"><span>완료 문서</span></div>
+          <br />
+          <table>
+            <tr>
+              <th>기안일</th>
+              <th>결재양식</th>
+              <th>제목</th>
+              <th>첨부</th>
+              <th>결재상태</th>
+            </tr>
+            <tr onclick="redirectTo('ReauestLeaveCompleted.html')">
+              <td>2023-12-25</td>
+              <td>연차신청</td>
+              <td>연차신청합니다.</td>
+              <td></td>
+              <td><button class="btn completed">완료</button></td>
+            </tr>
+
+            <tr onclick="redirectTo('OvertimeWorkCompleted.html')">
+              <td>2023-12-25</td>
+              <td>연장근무신청</td>
+              <td>연장근무내역입니다.</td>
+              <td></td>
+              <td><button class="btn completed">완료</button></td>
+            </tr>
+
+            <tr onclick="redirectTo('WeekendWorkCompleted.html')">
+              <td>2023-12-25</td>
+              <td>휴일근무신청</td>
+              <td>휴일근무신청합니다.</td>
+              <td></td>
+              <td><button class="btn completed">완료</button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="module" src="../importJS/headerIpt.js"></script>
+    <script type="module" src="../importJS/approvalIpt.js"></script>
+    <script src="approval.js"></script>
+  </body>
+</html>
